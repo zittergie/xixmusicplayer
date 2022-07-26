@@ -79,6 +79,8 @@ type
     MenuItem122: TMenuItem;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
+    MenuItem4: TMenuItem;
+    N1: TMenuItem;
     MI_SGALL_Wiki: TMenuItem;
     MenuItem92: TMenuItem;
     MI_SGAll_Play2: TMenuItem;
@@ -601,6 +603,7 @@ type
     procedure MenuItem129Click(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
     procedure MenuItem3Click(Sender: TObject);
+    procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem90Click(Sender: TObject);
     procedure MI_SGALL_WikiClick(Sender: TObject);
     procedure MI_SGALL_DeleteClick(Sender: TObject);
@@ -1325,7 +1328,7 @@ type TSearchforPlaylistThread = class(TThread)
 
 const
   configversion='v0.14c';
-  versie='2020-12-22';
+  versie='2022-05-09';
   READ_BYTES = 2048;
   // TODO: customizing grids columns could be a per/user setting
   //       for the moment, use this ....
@@ -2116,6 +2119,7 @@ begin
         LyricsVar:=TLyrics.Create;
         LyricsVar.GetSourceInfo(FormConfig.CLB_Lyrics.Items[i2]);
         LyricsVar.CreateLyricURL(ArtistLyric, TitleLyric);
+      //  if (pos('el',LyricsVar.LyricURL)>0) then Form1.LB_Filename.Caption:=LyricsVar.LyricURL;
         if LyricsVar.GetLyric(LyricsVar.LyricURL) then
         begin
           if LyricsVar.LyricsText.Count>2 then
@@ -3422,8 +3426,8 @@ end;
 procedure TForm1.FormResize(Sender: TObject);
 begin
   Splitter4Moved(Self);
-  If Form1.Width>1920 then Image9.Stretch:=True
-                      else Image9.Stretch:=False;
+  If (Form1.Width>1920) or (Form1.Height>1044) then Image9.Stretch:=True
+                                               else Image9.Stretch:=False;
   LB_Artiest.Left:=Trackbar2.Left+round(Trackbar2.Width/2)-round((LB_Artiest.Width+LB_CD.Width)/2)+15;
 end;
 
@@ -3770,16 +3774,6 @@ begin
 
     If CanClose then
     begin
-     // Form1.Hide;
-     (* Timer1.Enabled:=False;
-      Tracksfound.Free;
-      FilesFound.Free;
-      M3uFilesfound.Free;
-      SaveDownloadto.Free;
-      LyricsNotFound.Free;
-      Settings.Free;
-      PlayListsFound.Free;
-      MostPlayed.Free;  *)
       {$IFDEF HAIKU}
       {$ELSE}
     (*  case stream of
@@ -4610,6 +4604,7 @@ begin
            ImageListLCD.GetBitmap(0,Image2.Picture.Bitmap);
          end;
       1: Begin
+           Label_Extra.Font.Color:=clGray;
            ImageListBackDrop.GetBitmap(0,Image9.Picture.Bitmap);
            ImageListLCD.GetBitmap(0,Image1.Picture.Bitmap);
            ImageListLCD.GetBitmap(0,Image2.Picture.Bitmap);
@@ -4618,6 +4613,7 @@ begin
            ImageListBackDrop.GetBitmap(1,Image9.Picture.Bitmap);
            ImageListLCD.GetBitmap(1,Image1.Picture.Bitmap);
            ImageListLCD.GetBitmap(1,Image2.Picture.Bitmap);
+           Label_Extra.Font.Color:=clSilver;
            {$IFDEF MSWINDOWS}
             Form1.Color:=clGray;
             LB_Artist1.Color:=clGray;
@@ -4656,7 +4652,7 @@ begin
      Haiku:=true;
      AProcess := TProcess.Create(nil);
      try
-      AProcess.CommandLine:='wget '+url+' -O '+PathToSaveTo+' -T 5 -t 1';
+      AProcess.CommandLine:='wget '+url+' -O '+PathToSaveTo+' -T 5 -t 1 -U Mozilla';
       AProcess.options:=AProcess.options+[poWaitOnExit];
       AProcess.Execute;
      except
@@ -4668,12 +4664,31 @@ begin
 
   if (length(url)>1) and not Haiku then
   begin
-   fs := TFileStream.Create(PathToSaveTo, fmOpenWrite or fmCreate);
-   try
-      goed:=HttpGetBinary(Url, fs);
-   finally
-      fs.Free;
-   end;
+   (* TODO: Because HTTPS does not work for the moment we use wget *)
+    {$IFDEF WINDOWS}
+    if not goed then
+    begin
+      fs := TFileStream.Create(PathToSaveTo, fmOpenWrite or fmCreate);
+      try
+         goed:=HttpGetBinary(Url, fs);
+      finally
+         fs.Free;
+      end;
+    end;
+    {$ENDIF}
+    if not goed then
+    begin
+      AProcess := TProcess.Create(nil);
+      try
+   //   MemoLyrics.Lines.Add('wget '+url+' -O '+PathToSaveTo+' -T 5 -t 1 -U Mozilla');
+        AProcess.CommandLine:='wget '+url+' -O '+PathToSaveTo+' -T 5 -t 1 -U Mozilla';
+        AProcess.options:=AProcess.options+[poWaitOnExit];
+        AProcess.Execute;
+      except
+      end;
+      AProcess.Free;
+      if fileexists(PathToSaveTo) then goed:=True;
+    end;
   end;
   {$ENDIF}
   If (goed) and (FileExistsUTF8(Pathtosaveto)) then
@@ -4686,14 +4701,14 @@ begin
         CloseFile(Filevar);
         if pos('!DOCTYPE',lijn)>0 then
         begin
-          goed:=false;
-          DeleteFileUTF8(Pathtosaveto);
+         // goed:=false;
+         // DeleteFileUTF8(Pathtosaveto);
         end;
       end
       else
       begin
         goed:=false;
-        DeleteFileUTF8(Pathtosaveto);
+     //   DeleteFileUTF8(Pathtosaveto);
       end;
    end;
    DownloadFile:=goed;
@@ -9273,7 +9288,7 @@ end;
 
 procedure TForm1.Label30Click(Sender: TObject);
 begin
-  BrowseTo('http://www.listenlive.eu');
+ // BrowseTo('http://www.listenlive.eu');
 end;
 
 procedure TForm1.LB_XiXInfoClick(Sender: TObject);
@@ -10395,7 +10410,7 @@ begin
  begin
    id3extra.lyric:=''; ArtistLyric:=LB_Artiest.Caption; TitleLyric:=LB_Titel.Caption;
    //NOG VERANDEREN
-   CachedLyrics:=Configdir+Directoryseparator+'songtext'+Directoryseparator+ArtiestInfo+'-'+ConvertTitle(LB_Titel.Caption)+'.lrc'; // ARRAY 0 contains a link to the cached songtext
+   CachedLyrics:=Configdir+Directoryseparator+'songtext'+Directoryseparator+ArtiestInfo+'_'+ConvertTitle(LB_Titel.Caption)+'.lrc'; // ARRAY 0 contains a link to the cached songtext
    if stream<3 then
    begin
      GetId3Extra(songplaying);
@@ -14351,6 +14366,28 @@ begin
   AProcess.Free;
 end;
 
+procedure TForm1.MenuItem4Click(Sender: TObject);
+var i: integer;
+    TempLyrics: string;
+begin
+  ShowMessage('Gestart');
+  for i:=1 to SG_All.RowCount-1 do
+  begin
+    TempLyrics:=Configdir+Directoryseparator+'songtext'+Directoryseparator+ConvertArtist(SG_All.Cells[1,i],false)+'-'+ConvertTitle(SG_All.Cells[3,i])+'.lrc';
+    if fileexists(TempLyrics) then
+    begin
+      //showmessage(TempLyrics);
+      MemoLyrics.Lines.LoadFromFile(TempLyrics);
+      Application.ProcessMessages;
+      MemoLyrics.Lines.SaveToFile(Configdir+Directoryseparator+'newlyrics'+Directoryseparator+ConvertArtist(SG_All.Cells[1,i],false)+'_'+ConvertTitle(SG_All.Cells[3,i])+'.lrc');
+      Application.ProcessMessages;
+      DeleteFile(TempLyrics);
+    end;
+    //else showmessage('NO: '+TempLyrics);
+  end;
+  ShowMessage('Beeindingd');
+end;
+
 procedure TForm1.MenuItem90Click(Sender: TObject);
 var ext, bestand, lijn: String;
     ActiveIndex: longint;
@@ -15064,7 +15101,7 @@ begin
          else Form1.Splitter4.Top:=26+Form1.ImageCDCoverLyric.Width+1;
       Form1.Splitter4Moved(Form1.Stringgrid1);
     end;
-  end;          ;
+  end;
 end;
 
 procedure TForm1.MI_VU_Active4Click(Sender: TObject);

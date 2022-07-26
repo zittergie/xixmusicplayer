@@ -6,7 +6,7 @@ unit fetchlyrics;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, httpsend, LazFileUtils;
+  Classes, SysUtils, FileUtil, httpsend, LazFileUtils, openssl, fphttpclient;
 
 type
   TLyrics = class
@@ -143,11 +143,15 @@ begin
   ExtendedURL:=StringReplace(ExtendedURL,'{artist}',lowercase(artist),[rfReplaceAll]);
   if pos('{Artist}',ExtendedURL)>0 then artist[1]:=Upcase(artist[1]);
   ExtendedURL:=StringReplace(ExtendedURL,'{Artist}',artist,[rfReplaceAll]);
-
+  Title:=StringReplace(Title,'&','%26',[rfReplaceAll]);
   ExtendedURL:=StringReplace(ExtendedURL,'{title}',lowercase(title),[rfReplaceAll]);
-  if pos('{Title}',ExtendedURL)>0 then title[1]:=Upcase(Title[1]);
+  if pos('{Title}',ExtendedURL)>0 then
+  begin
+    title[1]:=Upcase(Title[1]);
+   // StringReplace(Title,'&','%26',[rfReplaceAll]);
+  end;
   ExtendedURL:=StringReplace(ExtendedURL,'{Title}',title,[rfReplaceAll]);
-
+  ExtendedURL:=StringReplace(ExtendedURL,' ','%20',[rfReplaceAll]);
   LyricURL:=BaseURL+ExtendedURL;
 end;
 
@@ -155,8 +159,9 @@ function TLyrics.GetLyric(url: String): boolean;
 var fs: TFilestream;
     TempDir, Temp, TempStr, BreakStr: String;
     goed, gevonden: Boolean;
-    i, i2, i3, teller: integer;
+    i, i2, i3, teller, positie, positie2: integer;
     TempStringList: Tstringlist;
+    Filevar: TextFile;
 begin
   if LyricsText=nil then LyricsText:=TStringList.Create;
   LyricsText.Clear; goed:=false;
@@ -167,12 +172,18 @@ begin
   If Form1.DownLoadFile(url,TempDir+Directoryseparator+'songtext.txt') then
   goed:=true;
   {$ELSE}
-  fs := TFileStream.Create(TempDir+Directoryseparator+'songtext.txt', fmOpenWrite or fmCreate);
+(*  AssignFile(Filevar,TempDir+Directoryseparator+'songtext.txt');
+  Rewrite(Filevar);
+  writeln(Filevar,TFPHttpClient.SimpleGet(url));
+  CloseFile(Filevar);   *)
+
+  if Form1.DownloadFile(url,TempDir+Directoryseparator+'songtext.txt') then goed:=true;
+(*  fs := TFileStream.Create(TempDir+Directoryseparator+'songtext.txt', fmOpenWrite or fmCreate);
   try
     goed:=HttpGetBinary(url, fs);
   finally
     fs.Free;
-  end;
+  end;     *)
   {$ENDIF}
 
   if goed then
@@ -299,13 +310,6 @@ begin
       if pos('-->',LyricsText.Strings[i])>0 then LyricsText.Delete(i);
       if pos('<div ',LyricsText.Strings[i])>0 then LyricsText.Delete(i);
 
-      if pos('<span',LyricsText.Strings[i])=1 then
-      begin
-        Temp:=LyricsText.Strings[i];
-        Delete(Temp,1,pos('>',Temp));
-        LyricsText.Strings[i]:=trim(Temp);
-      end;
-
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'<br/>',#13,[rfReplaceAll]);
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'<br />',#13,[rfReplaceAll]);
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'<br>',#13,[rfReplaceAll]);
@@ -317,12 +321,29 @@ begin
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'</div>','',[]);
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'<p>',#13,[rfReplaceAll]);
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'</p>',#13,[rfReplaceAll]);
+      LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'</a>','',[]);
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'</span>','',[]);
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'<p class=''verse''>',#10,[rfReplaceAll]);
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'<p class="writers">','',[rfReplaceAll]);
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'<p class="lyrics">','',[rfReplaceAll]);
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'&copy;','(c)',[rfReplaceAll]);
       LyricsText.Strings[i]:=StringReplace(LyricsText.Strings[i],'&quot;','"',[rfReplaceAll]);
+      if pos('<span',LyricsText.Strings[i])>0 then
+      begin
+        Temp:=trim(LyricsText.Strings[i]);
+       // Form1.Memo2.Lines.Add('*'+Temp+'*');
+        positie:=pos('<span',Temp);
+        positie2:=pos('>',Temp);
+        Delete(Temp,positie,positie2-positie+1);
+        LyricsText.Strings[i]:=trim(Temp);
+      end;
+      if pos('<a',LyricsText.Strings[i])>0 then
+      begin
+        Temp:=trim(LyricsText.Strings[i]);
+        positie:=pos('<a',Temp);
+        Delete(Temp,positie,pos('>',Temp));
+        LyricsText.Strings[i]:=trim(Temp);
+      end;
       inc(i);
     until i>=LyricsText.Count;
 
@@ -362,10 +383,23 @@ begin
   begin
     LyricsText.Strings[0]:=Trim(LyricsText.Strings[0]);
     LyricsText.Strings[LyricsText.Count-1]:=Trim(LyricsText.Strings[LyricsText.Count-1]);
+    temp:=LyricsText.Strings[0];
+    if pos('<',temp)=1 then
+    begin
+      delete(temp,1,pos('>',temp));
+      LyricsText.Strings[0]:=temp;
+    end;
+    temp:=trim(LyricsText.Strings[1]);
+    if pos('<',temp)=1 then
+    begin
+      delete(temp,1,pos('>',temp));
+      LyricsText.Strings[1]:=temp;
+    end;
+    if trim(LyricsText.Strings[0])='' then LyricsText.Delete(0);
   end;
   end;
 
-  DeleteFile(TempDir+Directoryseparator+'songtext.txt');
+ // DeleteFile(TempDir+Directoryseparator+'songtext.txt');
   GetLyric:=Goed;
 end;
 

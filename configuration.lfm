@@ -7320,8 +7320,8 @@ object FormConfig: TFormConfig
     OnChange = PageControl1Change
     object TabSheet1: TTabSheet
       Caption = 'General'
-      ClientHeight = 364
-      ClientWidth = 764
+      ClientHeight = 360
+      ClientWidth = 768
       Font.Height = -12
       ParentFont = False
       object Bevel1: TBevel
@@ -7332,7 +7332,7 @@ object FormConfig: TFormConfig
         Left = 6
         Height = 52
         Top = 8
-        Width = 751
+        Width = 755
         Anchors = [akTop, akLeft, akRight]
         BorderSpacing.Left = 6
         BorderSpacing.Top = 8
@@ -7363,7 +7363,7 @@ object FormConfig: TFormConfig
         Left = 120
         Height = 28
         Top = 20
-        Width = 476
+        Width = 480
         Anchors = [akTop, akLeft, akRight]
         BorderSpacing.Left = 4
         BorderSpacing.Right = 8
@@ -7379,7 +7379,7 @@ object FormConfig: TFormConfig
         AnchorSideTop.Side = asrCenter
         AnchorSideRight.Control = Bevel1
         AnchorSideRight.Side = asrBottom
-        Left = 604
+        Left = 608
         Height = 15
         Top = 27
         Width = 145
@@ -7401,7 +7401,7 @@ object FormConfig: TFormConfig
         Left = 6
         Height = 138
         Top = 64
-        Width = 751
+        Width = 755
         Anchors = [akTop, akLeft, akRight]
         BorderSpacing.Left = 6
         BorderSpacing.Top = 4
@@ -7411,9 +7411,9 @@ object FormConfig: TFormConfig
       object CB_Fade: TCheckBox
         AnchorSideTop.Control = Bevel2
         Left = 24
-        Height = 23
+        Height = 22
         Top = 72
-        Width = 208
+        Width = 206
         BorderSpacing.Top = 8
         Caption = 'Use crossfading between 2 songs'
         Checked = True
@@ -7429,8 +7429,8 @@ object FormConfig: TFormConfig
         AnchorSideBottom.Control = CB_FadeManual
         AnchorSideBottom.Side = asrBottom
         Left = 54
-        Height = 66
-        Top = 95
+        Height = 65
+        Top = 94
         Width = 4
         Anchors = [akTop, akLeft, akBottom]
         BorderSpacing.Left = 30
@@ -7445,7 +7445,7 @@ object FormConfig: TFormConfig
         AnchorSideBottom.Side = asrBottom
         Left = 62
         Height = 33
-        Top = 101
+        Top = 100
         Width = 69
         Anchors = [akTop, akLeft, akBottom]
         BorderSpacing.Left = 4
@@ -7463,8 +7463,8 @@ object FormConfig: TFormConfig
         AnchorSideRight.Control = Label92
         Left = 134
         Height = 37
-        Top = 97
-        Width = 587
+        Top = 96
+        Width = 591
         Min = 1
         OnChange = TB_FadeChange
         Position = 4
@@ -7484,9 +7484,9 @@ object FormConfig: TFormConfig
         AnchorSideTop.Control = TB_Fade
         AnchorSideTop.Side = asrBottom
         Left = 62
-        Height = 23
-        Top = 138
-        Width = 164
+        Height = 22
+        Top = 137
+        Width = 162
         BorderSpacing.Left = 4
         BorderSpacing.Top = 4
         Caption = 'Fade on manual selection'
@@ -7504,8 +7504,8 @@ object FormConfig: TFormConfig
         AnchorSideBottom.Side = asrBottom
         Left = 8
         Height = 15
-        Top = 349
-        Width = 748
+        Top = 345
+        Width = 752
         Alignment = taCenter
         Anchors = [akLeft, akRight, akBottom]
         BorderSpacing.Left = 8
@@ -7523,9 +7523,9 @@ object FormConfig: TFormConfig
         AnchorSideTop.Control = CB_MinimizeOnClose
         AnchorSideTop.Side = asrBottom
         Left = 24
-        Height = 23
-        Top = 293
-        Width = 278
+        Height = 22
+        Top = 292
+        Width = 276
         BorderSpacing.Top = 4
         Caption = 'Run from portable USB stick  (needs a restart)'
         Font.Height = -12
@@ -7537,9 +7537,9 @@ object FormConfig: TFormConfig
         AnchorSideRight.Control = Label93
         AnchorSideBottom.Control = TB_Fade
         AnchorSideBottom.Side = asrBottom
-        Left = 724
+        Left = 728
         Height = 37
-        Top = 97
+        Top = 96
         Width = 7
         Anchors = [akTop, akRight, akBottom]
         BorderSpacing.Right = 1
@@ -7554,9 +7554,9 @@ object FormConfig: TFormConfig
         AnchorSideRight.Side = asrBottom
         AnchorSideBottom.Control = TB_Fade
         AnchorSideBottom.Side = asrBottom
-        Left = 732
+        Left = 736
         Height = 37
-        Top = 97
+        Top = 96
         Width = 21
         Anchors = [akTop, akRight, akBottom]
         BorderSpacing.Right = 4
@@ -7574,7 +7574,7 @@ object FormConfig: TFormConfig
         Left = 6
         Height = 52
         Top = 206
-        Width = 751
+        Width = 755
         Anchors = [akTop, akLeft, akRight]
         BorderSpacing.Top = 4
         Shape = bsFrame
@@ -7602,7 +7602,7 @@ object FormConfig: TFormConfig
         Left = 120
         Height = 37
         Top = 214
-        Width = 584
+        Width = 588
         Frequency = 10
         LineSize = 0
         Max = 160
@@ -7623,7 +7623,7 @@ object FormConfig: TFormConfig
         AnchorSideTop.Side = asrCenter
         AnchorSideRight.Control = Bevel11
         AnchorSideRight.Side = asrBottom
-        Left = 722
+        Left = 726
         Height = 15
         Top = 225
         Width = 31
@@ -7638,7 +7638,7 @@ object FormConfig: TFormConfig
         AnchorSideTop.Control = Bevel11
         AnchorSideTop.Side = asrCenter
         AnchorSideRight.Control = Label95
-        Left = 707
+        Left = 711
         Height = 15
         Top = 225
         Width = 14
@@ -7653,9 +7653,9 @@ object FormConfig: TFormConfig
         AnchorSideBottom.Control = Bevel2
         AnchorSideBottom.Side = asrBottom
         Left = 24
-        Height = 23
-        Top = 172
-        Width = 262
+        Height = 22
+        Top = 173
+        Width = 260
         Anchors = [akLeft, akBottom]
         BorderSpacing.Bottom = 7
         Caption = 'Use REPLAY GAIN-metadata when available'
@@ -7669,9 +7669,9 @@ object FormConfig: TFormConfig
         AnchorSideTop.Control = Bevel11
         AnchorSideTop.Side = asrBottom
         Left = 24
-        Height = 23
+        Height = 22
         Top = 266
-        Width = 125
+        Width = 123
         BorderSpacing.Top = 8
         Caption = 'Minimize On Close'
         Font.Height = -12
@@ -7681,11 +7681,11 @@ object FormConfig: TFormConfig
       object CB_NoAdvance: TCheckBox
         AnchorSideRight.Control = Bevel2
         AnchorSideRight.Side = asrBottom
-        Left = 573
-        Height = 23
+        Left = 579
+        Height = 22
         Hint = 'Stop after playing each song.  Do not play the next song from the Playing Queue.'
         Top = 179
-        Width = 172
+        Width = 170
         Anchors = [akTop, akRight]
         BorderSpacing.Right = 12
         Caption = 'No Playing Queue advance'
@@ -7697,8 +7697,8 @@ object FormConfig: TFormConfig
     end
     object TabSheet2: TTabSheet
       Caption = 'Cache'
-      ClientHeight = 364
-      ClientWidth = 764
+      ClientHeight = 360
+      ClientWidth = 768
       Font.Height = -12
       ParentFont = False
       object Bevel3: TBevel
@@ -7936,8 +7936,8 @@ object FormConfig: TFormConfig
     end
     object TabSheet3: TTabSheet
       Caption = 'Gui'
-      ClientHeight = 364
-      ClientWidth = 764
+      ClientHeight = 360
+      ClientWidth = 768
       Font.Height = -12
       ParentFont = False
       object Bevel6: TBevel
@@ -7948,7 +7948,7 @@ object FormConfig: TFormConfig
         Left = 6
         Height = 102
         Top = 4
-        Width = 752
+        Width = 756
         Anchors = [akTop, akLeft, akRight]
         BorderSpacing.Left = 6
         BorderSpacing.Top = 4
@@ -7964,7 +7964,7 @@ object FormConfig: TFormConfig
         Left = 6
         Height = 72
         Top = 114
-        Width = 751
+        Width = 755
         Anchors = [akTop, akLeft, akRight]
         BorderSpacing.Left = 6
         BorderSpacing.Top = 8
@@ -8063,7 +8063,7 @@ object FormConfig: TFormConfig
         Left = 6
         Height = 66
         Top = 194
-        Width = 751
+        Width = 755
         Anchors = [akTop, akLeft, akRight]
         BorderSpacing.Left = 6
         BorderSpacing.Top = 8
@@ -8074,9 +8074,9 @@ object FormConfig: TFormConfig
         AnchorSideLeft.Control = Bevel8
         AnchorSideTop.Control = Bevel8
         Left = 14
-        Height = 23
+        Height = 22
         Top = 202
-        Width = 122
+        Width = 120
         BorderSpacing.Left = 8
         BorderSpacing.Top = 8
         Caption = 'Show notification'
@@ -8092,9 +8092,9 @@ object FormConfig: TFormConfig
         AnchorSideTop.Control = CB_Notification
         AnchorSideTop.Side = asrBottom
         Left = 34
-        Height = 23
-        Top = 228
-        Width = 142
+        Height = 22
+        Top = 227
+        Width = 140
         BorderSpacing.Left = 20
         BorderSpacing.Top = 3
         Caption = 'Only when minimized'
@@ -8106,10 +8106,10 @@ object FormConfig: TFormConfig
       end
       object CB_Tray: TCheckBox
         AnchorSideTop.Control = CB_CDCoverInfo
-        Left = 436
-        Height = 23
+        Left = 440
+        Height = 22
         Top = 12
-        Width = 105
+        Width = 103
         Anchors = [akTop]
         Caption = 'Show tray icon'
         Checked = True
@@ -8135,8 +8135,8 @@ object FormConfig: TFormConfig
         AnchorSideTop.Control = Label43
         AnchorSideTop.Side = asrCenter
         Left = 528
-        Height = 25
-        Top = 123
+        Height = 23
+        Top = 124
         Width = 50
         Font.Height = -12
         MaxValue = 20
@@ -8162,8 +8162,8 @@ object FormConfig: TFormConfig
         AnchorSideTop.Control = Label104
         AnchorSideTop.Side = asrCenter
         Left = 528
-        Height = 25
-        Top = 152
+        Height = 23
+        Top = 153
         Width = 50
         Font.Height = -12
         MaxValue = 26
@@ -8176,9 +8176,9 @@ object FormConfig: TFormConfig
       object CB_CDCoverInfo: TCheckBox
         AnchorSideTop.Control = Bevel6
         Left = 16
-        Height = 23
+        Height = 22
         Top = 12
-        Width = 109
+        Width = 107
         BorderSpacing.Top = 8
         Caption = 'Show CD Cover'
         Checked = True
@@ -8192,9 +8192,9 @@ object FormConfig: TFormConfig
         AnchorSideTop.Control = CB_CDCoverInfo
         AnchorSideTop.Side = asrBottom
         Left = 40
-        Height = 23
-        Top = 39
-        Width = 185
+        Height = 22
+        Top = 38
+        Width = 183
         BorderSpacing.Top = 4
         Caption = 'Show CD Cover abvove Lyrics'
         Checked = True
@@ -8206,9 +8206,9 @@ object FormConfig: TFormConfig
       object CB_ShowAllColumns: TCheckBox
         AnchorSideTop.Control = CB_Notification
         Left = 368
-        Height = 23
+        Height = 22
         Top = 202
-        Width = 151
+        Width = 149
         Caption = 'Try to show all columns'
         Font.Height = -12
         ParentFont = False
@@ -8218,10 +8218,10 @@ object FormConfig: TFormConfig
         AnchorSideLeft.Control = CB_CDCoverLyrics
         AnchorSideLeft.Side = asrBottom
         AnchorSideTop.Control = CB_CDCoverLyrics
-        Left = 237
-        Height = 23
-        Top = 39
-        Width = 161
+        Left = 235
+        Height = 22
+        Top = 38
+        Width = 159
         BorderSpacing.Left = 12
         Caption = 'Fix CD Cover at max 50%'
         Checked = True
@@ -8232,10 +8232,10 @@ object FormConfig: TFormConfig
       end
       object CB_LoadPictureFromFile: TCheckBox
         Left = 16
-        Height = 23
+        Height = 22
         Hint = 'Default is, if no cache CD Cover is found, first Last.FM will be serached.'#10'If no Data is found on Last.FM, Picture data is read from the file.'#10'As reading pictures from files will get optimised, default behaviour can be changed in the future.'
         Top = 72
-        Width = 335
+        Width = 333
         Caption = 'Load CD Cover from file before trying to search Last.FM.'
         Checked = True
         Enabled = False
@@ -8255,7 +8255,7 @@ object FormConfig: TFormConfig
         Left = 6
         Height = 84
         Top = 268
-        Width = 752
+        Width = 756
         Anchors = [akTop, akLeft, akRight]
         BorderSpacing.Top = 8
       end
@@ -8283,7 +8283,7 @@ object FormConfig: TFormConfig
         Left = 60
         Height = 28
         Top = 318
-        Width = 462
+        Width = 466
         Anchors = [akLeft, akRight, akBottom]
         BorderSpacing.Left = 3
         BorderSpacing.Right = 8
@@ -8300,7 +8300,7 @@ object FormConfig: TFormConfig
         AnchorSideTop.Side = asrCenter
         AnchorSideRight.Control = Bevel14
         AnchorSideRight.Side = asrBottom
-        Left = 530
+        Left = 534
         Height = 25
         Top = 320
         Width = 216
@@ -8314,9 +8314,9 @@ object FormConfig: TFormConfig
       end
       object SB_SystemTheme: TCheckBox
         Left = 16
-        Height = 23
+        Height = 22
         Top = 280
-        Width = 188
+        Width = 186
         Caption = 'Integrate with system theme:'
         Checked = True
         State = cbChecked
@@ -8327,7 +8327,7 @@ object FormConfig: TFormConfig
         AnchorSideLeft.Side = asrBottom
         AnchorSideTop.Control = SB_SystemTheme
         AnchorSideTop.Side = asrCenter
-        Left = 207
+        Left = 205
         Height = 25
         Top = 279
         Width = 185
@@ -8347,9 +8347,9 @@ object FormConfig: TFormConfig
         AnchorSideTop.Control = CB_SystemColorTheme
         AnchorSideTop.Side = asrCenter
         Left = 447
-        Height = 23
+        Height = 22
         Top = 280
-        Width = 101
+        Width = 99
         Caption = 'Use Backdrop'
         Checked = True
         State = cbChecked
@@ -8358,8 +8358,8 @@ object FormConfig: TFormConfig
     end
     object TabSheet5: TTabSheet
       Caption = 'Lyrics'
-      ClientHeight = 364
-      ClientWidth = 764
+      ClientHeight = 360
+      ClientWidth = 768
       Font.Height = -12
       ParentFont = False
       object CLB_Lyrics: TCheckListBox
@@ -8867,8 +8867,8 @@ object FormConfig: TFormConfig
     end
     object TabSheet6: TTabSheet
       Caption = 'Folders'
-      ClientHeight = 364
-      ClientWidth = 764
+      ClientHeight = 360
+      ClientWidth = 768
       Font.Height = -12
       ParentFont = False
       object Label109: TLabel
@@ -9291,8 +9291,8 @@ object FormConfig: TFormConfig
     end
     object TabSheet8: TTabSheet
       Caption = 'Devices'
-      ClientHeight = 364
-      ClientWidth = 764
+      ClientHeight = 360
+      ClientWidth = 768
       Font.Height = -12
       ParentFont = False
       object GroupBox3: TGroupBox
@@ -9607,8 +9607,8 @@ object FormConfig: TFormConfig
     end
     object TabSheet9: TTabSheet
       Caption = 'Rip CD'
-      ClientHeight = 364
-      ClientWidth = 764
+      ClientHeight = 360
+      ClientWidth = 768
       Font.Height = -12
       ParentFont = False
       object Bevel9: TBevel
@@ -9990,8 +9990,8 @@ object FormConfig: TFormConfig
     end
     object TabSheet10: TTabSheet
       Caption = 'External Apps'
-      ClientHeight = 364
-      ClientWidth = 764
+      ClientHeight = 360
+      ClientWidth = 768
       Font.Height = -12
       ParentFont = False
       object Panel2: TPanel
@@ -10524,8 +10524,8 @@ object FormConfig: TFormConfig
     end
     object TabSheet12: TTabSheet
       Caption = 'Last.FM'
-      ClientHeight = 364
-      ClientWidth = 764
+      ClientHeight = 360
+      ClientWidth = 768
       Font.Height = -12
       ParentFont = False
       object GroupBoxLastFM: TGroupBox
@@ -10693,8 +10693,8 @@ object FormConfig: TFormConfig
     end
     object TabSheet11: TTabSheet
       Caption = 'Updates'
-      ClientHeight = 364
-      ClientWidth = 764
+      ClientHeight = 360
+      ClientWidth = 768
       Font.Height = -12
       ParentFont = False
       object Panel3: TPanel

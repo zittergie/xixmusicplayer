@@ -9,7 +9,7 @@ unit BassFLAC;
 
 interface
 
-uses Windows, Bass;
+uses {$IFDEF WINDOWS} Windows, {$ENDIF}   Bass;
 
 const
   // BASS_CHANNELINFO type
@@ -35,16 +35,25 @@ type
 
 const
   {$IFDEF WINDOWS}
-  bassflacdll = 'bassflac.dll';
+    bassflacdll = 'bassflac.dll';
   {$ENDIF}
-   {$IFDEF LINUX}
+  {$IFDEF LINUX}
     bassflacdll = 'libbassflac.so';
   {$ENDIF}
+  {$IFDEF MACOS}
+    bassflacdll = 'libbassflac.dylib';
+  {$ENDIF}
 
+function BASS_FLAC_StreamCreateFile(mem:BOOL; f:Pointer; offset,length:QWORD; flags:DWORD): HSTREAM; {$IFDEF MSWINDOWS}stdcall{$ELSE}cdecl{$ENDIF}; external bassflacdll;
+function BASS_FLAC_StreamCreateURL(url:PChar; offset:DWORD; flags:DWORD; proc:DOWNLOADPROC; user:Pointer): HSTREAM; {$IFDEF MSWINDOWS}stdcall{$ELSE}cdecl{$ENDIF}; external bassflacdll;
+function BASS_FLAC_StreamCreateFileUser(system,flags:DWORD; var procs:BASS_FILEPROCS; user:Pointer): HSTREAM; {$IFDEF MSWINDOWS}stdcall{$ELSE}cdecl{$ENDIF}; external bassflacdll;
+
+(*
 function BASS_FLAC_StreamCreateFile(mem:BOOL; f:Pointer; offset,length:QWORD; flags:DWORD): HSTREAM; stdcall; external bassflacdll;
 function BASS_FLAC_StreamCreateURL(URL:PAnsiChar; offset:DWORD; flags:DWORD; proc:DOWNLOADPROC; user:Pointer): HSTREAM; stdcall; external bassflacdll;
 function BASS_FLAC_StreamCreateFileUser(system,flags:DWORD; var procs:BASS_FILEPROCS; user:Pointer): HSTREAM; stdcall; external bassflacdll;
+*)
 
 implementation
 
-end.
+end.
