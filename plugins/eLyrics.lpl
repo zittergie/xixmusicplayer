@@ -1,16 +1,16 @@
 XIX Lyrics Plugin
 1
-http://www.elyrics.net/read/
+https://www.elyrics.net/read/
 {a}/{artist}-lyrics/{title}-lyrics.html
 [REPLACECHARS]
  &@/\;".><
 -
 [DROP]
-</div><div id='inlyr'
+<div id='inlyr'>
 
 [END]
 [READ]
-<p><form action="
+<div class="my-3
 
 [END]
 [NOT FOUND]
@@ -19,4 +19,4 @@ Page not Found
 [END]
 [EXTRA]
 1
-1
+0

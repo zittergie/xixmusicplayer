@@ -1,10 +1,10 @@
 XIX Lyrics Plugin
 1
-http://www.xixmusicplayer.org/songtext/
-{artist}-{title}.lrc
+https://www.xixmusicplayer.org/tools/get_lyrics.php?
+artist={artist}&title={title}&compact=1
 [REPLACECHARS]
- ?*
--
+'?*-
+
 [DROP]
 
 
@@ -14,8 +14,8 @@ http://www.xixmusicplayer.org/songtext/
 
 [END]
 [NOT FOUND]
-20
-not found
+18
+NO LYRICS FOUND
 [END]
 [EXTRA]
 0

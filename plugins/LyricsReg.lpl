@@ -1,16 +1,16 @@
 XIX Lyrics Plugin
 1
-http://www.lyricsreg.com/lyrics/
+https://www.lyricsreg.com/lyrics/
 {artist}/{title}
 [REPLACECHARS]
  &@/\;".><
 +
 [DROP]
-Above Lyrics
+<div class="lyricsContainer">
 </script>
 [END]
 [READ]
-<script
+<div
 
 [END]
 [NOT FOUND]

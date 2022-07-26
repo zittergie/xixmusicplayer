@@ -1,16 +1,16 @@
 XIX Lyrics Plugin
 1
-http://www.lyricsmania.com/
+https://www.lyricsmania.com/
 {title}_lyrics_{artist}.html
 [REPLACECHARS]
  &@/\;"'.><
 _
 [DROP]
-rong>Lyrics to
-
+<div class="lyrics-body">
+</div>
 [END]
 [READ]
-</div>
+Powered by <b>LyricFind</b>
 
 [END]
 [NOT FOUND]
@@ -18,5 +18,5 @@ rong>Lyrics to
 Lyricsmania staff is working hard for you to add
 [END]
 [EXTRA]
-0
+1
 0

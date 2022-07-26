@@ -1,16 +1,16 @@
 XIX Lyrics Plugin
 1
-http://letras.mus.br/
-winamp.php?musica={title}&artista={artist}
+https://letras.mus.br/
+{artist}/{title}/
 [REPLACECHARS]
  &@/\;".><
 -
 [DROP]
-<div id="letra-cnt">
+<div class="cnt-letra
 
 [END]
 [READ]
-
+<div id="an-above-below"
 
 [END]
 [NOT FOUND]

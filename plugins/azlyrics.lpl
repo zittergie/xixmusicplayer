@@ -1,12 +1,12 @@
 XIX Lyrics Plugin
 1
-http://www.azlyrics.com/lyrics/
+https://www.azlyrics.com/lyrics/
 {artist}/{title}.html
 [REPLACECHARS]
  &@/\;"'><
 
 [DROP]
-<!-- Usage of
+<!-- Usage of azlyrics
 
 [END]
 [READ]
