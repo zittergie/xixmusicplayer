@@ -1,0 +1,1451 @@
+object FormPlanRecording: TFormPlanRecording
+  Left = 586
+  Height = 320
+  Top = 91
+  Width = 776
+  BorderStyle = bsDialog
+  ClientHeight = 320
+  ClientWidth = 776
+  Font.Height = -13
+  OnCloseQuery = FormCloseQuery
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.1.0.0'
+  object PageControl1: TPageControl
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 4
+    Height = 314
+    Top = 4
+    Width = 768
+    ActivePage = TabSheet2
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 4
+    BorderSpacing.Bottom = 2
+    TabIndex = 1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Overview'
+      ClientHeight = 284
+      ClientWidth = 758
+      object StringGrid1: TStringGrid
+        AnchorSideLeft.Control = TabSheet1
+        AnchorSideTop.Control = TabSheet1
+        AnchorSideRight.Control = SpeedButton5
+        AnchorSideBottom.Control = Label1
+        Left = 6
+        Height = 250
+        Top = 8
+        Width = 712
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        AutoEdit = False
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 8
+        BorderSpacing.Right = 4
+        BorderSpacing.Bottom = 6
+        ColCount = 9
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect, goSmoothScroll]
+        RowCount = 1
+        TabOrder = 0
+        TitleFont.Height = -13
+        OnClick = StringGrid1Click
+        OnDblClick = StringGrid1DblClick
+        ColWidths = (
+          47
+          64
+          164
+          64
+          64
+          47
+          77
+          64
+          64
+        )
+        Cells = (
+          9
+          0
+          0
+          'RS Nr.'
+          1
+          0
+          'Date'
+          2
+          0
+          'Station'
+          3
+          0
+          'From'
+          4
+          0
+          'Until'
+          5
+          0
+          'Mode'
+          6
+          0
+          'Recurrence'
+          7
+          0
+          'Period'
+          8
+          0
+          'RecurMode'
+        )
+      end
+      object Label1: TLabel
+        AnchorSideLeft.Control = TabSheet1
+        AnchorSideRight.Control = TabSheet1
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TabSheet1
+        AnchorSideBottom.Side = asrBottom
+        Left = 4
+        Height = 16
+        Top = 264
+        Width = 750
+        Alignment = taCenter
+        Anchors = [akLeft, akRight, akBottom]
+        BorderSpacing.Left = 4
+        BorderSpacing.Right = 4
+        BorderSpacing.Bottom = 4
+        Caption = 'No recordings planned'
+        ParentColor = False
+      end
+      object SpeedButton5: TSpeedButton
+        AnchorSideTop.Control = StringGrid1
+        AnchorSideRight.Control = TabSheet1
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = StringGrid1
+        AnchorSideBottom.Side = asrBottom
+        Left = 722
+        Height = 250
+        Top = 8
+        Width = 32
+        Anchors = [akTop, akRight, akBottom]
+        BorderSpacing.Right = 4
+        Glyph.Data = {
+          36090000424D3609000000000000360000002800000018000000180000000100
+          2000000000000009000064000000640000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000000000000000000000000000004000000080000000E0000
+          00150000001D00000022000000210000001B000000130000000D000000070000
+          0002000000000000000000000000000000000000000000000000000000000000
+          00000000000000000006000000130000001E0000004000000866030354A70505
+          75CD070798EB0606AAFB0606AAFB050596EA040474CB020253A20000085F0000
+          00360000001B0000001000000003000000000000000000000000000000000000
+          00000000000600000014000000210000004504043F860909A6EF1616BCFB2727
+          D3FF2F2FDBFF3535DCFF3434DCFF2E2EDBFF2424D1FF1212B8FB0606A2EE0202
+          407F000000390000001D00000011000000020000000000000000000000000000
+          0000000000000000000D0000121C0A0AA2940D0DB9F82E2EDDFE4141DDFF4848
+          DEFF4141DDFF3434DBFF3333DAFF4040DDFF4646DEFF3D3DDCFF2929DAFE0808
+          B1F805059C93000014190000000A000000000000000000000000000000000000
+          000000000000000000000C0CBC7D1919C9F53333DFFF3131DBFF2727D9FF7C7D
+          E2FFABACE7FFD6D8ECFFD6D8ECFFABACE7FF7C7DE2FF2727D9FF2D2DDAFF2D2D
+          DDFF1313C1F50606B17D00000000000000000000000000000000000000000000
+          0000000000001111BC2E1212C1F43131DFFF2121DAFF494ADEFFCFD0EBFFECEE
+          EEFFECEEEEFFEDEFEFFFEDEFEFFFECEEEEFFECEEEEFFCFD0EBFF494ADEFF1F1F
+          D9FF2929DEFF0B0BB7F40606B12E000000000000000000000000000000000000
+          00000000D5061111C3DC3030DEFE2626DBFF4747DEFFEBEDEFFFEEF0F0FFEEF0
+          F0FFEFF0F0FFEFF0F0FFEFF0F0FFEFF0F0FFEEF0F0FFEEF0F0FFEBEDEFFF4747
+          DEFF2020DAFF2727DCFE0A0AB7DC0000AA060000000000000000000000000000
+          00001313C54F2020CFF23131DEFF1B1BDBFFD1D2EDFFEFF1F1FF848886FF7578
+          77FFE2E3E3FFF1F2F2FFF1F2F2FFE2E3E3FF777C7AFF848886FFEFF1F1FFD1D2
+          EDFF1A1ADBFF2727DDFF1717C8F10A0AB84F0000000000000000000000000000
+          00001313C9853030DFFC2828DEFF797AE6FFF0F2F2FFF1F3F3FF787C7AFF5357
+          55FF6C6F6EFFE4E5E5FFE4E5E5FF6C6F6EFF535755FF757877FFF1F3F3FFF0F2
+          F2FF797AE6FF2222DDFF2626DAFC0D0DBC850000000000000000000000000000
+          00001616CDC53939E4FF2323DFFFAAABECFFF2F3F3FFF3F4F4FFE5E6E6FF6C6F
+          6EFF535755FF6A6D6CFF6A6D6CFF535755FF6C6F6EFFE5E6E6FFF3F4F4FFF2F3
+          F3FFADAFEDFF1F1FDFFF3030E1FF1010C0C50000000000000000000000000000
+          00001717CFF24343E6FF1C1CE0FFD6D7F1FFF4F5F5FFF5F6F6FFF6F7F7FFE7E8
+          E8FF6A6D6CFF535755FF535755FF6A6D6CFFE7E8E8FFF6F7F7FFF5F6F6FFF4F5
+          F5FFDBDDF2FF1B1BE0FF3636E4FF1010C1F20000000000000000000000000000
+          00001818D2F24747E7FF1E1EE1FFD7D8F2FFF5F6F6FFF6F7F7FFF7F8F8FFE9EA
+          EAFF6A6D6CFF535755FF535755FF6A6D6CFFE9EAEAFFF7F8F8FFF6F7F7FFF5F6
+          F6FFDEDFF3FF1D1DE1FF3939E5FF1111C4F20000000000000000000000000000
+          00001B1BD5C44444E8FF2B2BE4FFAEAFF0FFF6F7F7FFF7F8F8FFEAEAEAFF6D70
+          6FFF535755FF6A6E6DFF6A6E6DFF535755FF6D706FFFEAEAEAFFF7F8F8FFF6F7
+          F7FFB1B2F0FF2626E4FF3838E5FF1414C8C40000000000000000000000000000
+          00001B1BD6843C3CE7FC3939E7FF8081ECFFF7F7F7FFF8F9F9FF777A79FF5357
+          55FF6E7170FFEDEDEDFFEDEDEDFF6E7170FF535755FF7A7E7CFFF8F9F9FFF7F8
+          F8FF8081ECFF3030E6FF3131E0FC1313C9840000000000000000000000000000
+          00001E1ED74D2D2DDDF35151EAFF2A2AE6FFDADBF6FFF8F9F9FF878A88FF7A7E
+          7CFFEDEDEDFFFEFEFEFFFEFEFEFFEDEDEDFF777A79FF878A88FFF8F9F9FFDADB
+          F6FF2929E6FF4242E9FF2323D3F31414CA4D0000000000000000000000000000
+          00003333CC051F1FDBD94949EAFE4444E9FF5353EBFFF6F6F8FFF9FAFAFFFAFB
+          FBFFFBFCFCFFFCFCFCFFFCFCFCFFFBFCFCFFFAFBFBFFF9FAFAFFF6F7F9FF5353
+          EBFF3A3AE8FF3D3DE7FE1818CFD90000CC050000000000000000000000000000
+          0000000000001D1DDC2C2424DFF45C5CEDFF3434E8FF5454ECFFDCDDF7FFF9FA
+          FAFFFAFAFAFFFAFBFBFFFAFBFBFFFAFAFAFFF9FAFAFFDCDDF7FF5454ECFF2F2F
+          E8FF4D4DEBFF1E1ED5F41717D12C000000000000000000000000000000000000
+          000000000000000000001F1FE07B3232E4F56465EDFF4F52EDFF2D2DE9FF8485
+          F0FFB2B2F3FFDDDEF7FFDDDEF7FFB2B3F4FF8485F0FF2D2DE9FF4548ECFF5354
+          ECFF2A2ADDF51B1BD67B00000000000000000000000000000000000000000000
+          000000000000000000000000FF022222E1792727E3F3585AEEFE7A81F1FF6D77
+          F1FF555CEEFF3638EAFF3537EAFF5258EEFF6670F0FF6C74EFFF4B4DEBFE2222
+          DBF31B1BD9790000FF0200000000000000000000000000000000000000000000
+          0000000000000000000000000000000000002525E0292323E3D53737E7F35151
+          ECFD7173F0FF9496F4FF9193F3FF6A6CF0FF4849EAFD3030E2F31F1FDCD51F1F
+          DA29000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000000000000000FF032424E54E2323
+          E6852323E4C52323E4F22323E3F22222E1C52121E2852121E24E0000FF030000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000
+        }
+        OnClick = SpeedButton5Click
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Add Recording'
+      ClientHeight = 284
+      ClientWidth = 758
+      object Panel1: TPanel
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = TabSheet2
+        Left = 12
+        Height = 148
+        Top = 12
+        Width = 362
+        BorderSpacing.Left = 12
+        BorderSpacing.Top = 12
+        BevelInner = bvLowered
+        ClientHeight = 148
+        ClientWidth = 362
+        ParentColor = False
+        TabOrder = 0
+        object Label2: TLabel
+          AnchorSideLeft.Control = Panel1
+          AnchorSideTop.Control = ComboBox1
+          AnchorSideTop.Side = asrCenter
+          Left = 8
+          Height = 16
+          Top = 18
+          Width = 78
+          Alignment = taRightJustify
+          BorderSpacing.Left = 6
+          Caption = 'Radiostation:'
+          ParentColor = False
+        end
+        object ComboBox1: TComboBox
+          AnchorSideLeft.Control = Label2
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideRight.Control = Panel1
+          AnchorSideRight.Side = asrBottom
+          Left = 89
+          Height = 29
+          Top = 12
+          Width = 263
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 3
+          BorderSpacing.Right = 8
+          ItemHeight = 0
+          OnSelect = ComboBox1Select
+          Style = csDropDownList
+          TabOrder = 0
+        end
+        object Label3: TLabel
+          AnchorSideTop.Control = ComboBox1
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Label2
+          AnchorSideRight.Side = asrBottom
+          Left = 55
+          Height = 16
+          Top = 53
+          Width = 31
+          Alignment = taRightJustify
+          Anchors = [akTop, akRight]
+          BorderSpacing.Top = 12
+          Caption = 'Date:'
+          ParentColor = False
+        end
+        object Label4: TLabel
+          AnchorSideLeft.Control = Label3
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label3
+          Cursor = crHandPoint
+          Left = 89
+          Height = 16
+          Top = 53
+          Width = 70
+          BorderSpacing.Left = 3
+          Caption = '2013.03.31'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+          OnClick = Label4Click
+        end
+        object Label5: TLabel
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label3
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Label3
+          AnchorSideRight.Side = asrBottom
+          Left = 57
+          Height = 16
+          Top = 81
+          Width = 29
+          Anchors = [akTop, akRight]
+          BorderSpacing.Top = 12
+          Caption = 'from'
+          ParentColor = False
+        end
+        object LabelH1: TLabel
+          AnchorSideLeft.Control = UpDown1
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          Left = 103
+          Height = 16
+          Top = 81
+          Width = 16
+          Caption = '19'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label7: TLabel
+          AnchorSideLeft.Control = UpDown2
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          Left = 158
+          Height = 16
+          Top = 81
+          Width = 13
+          BorderSpacing.Left = 7
+          Caption = 'to'
+          ParentColor = False
+        end
+        object LabelH2: TLabel
+          AnchorSideLeft.Control = UpDown3
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          Left = 190
+          Height = 16
+          Top = 81
+          Width = 16
+          Caption = '20'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label6: TLabel
+          AnchorSideLeft.Control = LabelH1
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          Left = 120
+          Height = 16
+          Top = 81
+          Width = 3
+          BorderSpacing.Left = 1
+          Caption = '.'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object LabelM1: TLabel
+          AnchorSideLeft.Control = Label6
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          Left = 123
+          Height = 16
+          Top = 81
+          Width = 16
+          Caption = '00'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label8: TLabel
+          AnchorSideLeft.Control = LabelH2
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          Left = 207
+          Height = 16
+          Top = 81
+          Width = 3
+          BorderSpacing.Left = 1
+          Caption = '.'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object LabelM2: TLabel
+          AnchorSideLeft.Control = Label8
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          Left = 210
+          Height = 16
+          Top = 81
+          Width = 16
+          Caption = '00'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object UpDown1: TUpDown
+          AnchorSideLeft.Control = Label5
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          AnchorSideTop.Side = asrCenter
+          Left = 92
+          Height = 22
+          Top = 78
+          Width = 11
+          BorderSpacing.Left = 6
+          Min = 0
+          OnClick = UpDown1Click
+          Position = 0
+          TabOrder = 1
+        end
+        object UpDown2: TUpDown
+          AnchorSideLeft.Control = LabelM1
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          AnchorSideTop.Side = asrCenter
+          Left = 140
+          Height = 22
+          Top = 78
+          Width = 11
+          BorderSpacing.Left = 1
+          Min = 0
+          OnClick = UpDown2Click
+          Position = 0
+          TabOrder = 2
+        end
+        object UpDown3: TUpDown
+          AnchorSideLeft.Control = Label7
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          AnchorSideTop.Side = asrCenter
+          Left = 179
+          Height = 22
+          Top = 78
+          Width = 11
+          BorderSpacing.Left = 8
+          Min = 0
+          OnClick = UpDown3Click
+          Position = 0
+          TabOrder = 3
+        end
+        object UpDown4: TUpDown
+          AnchorSideLeft.Control = LabelM2
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label5
+          AnchorSideTop.Side = asrCenter
+          Left = 227
+          Height = 22
+          Top = 78
+          Width = 11
+          BorderSpacing.Left = 1
+          Min = 0
+          OnClick = UpDown4Click
+          Position = 0
+          TabOrder = 4
+        end
+        object CB_Recur: TCheckBox
+          AnchorSideLeft.Control = Label3
+          Left = 55
+          Height = 23
+          Top = 114
+          Width = 91
+          Caption = 'Recurrence'
+          TabOrder = 5
+        end
+        object CB_Period: TComboBox
+          AnchorSideLeft.Control = CB_Recur
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = CB_Recur
+          AnchorSideTop.Side = asrCenter
+          Left = 149
+          Height = 26
+          Top = 112
+          Width = 140
+          BorderSpacing.Left = 3
+          ItemHeight = 0
+          ItemIndex = 0
+          Items.Strings = (
+            'Every day'
+            'Every week'
+            'Every 2 weeks'
+            'Every 3 weeks'
+            'Every 4 weeks'
+          )
+          Style = csDropDownList
+          TabOrder = 6
+          Text = 'Every day'
+        end
+      end
+      object Panel2: TPanel
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = Panel1
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        Left = 12
+        Height = 52
+        Top = 172
+        Width = 734
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 12
+        BorderSpacing.Top = 12
+        BorderSpacing.Right = 12
+        BevelInner = bvLowered
+        ClientHeight = 52
+        ClientWidth = 734
+        ParentColor = False
+        TabOrder = 1
+        object RadioButton1: TRadioButton
+          AnchorSideLeft.Control = Panel2
+          AnchorSideTop.Control = Panel2
+          AnchorSideTop.Side = asrCenter
+          Left = 26
+          Height = 23
+          Top = 15
+          Width = 68
+          BorderSpacing.Left = 24
+          Caption = 'Record'
+          Checked = True
+          TabOrder = 0
+          TabStop = True
+        end
+        object RadioButton2: TRadioButton
+          AnchorSideTop.Control = Panel2
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Panel2
+          AnchorSideRight.Side = asrCenter
+          Left = 329
+          Height = 23
+          Top = 15
+          Width = 75
+          Anchors = [akTop, akRight]
+          Caption = 'Warning'
+          TabOrder = 1
+        end
+        object RadioButton3: TRadioButton
+          AnchorSideTop.Control = Panel2
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Panel2
+          AnchorSideRight.Side = asrBottom
+          Left = 647
+          Height = 23
+          Top = 15
+          Width = 61
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 24
+          Caption = 'Listen'
+          TabOrder = 2
+        end
+      end
+      object Panel3: TPanel
+        AnchorSideLeft.Control = Panel1
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Panel1
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Panel1
+        AnchorSideBottom.Side = asrBottom
+        Left = 382
+        Height = 148
+        Top = 12
+        Width = 364
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Left = 8
+        BorderSpacing.Right = 12
+        BevelInner = bvLowered
+        ClientHeight = 148
+        ClientWidth = 364
+        ParentColor = False
+        TabOrder = 2
+        object ComboBoxTemp: TComboBox
+          AnchorSideLeft.Control = Panel3
+          AnchorSideRight.Control = Panel3
+          AnchorSideRight.Side = asrBottom
+          Left = 10
+          Height = 27
+          Top = 79
+          Width = 344
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 8
+          BorderSpacing.Right = 8
+          ItemHeight = 0
+          TabOrder = 0
+          Text = 'ComboBoxTemp'
+          Visible = False
+        end
+        object Label9: TLabel
+          AnchorSideLeft.Control = Panel3
+          AnchorSideTop.Control = Panel3
+          AnchorSideRight.Control = Panel3
+          AnchorSideRight.Side = asrBottom
+          Left = 2
+          Height = 16
+          Top = 2
+          Width = 360
+          Alignment = taCenter
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Info'
+          Color = clHighlight
+          Font.Color = clHighlightText
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+        end
+        object Label10: TLabel
+          AnchorSideLeft.Control = Panel3
+          AnchorSideTop.Control = Label9
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Panel3
+          AnchorSideRight.Side = asrBottom
+          Left = 2
+          Height = 16
+          Top = 22
+          Width = 360
+          Alignment = taCenter
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 4
+          Caption = '-'
+          ParentColor = False
+        end
+        object Label11: TLabel
+          AnchorSideLeft.Control = Panel3
+          AnchorSideTop.Control = Label10
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Panel3
+          AnchorSideRight.Side = asrBottom
+          Left = 2
+          Height = 16
+          Top = 40
+          Width = 360
+          Alignment = taCenter
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 2
+          Caption = '-'
+          ParentColor = False
+        end
+      end
+      object SpeedButton1: TSpeedButton
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TabSheet2
+        AnchorSideBottom.Side = asrBottom
+        Left = 650
+        Height = 24
+        Top = 252
+        Width = 100
+        Anchors = [akRight, akBottom]
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
+        Caption = 'Add'
+        Font.Style = [fsBold]
+        OnClick = SpeedButton1Click
+        ParentFont = False
+      end
+      object SpeedButton2: TSpeedButton
+        AnchorSideTop.Control = SpeedButton1
+        AnchorSideRight.Control = SpeedButton1
+        Left = 544
+        Height = 24
+        Top = 252
+        Width = 100
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Cancel'
+        Font.Style = [fsBold]
+        OnClick = SpeedButton2Click
+        ParentFont = False
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Modify Recording'
+      ClientHeight = 284
+      ClientWidth = 758
+      OnShow = TabSheet3Show
+      object Panel4: TPanel
+        AnchorSideLeft.Control = TabSheet3
+        AnchorSideTop.Control = TabSheet3
+        Left = 12
+        Height = 148
+        Top = 12
+        Width = 362
+        BorderSpacing.Left = 12
+        BorderSpacing.Top = 12
+        BevelInner = bvLowered
+        ClientHeight = 148
+        ClientWidth = 362
+        TabOrder = 0
+        object Label12: TLabel
+          AnchorSideLeft.Control = Panel4
+          AnchorSideTop.Control = ComboBox2
+          AnchorSideTop.Side = asrCenter
+          Left = 8
+          Height = 16
+          Top = 18
+          Width = 78
+          BorderSpacing.Left = 6
+          Caption = 'Radiostation:'
+          ParentColor = False
+        end
+        object ComboBox2: TComboBox
+          AnchorSideLeft.Control = Label12
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideRight.Control = Panel4
+          AnchorSideRight.Side = asrBottom
+          Left = 89
+          Height = 29
+          Top = 12
+          Width = 263
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 3
+          BorderSpacing.Right = 8
+          ItemHeight = 0
+          OnSelect = ComboBox2Select
+          Style = csDropDownList
+          TabOrder = 0
+        end
+        object Label16: TLabel
+          AnchorSideTop.Control = ComboBox2
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Label12
+          AnchorSideRight.Side = asrBottom
+          Left = 55
+          Height = 16
+          Top = 53
+          Width = 31
+          Alignment = taRightJustify
+          Anchors = [akTop, akRight]
+          BorderSpacing.Top = 12
+          Caption = 'Date:'
+          ParentColor = False
+        end
+        object Label17: TLabel
+          AnchorSideLeft.Control = Label16
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label16
+          Cursor = crHandPoint
+          Left = 89
+          Height = 16
+          Top = 53
+          Width = 70
+          BorderSpacing.Left = 3
+          Caption = '2013.03.31'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+          OnClick = Label17Click
+        end
+        object Label18: TLabel
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label16
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Label12
+          AnchorSideRight.Side = asrBottom
+          Left = 57
+          Height = 16
+          Top = 81
+          Width = 29
+          Anchors = [akTop, akRight]
+          BorderSpacing.Top = 12
+          Caption = 'from'
+          ParentColor = False
+        end
+        object UpDown5: TUpDown
+          AnchorSideLeft.Control = Label18
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          AnchorSideTop.Side = asrCenter
+          Left = 92
+          Height = 22
+          Top = 78
+          Width = 11
+          BorderSpacing.Left = 6
+          Min = 0
+          OnClick = UpDown5Click
+          Position = 0
+          TabOrder = 1
+        end
+        object UpDown6: TUpDown
+          AnchorSideLeft.Control = LabelM3
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          AnchorSideTop.Side = asrCenter
+          Left = 140
+          Height = 22
+          Top = 78
+          Width = 11
+          BorderSpacing.Left = 1
+          Min = 0
+          OnClick = UpDown6Click
+          Position = 0
+          TabOrder = 2
+        end
+        object UpDown7: TUpDown
+          AnchorSideLeft.Control = Label22
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          AnchorSideTop.Side = asrCenter
+          Left = 179
+          Height = 22
+          Top = 78
+          Width = 11
+          BorderSpacing.Left = 8
+          Min = 0
+          OnClick = UpDown7Click
+          Position = 0
+          TabOrder = 3
+        end
+        object UpDown8: TUpDown
+          AnchorSideLeft.Control = LabelM4
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          AnchorSideTop.Side = asrCenter
+          Left = 227
+          Height = 22
+          Top = 78
+          Width = 11
+          BorderSpacing.Left = 1
+          Min = 0
+          OnClick = UpDown8Click
+          Position = 0
+          TabOrder = 4
+        end
+        object LabelH3: TLabel
+          AnchorSideLeft.Control = UpDown5
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          Left = 103
+          Height = 16
+          Top = 81
+          Width = 16
+          Caption = '19'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label20: TLabel
+          AnchorSideLeft.Control = LabelH3
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          Left = 120
+          Height = 16
+          Top = 81
+          Width = 3
+          BorderSpacing.Left = 1
+          Caption = '.'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object LabelM3: TLabel
+          AnchorSideLeft.Control = Label20
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          Left = 123
+          Height = 16
+          Top = 81
+          Width = 16
+          Caption = '00'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label22: TLabel
+          AnchorSideLeft.Control = UpDown6
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          Left = 158
+          Height = 16
+          Top = 81
+          Width = 13
+          BorderSpacing.Left = 7
+          Caption = 'to'
+          ParentColor = False
+        end
+        object LabelH4: TLabel
+          AnchorSideLeft.Control = UpDown7
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          Left = 190
+          Height = 16
+          Top = 81
+          Width = 16
+          Caption = '20'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label24: TLabel
+          AnchorSideLeft.Control = LabelH4
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          Left = 207
+          Height = 16
+          Top = 81
+          Width = 3
+          BorderSpacing.Left = 1
+          Caption = '.'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object LabelM4: TLabel
+          AnchorSideLeft.Control = Label24
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label18
+          Left = 210
+          Height = 16
+          Top = 81
+          Width = 16
+          Caption = '00'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object CB_Recur1: TCheckBox
+          AnchorSideLeft.Control = Label16
+          Left = 55
+          Height = 23
+          Top = 114
+          Width = 91
+          Caption = 'Recurrence'
+          TabOrder = 5
+        end
+        object CB_Period1: TComboBox
+          AnchorSideLeft.Control = CB_Recur1
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = CB_Recur1
+          AnchorSideTop.Side = asrCenter
+          Left = 149
+          Height = 26
+          Top = 112
+          Width = 140
+          BorderSpacing.Left = 3
+          ItemHeight = 0
+          ItemIndex = 0
+          Items.Strings = (
+            'Every day'
+            'Every week'
+            'Every 2 weeks'
+            'Every 3 weeks'
+            'Every 4 weeks'
+            'Every month'
+          )
+          Style = csDropDownList
+          TabOrder = 6
+          Text = 'Every day'
+        end
+      end
+      object Panel5: TPanel
+        AnchorSideLeft.Control = TabSheet3
+        AnchorSideTop.Control = Panel4
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet3
+        AnchorSideRight.Side = asrBottom
+        Left = 12
+        Height = 52
+        Top = 172
+        Width = 734
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 12
+        BorderSpacing.Top = 12
+        BorderSpacing.Right = 12
+        BevelInner = bvLowered
+        ClientHeight = 52
+        ClientWidth = 734
+        TabOrder = 1
+        object RadioButton4: TRadioButton
+          AnchorSideLeft.Control = Panel5
+          AnchorSideTop.Control = Panel5
+          AnchorSideTop.Side = asrCenter
+          Left = 26
+          Height = 23
+          Top = 15
+          Width = 68
+          BorderSpacing.Left = 24
+          Caption = 'Record'
+          Checked = True
+          TabOrder = 0
+          TabStop = True
+        end
+        object RadioButton5: TRadioButton
+          AnchorSideTop.Control = Panel5
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Panel5
+          AnchorSideRight.Side = asrCenter
+          Left = 329
+          Height = 23
+          Top = 15
+          Width = 75
+          Anchors = [akTop, akRight]
+          Caption = 'Warning'
+          TabOrder = 1
+        end
+        object RadioButton6: TRadioButton
+          AnchorSideTop.Control = Panel5
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Panel5
+          AnchorSideRight.Side = asrBottom
+          Left = 647
+          Height = 23
+          Top = 15
+          Width = 61
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 24
+          Caption = 'Listen'
+          TabOrder = 2
+        end
+      end
+      object Panel6: TPanel
+        AnchorSideLeft.Control = Panel4
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = Panel4
+        AnchorSideRight.Control = TabSheet3
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Panel4
+        AnchorSideBottom.Side = asrBottom
+        Left = 382
+        Height = 148
+        Top = 12
+        Width = 364
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Left = 8
+        BorderSpacing.Right = 12
+        BevelInner = bvLowered
+        ClientHeight = 148
+        ClientWidth = 364
+        TabOrder = 2
+        object Label13: TLabel
+          AnchorSideLeft.Control = Panel6
+          AnchorSideTop.Control = Panel6
+          AnchorSideRight.Control = Panel6
+          AnchorSideRight.Side = asrBottom
+          Left = 2
+          Height = 16
+          Top = 2
+          Width = 360
+          Alignment = taCenter
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Info'
+          Color = clHighlight
+          Font.Color = clHighlightText
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+        end
+        object Label14: TLabel
+          AnchorSideLeft.Control = Panel6
+          AnchorSideTop.Control = Label13
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Panel6
+          AnchorSideRight.Side = asrBottom
+          Left = 2
+          Height = 16
+          Top = 22
+          Width = 360
+          Alignment = taCenter
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 4
+          Caption = '-'
+          ParentColor = False
+        end
+        object Label15: TLabel
+          AnchorSideLeft.Control = Panel6
+          AnchorSideTop.Control = Label14
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Panel6
+          AnchorSideRight.Side = asrBottom
+          Left = 2
+          Height = 16
+          Top = 40
+          Width = 360
+          Alignment = taCenter
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 2
+          Caption = '-'
+          ParentColor = False
+        end
+      end
+      object SpeedButton3: TSpeedButton
+        AnchorSideRight.Control = TabSheet3
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TabSheet3
+        AnchorSideBottom.Side = asrBottom
+        Left = 650
+        Height = 24
+        Top = 252
+        Width = 100
+        Anchors = [akRight, akBottom]
+        BorderSpacing.Right = 8
+        BorderSpacing.Bottom = 8
+        Caption = 'Update'
+        Font.Style = [fsBold]
+        OnClick = SpeedButton3Click
+        ParentFont = False
+      end
+      object SpeedButton4: TSpeedButton
+        AnchorSideTop.Control = SpeedButton3
+        AnchorSideRight.Control = SpeedButton3
+        Left = 544
+        Height = 24
+        Top = 252
+        Width = 100
+        Anchors = [akTop, akRight]
+        BorderSpacing.Right = 6
+        Caption = 'Cancel'
+        Font.Style = [fsBold]
+        OnClick = SpeedButton4Click
+        ParentFont = False
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Settings'
+      ClientHeight = 284
+      ClientWidth = 758
+      object CheckBox1: TCheckBox
+        Left = 24
+        Height = 23
+        Top = 216
+        Width = 353
+        Caption = 'Warn if a recording is busy when a schedule should start'
+        Enabled = False
+        TabOrder = 0
+      end
+      object CheckBox2: TCheckBox
+        Left = 24
+        Height = 23
+        Top = 240
+        Width = 327
+        Caption = 'Hide Schedule icon when no recordings are planned'
+        Enabled = False
+        TabOrder = 1
+      end
+      object Label19: TLabel
+        Left = 32
+        Height = 1
+        Top = 16
+        Width = 1
+        ParentColor = False
+      end
+      object Panel7: TPanel
+        AnchorSideLeft.Control = TabSheet4
+        AnchorSideRight.Control = TabSheet4
+        AnchorSideRight.Side = asrBottom
+        Left = 4
+        Height = 200
+        Top = 8
+        Width = 750
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 4
+        BorderSpacing.Right = 4
+        ClientHeight = 200
+        ClientWidth = 750
+        TabOrder = 2
+        object Label_Copy: TLabel
+          AnchorSideLeft.Control = CB_CopyFolder
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = CB_CopyFolder
+          AnchorSideTop.Side = asrCenter
+          Left = 34
+          Height = 16
+          Top = 9
+          Width = 275
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 4
+          Caption = 'After recording has finished, copy recording to:'
+          ParentColor = False
+        end
+        object Edit_Copy: TEdit
+          AnchorSideLeft.Control = Label_Copy
+          AnchorSideTop.Control = Label_Copy
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = SpeedButton6
+          Left = 34
+          Height = 27
+          Top = 27
+          Width = 680
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 6
+          TabOrder = 0
+        end
+        object CB_CopyFolder: TCheckBox
+          AnchorSideLeft.Control = Panel7
+          AnchorSideTop.Control = Panel7
+          Left = 7
+          Height = 23
+          Top = 6
+          Width = 23
+          BorderSpacing.Left = 6
+          BorderSpacing.Top = 5
+          OnChange = CB_CopyFolderChange
+          TabOrder = 1
+        end
+        object CB_RenameFile: TCheckBox
+          AnchorSideTop.Control = Edit_Copy
+          AnchorSideTop.Side = asrBottom
+          Left = 7
+          Height = 23
+          Top = 59
+          Width = 23
+          BorderSpacing.Top = 5
+          Enabled = False
+          TabOrder = 2
+        end
+        object SpeedButton6: TSpeedButton
+          AnchorSideTop.Control = Edit_Copy
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Panel7
+          AnchorSideRight.Side = asrBottom
+          Left = 720
+          Height = 22
+          Top = 29
+          Width = 23
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 6
+          Caption = '...'
+          OnClick = SpeedButton6Click
+        end
+        object Label_Rename: TLabel
+          AnchorSideLeft.Control = Label_Copy
+          AnchorSideTop.Control = CB_RenameFile
+          AnchorSideTop.Side = asrCenter
+          Left = 34
+          Height = 16
+          Top = 62
+          Width = 88
+          Caption = 'Rename file to:'
+          Enabled = False
+          ParentColor = False
+        end
+        object Edit_Rename: TEdit
+          AnchorSideLeft.Control = Label_Copy
+          AnchorSideTop.Control = Label_Rename
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Panel7
+          AnchorSideRight.Side = asrBottom
+          Left = 34
+          Height = 27
+          Top = 80
+          Width = 709
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 2
+          BorderSpacing.Right = 6
+          Enabled = False
+          OnChange = Edit_RenameChange
+          TabOrder = 3
+        end
+        object Shape1: TShape
+          AnchorSideLeft.Control = Panel7
+          AnchorSideTop.Control = Edit_Rename
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Panel7
+          AnchorSideRight.Side = asrBottom
+          AnchorSideBottom.Control = Panel7
+          AnchorSideBottom.Side = asrBottom
+          Left = 9
+          Height = 79
+          Top = 114
+          Width = 732
+          Anchors = [akTop, akLeft, akRight, akBottom]
+          BorderSpacing.Left = 8
+          BorderSpacing.Top = 7
+          BorderSpacing.Right = 8
+          BorderSpacing.Bottom = 6
+          Brush.Color = clHighlight
+          Pen.Color = clHighlightText
+          Shape = stRoundRect
+        end
+        object Label25: TLabel
+          AnchorSideBottom.Control = Label26
+          Left = 16
+          Height = 16
+          Top = 127
+          Width = 135
+          Anchors = [akLeft, akBottom]
+          BorderSpacing.Bottom = 2
+          Caption = '%D: Number of the day'
+          Font.Color = clHighlightText
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object CB_Overwrite: TCheckBox
+          AnchorSideTop.Control = Label_Rename
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Edit_Rename
+          AnchorSideRight.Side = asrBottom
+          Left = 509
+          Height = 23
+          Top = 59
+          Width = 234
+          Anchors = [akTop, akRight]
+          Caption = 'Overwrite the file if it already exists'
+          Enabled = False
+          TabOrder = 4
+        end
+        object Label26: TLabel
+          AnchorSideTop.Control = Shape1
+          AnchorSideTop.Side = asrCenter
+          Left = 16
+          Height = 16
+          Top = 145
+          Width = 121
+          BorderSpacing.Bottom = 3
+          Caption = '%d: Name of the day'
+          Font.Color = clHighlightText
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label27: TLabel
+          AnchorSideBottom.Control = Label28
+          Left = 176
+          Height = 16
+          Top = 127
+          Width = 154
+          Anchors = [akLeft, akBottom]
+          BorderSpacing.Bottom = 2
+          Caption = '%M: Number of the month'
+          Font.Color = clHighlightText
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label28: TLabel
+          AnchorSideTop.Control = Shape1
+          AnchorSideTop.Side = asrCenter
+          Left = 176
+          Height = 16
+          Top = 145
+          Width = 141
+          Caption = '%m: Name of the month'
+          Font.Color = clHighlightText
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label29: TLabel
+          AnchorSideBottom.Control = Label30
+          Left = 360
+          Height = 16
+          Top = 127
+          Width = 50
+          Anchors = [akLeft, akBottom]
+          BorderSpacing.Bottom = 2
+          Caption = '%Y: Year'
+          Font.Color = clHighlightText
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label30: TLabel
+          AnchorSideTop.Control = Shape1
+          AnchorSideTop.Side = asrCenter
+          Left = 360
+          Height = 16
+          Top = 145
+          Width = 100
+          Caption = '%R: Radiostation'
+          Font.Color = clHighlightText
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label31: TLabel
+          AnchorSideBottom.Control = Shape1
+          AnchorSideBottom.Side = asrBottom
+          Left = 24
+          Height = 16
+          Top = 171
+          Width = 55
+          Anchors = [akLeft, akBottom]
+          BorderSpacing.Bottom = 6
+          Caption = 'Example:'
+          Font.Color = clHighlightText
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label32: TLabel
+          AnchorSideLeft.Control = Label31
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label31
+          Left = 82
+          Height = 1
+          Top = 171
+          Width = 1
+          BorderSpacing.Left = 3
+          Font.Color = clYellow
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label33: TLabel
+          AnchorSideBottom.Control = Label34
+          Left = 480
+          Height = 16
+          Top = 127
+          Width = 91
+          Anchors = [akLeft, akBottom]
+          BorderSpacing.Bottom = 2
+          Caption = '%h: Time (start)'
+          Font.Color = clHighlightText
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label34: TLabel
+          AnchorSideTop.Control = Shape1
+          AnchorSideTop.Side = asrCenter
+          Left = 480
+          Height = 16
+          Top = 145
+          Width = 87
+          Caption = '%H: Time (end)'
+          Font.Color = clHighlightText
+          Font.Height = -13
+          ParentColor = False
+          ParentFont = False
+        end
+        object CB_DeleteAfterCopy: TCheckBox
+          AnchorSideTop.Control = CB_CopyFolder
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Panel7
+          AnchorSideRight.Side = asrBottom
+          Left = 558
+          Height = 23
+          Top = 6
+          Width = 187
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 4
+          Caption = 'Delete recording after copy'
+          Enabled = False
+          TabOrder = 5
+        end
+      end
+    end
+  end
+  object CalendarDialog1: TCalendarDialog
+    Date = 41511
+    OKCaption = '&OK'
+    CancelCaption = 'Annuleer'
+    left = 160
+    top = 200
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    left = 512
+    top = 221
+  end
+end

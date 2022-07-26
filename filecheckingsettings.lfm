@@ -1,0 +1,576 @@
+object FormFileCheckingSettings: TFormFileCheckingSettings
+  Left = 450
+  Height = 500
+  Top = 38
+  Width = 467
+  Caption = 'File Checking Settings'
+  ClientHeight = 500
+  ClientWidth = 467
+  DesignTimePPI = 100
+  LCLVersion = '2.0.2.0'
+  object BitBtn1: TBitBtn
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 368
+    Height = 31
+    Top = 461
+    Width = 78
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 21
+    BorderSpacing.Bottom = 8
+    Caption = 'Close'
+    OnClick = BitBtn1Click
+    ParentFont = False
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = BitBtn1
+    Left = 4
+    Height = 451
+    Top = 4
+    Width = 459
+    ActivePage = TabSheet2
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 4
+    BorderSpacing.Bottom = 6
+    ParentFont = False
+    TabIndex = 2
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'Caps/Lowercase'
+      ClientHeight = 393
+      ClientWidth = 434
+      ParentFont = False
+      object Panel1: TPanel
+        AnchorSideLeft.Control = TabSheet1
+        AnchorSideTop.Control = TabSheet1
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TabSheet1
+        AnchorSideBottom.Side = asrBottom
+        Left = 8
+        Height = 379
+        Top = 8
+        Width = 413
+        Anchors = [akTop, akLeft, akBottom]
+        BorderSpacing.Left = 8
+        BorderSpacing.Top = 8
+        BorderSpacing.Bottom = 6
+        ClientHeight = 379
+        ClientWidth = 413
+        ParentFont = False
+        TabOrder = 0
+        object Label1: TLabel
+          AnchorSideTop.Control = Label3
+          AnchorSideTop.Side = asrBottom
+          Left = 8
+          Height = 16
+          Top = 22
+          Width = 89
+          BorderSpacing.Top = 4
+          Caption = 'All Caps filter:'
+          ParentColor = False
+          ParentFont = False
+        end
+        object ListBox1: TListBox
+          AnchorSideTop.Control = Label1
+          AnchorSideTop.Side = asrBottom
+          AnchorSideBottom.Control = SpeedButton1
+          Left = 8
+          Height = 299
+          Top = 39
+          Width = 192
+          Anchors = [akTop, akLeft, akBottom]
+          BorderSpacing.Bottom = 6
+          Items.Strings = (
+            '!!!'
+            '[:SITD:]'
+            '3T'
+            'ABBA'
+            'ABC'
+            'ABN'
+            'ACDC'
+            'ADHD'
+            'ATB'
+            'ATC'
+            'B.B.E.'
+            'B.V.S.M.P.'
+            'B2K'
+            'BBE'
+            'BBM'
+            'C.C.R.'
+            'C*Y*B'
+            'C/A/T'
+            'CCR'
+            'D.A.A.U.'
+            'D.A.F.'
+            'D.H.S.'
+            'D.H.T.'
+            'D12'
+            'DAF'
+            'DHS'
+            'DHT'
+            'DMX'
+            'ELO'
+            'EMF'
+            'FGFC820'
+            'IAMX'
+            'INXS'
+            'K.I.A.'
+            'K2'
+            'K3'
+            'K7'
+            'L & O'
+            'L&O'
+            'L7'
+            'LFO'
+            'LMFAO'
+            'M.A.R.R.S.'
+            'M.O.P.'
+            'M|A|R|R|S'
+            'M2M'
+            'MARRS'
+            'MGMT'
+            'MN8'
+            'MSTRKRFT'
+            'N.E.R.D.'
+            'N.W.A'
+            'NTREK'
+            'NWA'
+            'OMC'
+            'OMD'
+            'P.O.D.'
+            'P.O.S'
+            'POD'
+            'R.E.M.'
+            'REM'
+            'SITD'
+            'SUE'
+            'SWV'
+            'T.A.T.U.'
+            'T.F.O.'
+            'T.N.N'
+            'T&N'
+            'T99'
+            'TCM'
+            'TJR'
+            'TLC'
+            'TMBG'
+            'TNN'
+            'U 96'
+            'U.N.K.L.E.'
+            'U2'
+            'U96'
+            'UB40'
+            'UFO'
+            'W.A.S.P.'
+            'W817'
+            'XP8'
+            'XTC'
+          )
+          ItemHeight = 18
+          OnClick = ListBox1Click
+          ParentFont = False
+          Sorted = True
+          TabOrder = 0
+        end
+        object Label2: TLabel
+          AnchorSideLeft.Control = ListBox1
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label1
+          Left = 208
+          Height = 16
+          Top = 22
+          Width = 124
+          BorderSpacing.Left = 8
+          Caption = 'All Lowercase filter:'
+          ParentColor = False
+          ParentFont = False
+        end
+        object ListBox2: TListBox
+          AnchorSideLeft.Control = Label2
+          AnchorSideTop.Control = ListBox1
+          AnchorSideBottom.Control = ListBox1
+          AnchorSideBottom.Side = asrBottom
+          Left = 208
+          Height = 299
+          Top = 39
+          Width = 192
+          Anchors = [akTop, akLeft, akBottom]
+          Items.Strings = (
+            ':wumpscut:'
+            '!!!'
+            '!distain'
+            '32crash'
+            '8khz mono'
+            'mind.in.a.box'
+          )
+          ItemHeight = 18
+          ParentFont = False
+          Sorted = True
+          TabOrder = 1
+        end
+        object SpeedButton1: TSpeedButton
+          AnchorSideBottom.Control = Panel1
+          AnchorSideBottom.Side = asrBottom
+          Left = 21
+          Height = 29
+          Top = 341
+          Width = 29
+          Anchors = [akLeft, akBottom]
+          BorderSpacing.Bottom = 8
+          Caption = '+'
+          ParentFont = False
+        end
+        object SpeedButton2: TSpeedButton
+          AnchorSideLeft.Control = SpeedButton1
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = SpeedButton1
+          Left = 52
+          Height = 29
+          Top = 356
+          Width = 29
+          BorderSpacing.Left = 2
+          Caption = '-'
+          ParentFont = False
+        end
+        object SpeedButton3: TSpeedButton
+          AnchorSideTop.Control = SpeedButton1
+          Left = 225
+          Height = 29
+          Top = 356
+          Width = 29
+          Caption = '+'
+          ParentFont = False
+        end
+        object SpeedButton4: TSpeedButton
+          AnchorSideLeft.Control = SpeedButton3
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = SpeedButton1
+          Left = 256
+          Height = 29
+          Top = 356
+          Width = 29
+          BorderSpacing.Left = 2
+          Caption = '-'
+          ParentFont = False
+        end
+        object Label3: TLabel
+          AnchorSideLeft.Control = Panel1
+          AnchorSideTop.Control = Panel1
+          AnchorSideRight.Control = Panel1
+          AnchorSideRight.Side = asrBottom
+          Left = 1
+          Height = 16
+          Top = 1
+          Width = 394
+          Alignment = taCenter
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Skip these Artists/Bands'
+          Color = clHighlight
+          Font.Color = clHighlightText
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Empty Items'
+      ClientHeight = 393
+      ClientWidth = 434
+      ParentFont = False
+      object Panel2: TPanel
+        AnchorSideLeft.Control = TabSheet3
+        AnchorSideTop.Control = TabSheet3
+        AnchorSideRight.Control = TabSheet3
+        AnchorSideRight.Side = asrBottom
+        Left = 8
+        Height = 125
+        Top = 8
+        Width = 418
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 8
+        BorderSpacing.Top = 8
+        BorderSpacing.Right = 8
+        ClientHeight = 125
+        ClientWidth = 418
+        ParentFont = False
+        TabOrder = 0
+        object Label4: TLabel
+          AnchorSideLeft.Control = Panel2
+          AnchorSideTop.Control = Panel2
+          AnchorSideRight.Control = Panel2
+          AnchorSideRight.Side = asrBottom
+          Left = 1
+          Height = 16
+          Top = 1
+          Width = 416
+          Alignment = taCenter
+          Anchors = [akTop, akLeft, akRight]
+          Caption = 'Check these fields for empty values'
+          Color = clHighlight
+          Font.Color = clHighlightText
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+          Transparent = False
+        end
+        object CheckBox1: TCheckBox
+          Left = 25
+          Height = 18
+          Top = 42
+          Width = 54
+          Caption = 'Artist'
+          Checked = True
+          ParentFont = False
+          State = cbChecked
+          TabOrder = 0
+        end
+        object CheckBox2: TCheckBox
+          Left = 25
+          Height = 18
+          Top = 75
+          Width = 47
+          Caption = 'Title'
+          Checked = True
+          ParentFont = False
+          State = cbChecked
+          TabOrder = 1
+        end
+        object CheckBox3: TCheckBox
+          Left = 158
+          Height = 18
+          Top = 42
+          Width = 59
+          Caption = 'Album'
+          Checked = True
+          ParentFont = False
+          State = cbChecked
+          TabOrder = 2
+        end
+        object CheckBox4: TCheckBox
+          Left = 158
+          Height = 18
+          Top = 75
+          Width = 114
+          Caption = 'Album Track Nr'
+          Checked = True
+          ParentFont = False
+          State = cbChecked
+          TabOrder = 3
+        end
+        object CheckBox5: TCheckBox
+          Left = 325
+          Height = 18
+          Top = 42
+          Width = 57
+          Caption = 'Genre'
+          Checked = True
+          ParentFont = False
+          State = cbChecked
+          TabOrder = 4
+        end
+        object CheckBox6: TCheckBox
+          Left = 325
+          Height = 18
+          Top = 75
+          Width = 47
+          Caption = 'Year'
+          Checked = True
+          ParentFont = False
+          State = cbChecked
+          TabOrder = 5
+        end
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Common artist errors'
+      ClientHeight = 423
+      ClientWidth = 455
+      ParentFont = False
+      object SpeedButton5: TSpeedButton
+        AnchorSideBottom.Control = TabSheet2
+        AnchorSideBottom.Side = asrBottom
+        Left = 46
+        Height = 29
+        Top = 386
+        Width = 29
+        Anchors = [akLeft, akBottom]
+        BorderSpacing.Bottom = 8
+        Caption = '+'
+        ParentFont = False
+      end
+      object SpeedButton6: TSpeedButton
+        AnchorSideLeft.Control = SpeedButton5
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = SpeedButton5
+        Left = 77
+        Height = 29
+        Top = 386
+        Width = 29
+        BorderSpacing.Left = 2
+        Caption = '-'
+        ParentFont = False
+      end
+      object StringGrid1: TStringGrid
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = TabSheet2
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = SpeedButton6
+        Left = 4
+        Height = 376
+        Top = 4
+        Width = 447
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BorderSpacing.Left = 4
+        BorderSpacing.Top = 4
+        BorderSpacing.Right = 4
+        BorderSpacing.Bottom = 6
+        ColCount = 2
+        FixedCols = 0
+        Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect, goSmoothScroll]
+        ParentFont = False
+        RowCount = 17
+        TabOrder = 0
+        ColWidths = (
+          219
+          217
+        )
+        RowHeights = (
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+          24
+        )
+        Cells = (
+          34
+          0
+          0
+          'Correct Name'
+          0
+          1
+          '[:SITD:]'
+          0
+          2
+          'An Pierlé'
+          0
+          3
+          'Creedence Clearwater Revival'
+          0
+          4
+          'D.A.A.U.'
+          0
+          5
+          'Girls Against Boys'
+          0
+          6
+          'Keb'' Mo'''
+          0
+          7
+          'K.I.A.'
+          0
+          8
+          'M|A|R|R|S'
+          0
+          9
+          'P.O.S'
+          0
+          10
+          'The J. Geils Band'
+          0
+          11
+          'Fugees'
+          0
+          12
+          'The Smashing Pumpkins'
+          0
+          13
+          'Jade 4U'
+          0
+          14
+          'Lily Allen'
+          0
+          15
+          'Red Hot Chili Peppers'
+          0
+          16
+          'Sweet'
+          1
+          0
+          'Possible Wrong Values'
+          1
+          1
+          '[[SITD]][[S.I.T.D.]]'
+          1
+          2
+          '[Ann Pierlé][Ann Pierle][An Pierle]'
+          1
+          3
+          '[C.C.R.][CCR]'
+          1
+          4
+          '[DAAU]'
+          1
+          5
+          '[Girls vs. Boys]'
+          1
+          6
+          '[Kebmo][KebMo][Keb''Mo]'
+          1
+          7
+          '[KIA]'
+          1
+          8
+          '[MARSS][M.A.R.S.S.][M.A.R.R.S.]'
+          1
+          9
+          '[P.O.S.]'
+          1
+          10
+          '[The J.Geils Band]'
+          1
+          11
+          '[The Fugees]'
+          1
+          12
+          '[Smashing Pumpkins]'
+          1
+          13
+          '[Jade 4 U][Jade4U]'
+          1
+          14
+          '[Lilly Allen]'
+          1
+          15
+          '[Red Hot Chilli Peppers]'
+          1
+          16
+          '[The Sweet]'
+        )
+      end
+    end
+  end
+end

@@ -1,0 +1,55 @@
+object FormLog: TFormLog
+  Left = 1231
+  Height = 629
+  Top = 119
+  Width = 438
+  Caption = 'Debug Log'
+  ClientHeight = 629
+  ClientWidth = 438
+  LCLVersion = '1.4.0.4'
+  object MemoDebugLog: TMemo
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Button1
+    Left = 6
+    Height = 590
+    Top = 6
+    Width = 426
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 6
+    BorderSpacing.Right = 6
+    BorderSpacing.Bottom = 4
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideLeft.Side = asrCenter
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 182
+    Height = 25
+    Top = 600
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 4
+    Caption = 'Clear'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object CB_Log: TCheckBox
+    AnchorSideTop.Control = Button1
+    AnchorSideTop.Side = asrCenter
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 16
+    Height = 18
+    Top = 603
+    Width = 44
+    Caption = 'Log'
+    TabOrder = 2
+  end
+end

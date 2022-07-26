@@ -1,0 +1,165 @@
+object FormFileTools: TFormFileTools
+  Left = 481
+  Height = 501
+  Top = 211
+  Width = 816
+  Caption = 'File Checking Tool'
+  ClientHeight = 501
+  ClientWidth = 816
+  Menu = MainMenu1
+  OnShow = FormShow
+  LCLVersion = '1.9.0.0'
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 15
+    Top = 486
+    Width = 816
+    Panels = <    
+      item
+        Width = 150
+      end    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object StringGrid1: TStringGrid
+    AnchorSideLeft.Control = Label1
+    AnchorSideTop.Control = Label1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 383
+    Top = 82
+    Width = 800
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Right = 8
+    ColCount = 9
+    FixedCols = 2
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect, goSmoothScroll]
+    RowCount = 1
+    TabOrder = 1
+    Cells = (
+      9
+      0
+      0
+      'Reason'
+      1
+      0
+      'Nr'
+      2
+      0
+      'Artist'
+      3
+      0
+      'Title'
+      4
+      0
+      'Track'
+      5
+      0
+      'CD'
+      6
+      0
+      'Year'
+      7
+      0
+      'Genre'
+      8
+      0
+      'Filename'
+    )
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Panel1
+    AnchorSideTop.Side = asrBottom
+    Left = 8
+    Height = 16
+    Top = 66
+    Width = 61
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 12
+    Caption = 'Overview:'
+    ParentColor = False
+  end
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 16
+    Height = 50
+    Top = 4
+    Width = 784
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 16
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 16
+    ClientHeight = 50
+    ClientWidth = 784
+    TabOrder = 2
+    object CB_Errors: TComboBox
+      AnchorSideLeft.Control = Label2
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 149
+      Height = 20
+      Top = 15
+      Width = 613
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 4
+      BorderSpacing.Right = 21
+      ItemHeight = 0
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object Label2: TLabel
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      AnchorSideTop.Side = asrCenter
+      Left = 9
+      Height = 16
+      Top = 17
+      Width = 136
+      BorderSpacing.Left = 8
+      Caption = 'Filter errors/hints on:'
+      ParentColor = False
+    end
+  end
+  object MainMenu1: TMainMenu
+    left = 152
+    top = 88
+    object MenuItem1: TMenuItem
+      Caption = 'Action'
+      object MenuItem2: TMenuItem
+        Caption = 'Check for Tags for Syntax Errors'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Check for missing DB Info / Tags'
+        OnClick = MenuItem6Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Check for Duplicates'
+      end
+      object MenuItem4: TMenuItem
+        Caption = '-'
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Check All'
+      end
+    end
+    object MenuItem7: TMenuItem
+      Caption = 'Settings'
+      object MenuItem8: TMenuItem
+        Caption = 'Configuration'
+        OnClick = MenuItem8Click
+      end
+    end
+  end
+end

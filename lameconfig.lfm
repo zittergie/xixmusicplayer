@@ -1,0 +1,1087 @@
+object FormLameConfig: TFormLameConfig
+  Left = 676
+  Height = 500
+  Top = 23
+  Width = 560
+  BorderStyle = bsDialog
+  Caption = 'Encoder configuration'
+  ClientHeight = 500
+  ClientWidth = 560
+  Font.Height = -13
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '1.9.0.0'
+  object Button1: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 455
+    Height = 30
+    Top = 456
+    Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 30
+    BorderSpacing.Bottom = 14
+    Caption = 'Save'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Button1
+    Left = 4
+    Height = 440
+    Top = 4
+    Width = 552
+    ActivePage = TabSheet1
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 4
+    BorderSpacing.Bottom = 12
+    TabIndex = 0
+    TabOrder = 1
+    OnChange = PageControl1Change
+    object TabSheet1: TTabSheet
+      Caption = 'Lame'
+      ClientHeight = 401
+      ClientWidth = 546
+      object GroupPresets: TGroupBox
+        AnchorSideLeft.Control = GroupQuality
+        AnchorSideTop.Control = GroupQuality
+        AnchorSideTop.Side = asrBottom
+        Left = 6
+        Height = 72
+        Top = 320
+        Width = 332
+        BorderSpacing.Top = 8
+        Caption = 'Presets:'
+        ClientHeight = 49
+        ClientWidth = 324
+        TabOrder = 0
+        object CB_EncQuality: TComboBox
+          AnchorSideLeft.Control = Label3
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label3
+          AnchorSideTop.Side = asrCenter
+          Left = 130
+          Height = 20
+          Top = 15
+          Width = 93
+          BorderSpacing.Left = 4
+          ItemHeight = 0
+          ItemIndex = 2
+          Items.Strings = (
+            'medium'
+            'standard'
+            'extreme'
+          )
+          Style = csDropDownList
+          TabOrder = 0
+          Text = 'extreme'
+        end
+        object Label3: TLabel
+          Left = 15
+          Height = 16
+          Top = 17
+          Width = 111
+          Caption = 'Encoding Quality:'
+          ParentColor = False
+        end
+      end
+      object GroupQuality: TGroupBox
+        AnchorSideLeft.Control = GroupBox1
+        AnchorSideTop.Control = GroupBitrate
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = GroupBitrate
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 74
+        Top = 238
+        Width = 534
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 8
+        Caption = ' Quality Setting:  (9 - low quality  /  0 - high quality) '
+        ClientHeight = 51
+        ClientWidth = 526
+        TabOrder = 1
+        object TB_Quality: TTrackBar
+          AnchorSideLeft.Control = Label9
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = GroupQuality
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = ComboBox1
+          Left = 18
+          Height = 37
+          Top = 7
+          Width = 394
+          Max = 9
+          OnChange = TB_QualityChange
+          Position = 0
+          Reversed = True
+          ScalePos = trLeft
+          ShowSelRange = False
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 6
+          BorderSpacing.Right = 7
+          TabOrder = 0
+        end
+        object ComboBox1: TComboBox
+          AnchorSideTop.Control = GroupQuality
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Label4
+          Left = 419
+          Height = 20
+          Top = 15
+          Width = 68
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 4
+          ItemHeight = 0
+          ItemIndex = 10
+          Items.Strings = (
+            '32'
+            '40'
+            '48'
+            '56'
+            '64'
+            '80'
+            '96'
+            '112'
+            '128'
+            '160'
+            '192'
+            '224'
+            '256'
+            '320'
+          )
+          Style = csDropDownList
+          TabOrder = 1
+          Text = '192'
+        end
+        object Label4: TLabel
+          AnchorSideTop.Control = GroupQuality
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = GroupQuality
+          AnchorSideRight.Side = asrBottom
+          Left = 491
+          Height = 16
+          Top = 17
+          Width = 31
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 4
+          Caption = 'kbps'
+          ParentColor = False
+        end
+        object Label9: TLabel
+          AnchorSideLeft.Control = GroupQuality
+          AnchorSideTop.Control = TB_Quality
+          AnchorSideBottom.Control = TB_Quality
+          AnchorSideBottom.Side = asrBottom
+          Left = 4
+          Height = 37
+          Top = 7
+          Width = 8
+          Anchors = [akTop, akLeft, akBottom]
+          BorderSpacing.Left = 4
+          Caption = '0'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object GroupBitrate: TGroupBox
+        AnchorSideLeft.Control = GroupBox1
+        AnchorSideTop.Control = GroupBox1
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = GroupBox1
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 142
+        Top = 88
+        Width = 534
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 4
+        Caption = ' Bitrate Setting: '
+        ClientHeight = 119
+        ClientWidth = 526
+        Enabled = False
+        TabOrder = 2
+        object TB_Bitrate_min: TTrackBar
+          AnchorSideLeft.Control = Label1
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = GroupBitrate
+          AnchorSideRight.Control = Label5
+          Left = 81
+          Height = 37
+          Top = 4
+          Width = 381
+          Frequency = 8
+          LineSize = 8
+          Max = 320
+          Min = 8
+          OnChange = TB_Bitrate_minChange
+          Position = 192
+          ScalePos = trRight
+          TickMarks = tmTopLeft
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 4
+          BorderSpacing.Right = 4
+          TabOrder = 0
+        end
+        object CB_CBR: TCheckBox
+          AnchorSideLeft.Control = GroupBitrate
+          AnchorSideTop.Side = asrBottom
+          AnchorSideBottom.Control = GroupBitrate
+          AnchorSideBottom.Side = asrBottom
+          Left = 3
+          Height = 22
+          Top = 93
+          Width = 407
+          Anchors = [akLeft, akBottom]
+          AutoSize = False
+          BorderSpacing.Left = 3
+          BorderSpacing.Bottom = 4
+          Caption = 'Restrict encoder to constant bitrate'
+          OnChange = CB_CBRChange
+          TabOrder = 1
+        end
+        object Label1: TLabel
+          AnchorSideLeft.Control = GroupBitrate
+          AnchorSideTop.Control = TB_Bitrate_min
+          AnchorSideBottom.Control = TB_Bitrate_min
+          AnchorSideBottom.Side = asrBottom
+          Left = 3
+          Height = 37
+          Top = 4
+          Width = 74
+          Alignment = taRightJustify
+          Anchors = [akTop, akLeft, akBottom]
+          AutoSize = False
+          BorderSpacing.Left = 3
+          BorderSpacing.Right = 4
+          Caption = 'Minimum:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+        object Label2: TLabel
+          AnchorSideLeft.Control = GroupBitrate
+          AnchorSideTop.Control = TB_BitRate_max
+          AnchorSideBottom.Control = TB_BitRate_max
+          AnchorSideBottom.Side = asrBottom
+          Left = 3
+          Height = 37
+          Top = 49
+          Width = 74
+          Alignment = taRightJustify
+          Anchors = [akTop, akLeft, akBottom]
+          AutoSize = False
+          BorderSpacing.Left = 3
+          Caption = 'Maximum:'
+          Layout = tlCenter
+          ParentColor = False
+        end
+        object TB_BitRate_max: TTrackBar
+          AnchorSideLeft.Control = TB_Bitrate_min
+          AnchorSideTop.Control = TB_Bitrate_min
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Label7
+          Left = 81
+          Height = 37
+          Top = 49
+          Width = 381
+          Frequency = 8
+          Max = 320
+          Min = 192
+          OnChange = TB_BitRate_maxChange
+          Position = 192
+          ScalePos = trRight
+          ShowSelRange = False
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 8
+          BorderSpacing.Right = 4
+          TabOrder = 2
+        end
+        object Label5: TLabel
+          AnchorSideTop.Control = TB_Bitrate_min
+          AnchorSideRight.Control = Label6
+          AnchorSideBottom.Control = TB_Bitrate_min
+          AnchorSideBottom.Side = asrBottom
+          Left = 466
+          Height = 37
+          Top = 4
+          Width = 25
+          Anchors = [akTop, akRight, akBottom]
+          BorderSpacing.Right = 2
+          Caption = '192'
+          Layout = tlCenter
+          ParentColor = False
+        end
+        object Label6: TLabel
+          AnchorSideTop.Control = TB_Bitrate_min
+          AnchorSideRight.Control = GroupBitrate
+          AnchorSideRight.Side = asrBottom
+          AnchorSideBottom.Control = TB_Bitrate_min
+          AnchorSideBottom.Side = asrBottom
+          Left = 493
+          Height = 37
+          Top = 4
+          Width = 31
+          Anchors = [akTop, akRight, akBottom]
+          BorderSpacing.Right = 2
+          Caption = 'Kbps'
+          Layout = tlCenter
+          ParentColor = False
+        end
+        object Label7: TLabel
+          AnchorSideTop.Control = TB_BitRate_max
+          AnchorSideRight.Control = Label8
+          AnchorSideBottom.Control = TB_BitRate_max
+          AnchorSideBottom.Side = asrBottom
+          Left = 466
+          Height = 37
+          Top = 49
+          Width = 25
+          Anchors = [akTop, akRight, akBottom]
+          BorderSpacing.Right = 2
+          Caption = '192'
+          Layout = tlCenter
+          ParentColor = False
+        end
+        object Label8: TLabel
+          AnchorSideTop.Control = TB_BitRate_max
+          AnchorSideRight.Control = GroupBitrate
+          AnchorSideRight.Side = asrBottom
+          AnchorSideBottom.Control = TB_BitRate_max
+          AnchorSideBottom.Side = asrBottom
+          Left = 493
+          Height = 37
+          Top = 49
+          Width = 31
+          Anchors = [akTop, akRight, akBottom]
+          BorderSpacing.Right = 2
+          Caption = 'Kbps'
+          Layout = tlCenter
+          ParentColor = False
+        end
+      end
+      object GroupBox1: TGroupBox
+        AnchorSideLeft.Control = TabSheet1
+        AnchorSideTop.Control = TabSheet1
+        AnchorSideRight.Control = TabSheet1
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 80
+        Top = 4
+        Width = 534
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 4
+        BorderSpacing.Right = 6
+        Caption = ' Lame Settings: '
+        ClientHeight = 57
+        ClientWidth = 526
+        ParentColor = False
+        TabOrder = 3
+        OnClick = GroupBox1Click
+        object RB_Bitrate: TRadioButton
+          AnchorSideLeft.Control = GroupBox1
+          AnchorSideTop.Control = GroupBox1
+          Left = 12
+          Height = 26
+          Top = 6
+          Width = 100
+          AutoSize = False
+          BorderSpacing.Left = 12
+          BorderSpacing.Top = 6
+          Caption = 'Bitrate'
+          OnChange = RB_BitrateChange
+          TabOrder = 0
+        end
+        object RB_Quality: TRadioButton
+          AnchorSideLeft.Control = GroupBox1
+          AnchorSideLeft.Side = asrCenter
+          AnchorSideTop.Control = GroupBox1
+          Left = 224
+          Height = 26
+          Top = 6
+          Width = 79
+          AutoSize = False
+          BorderSpacing.Top = 6
+          Caption = 'Quality'
+          Checked = True
+          OnChange = RB_BitrateChange
+          TabOrder = 1
+          TabStop = True
+        end
+        object CB_Mono: TCheckBox
+          AnchorSideLeft.Control = GroupBox1
+          AnchorSideLeft.Side = asrCenter
+          AnchorSideTop.Control = RB_Quality
+          AnchorSideTop.Side = asrBottom
+          Left = 228
+          Height = 22
+          Top = 36
+          Width = 70
+          AutoSize = False
+          BorderSpacing.Top = 4
+          Caption = 'Mono'
+          TabOrder = 2
+        end
+        object RB_Presets: TRadioButton
+          AnchorSideTop.Control = GroupBox1
+          AnchorSideRight.Control = GroupBox1
+          AnchorSideRight.Side = asrBottom
+          Left = 425
+          Height = 26
+          Top = 6
+          Width = 89
+          Alignment = taLeftJustify
+          Anchors = [akTop, akRight]
+          AutoSize = False
+          BorderSpacing.Top = 6
+          BorderSpacing.Right = 12
+          Caption = 'Presets'
+          OnChange = RB_BitrateChange
+          TabOrder = 3
+        end
+      end
+    end
+    object TabSheet5: TTabSheet
+      Caption = 'Flac'
+      ClientHeight = 401
+      ClientWidth = 546
+      object Label17: TLabel
+        AnchorSideLeft.Control = TabSheet5
+        AnchorSideLeft.Side = asrCenter
+        AnchorSideTop.Control = TabSheet5
+        AnchorSideTop.Side = asrCenter
+        Left = 199
+        Height = 16
+        Top = 192
+        Width = 148
+        Caption = 'NO SETTINGS NEEDED'
+        Font.Height = -13
+        Font.Style = [fsBold]
+        ParentColor = False
+        ParentFont = False
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'OGG Vorbis'
+      ClientHeight = 401
+      ClientWidth = 546
+      object GroupBox4: TGroupBox
+        AnchorSideLeft.Control = TabSheet2
+        AnchorSideTop.Control = TabSheet2
+        AnchorSideRight.Control = TabSheet2
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 124
+        Top = 4
+        Width = 534
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 4
+        BorderSpacing.Right = 6
+        Caption = 'Bitrate Settings:'
+        ClientHeight = 101
+        ClientWidth = 526
+        TabOrder = 0
+        object Label18: TLabel
+          Left = 0
+          Height = 16
+          Top = 8
+          Width = 75
+          Alignment = taRightJustify
+          AutoSize = False
+          Caption = 'Minimum'
+          ParentColor = False
+        end
+        object Label19: TLabel
+          AnchorSideTop.Control = TB_OGG_Max
+          AnchorSideTop.Side = asrCenter
+          Left = 0
+          Height = 16
+          Top = 37
+          Width = 75
+          Alignment = taRightJustify
+          AutoSize = False
+          Caption = 'Maximum'
+          ParentColor = False
+        end
+        object TB_OGG_Min: TTrackBar
+          AnchorSideLeft.Control = Label18
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = GroupBox4
+          AnchorSideRight.Control = Label20
+          Left = 81
+          Height = 25
+          Top = 4
+          Width = 375
+          Frequency = 2
+          Max = 320
+          Min = 10
+          OnChange = TB_OGG_MinChange
+          Position = 128
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 6
+          BorderSpacing.Top = 4
+          BorderSpacing.Right = 6
+          TabOrder = 0
+        end
+        object Label20: TLabel
+          AnchorSideTop.Control = TB_OGG_Min
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Label21
+          Left = 462
+          Height = 16
+          Top = 8
+          Width = 25
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 4
+          Caption = '128'
+          ParentColor = False
+        end
+        object Label21: TLabel
+          AnchorSideTop.Control = TB_OGG_Min
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = GroupBox4
+          AnchorSideRight.Side = asrBottom
+          Left = 491
+          Height = 16
+          Top = 8
+          Width = 31
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 4
+          Caption = 'Kbps'
+          ParentColor = False
+        end
+        object TB_OGG_Max: TTrackBar
+          AnchorSideLeft.Control = TB_OGG_Min
+          AnchorSideTop.Control = TB_OGG_Min
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = Label23
+          Left = 81
+          Height = 25
+          Top = 33
+          Width = 375
+          Frequency = 2
+          Max = 320
+          Min = 128
+          OnChange = TB_OGG_MaxChange
+          Position = 224
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Top = 4
+          BorderSpacing.Right = 6
+          TabOrder = 1
+        end
+        object Label22: TLabel
+          AnchorSideTop.Control = TB_OGG_Max
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = GroupBox4
+          AnchorSideRight.Side = asrBottom
+          Left = 491
+          Height = 16
+          Top = 37
+          Width = 31
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 4
+          Caption = 'Kbps'
+          ParentColor = False
+        end
+        object Label23: TLabel
+          AnchorSideTop.Control = TB_OGG_Max
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Label22
+          Left = 462
+          Height = 16
+          Top = 37
+          Width = 25
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 4
+          Caption = '224'
+          ParentColor = False
+        end
+        object RB_OGG_VBR: TRadioButton
+          Left = 19
+          Height = 18
+          Hint = 'Use variable bitrate encoding.  In VBR mode the bitrate may go up and down freely depending on the content to achieve more consistent quality.'
+          Top = 72
+          Width = 101
+          Caption = 'VBR (default)'
+          Checked = True
+          OnChange = RB_OGG_VBRChange
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 3
+          TabStop = True
+        end
+        object RB_OGG_CVBR: TRadioButton
+          AnchorSideLeft.Control = GroupBox4
+          AnchorSideLeft.Side = asrCenter
+          Left = 236
+          Height = 18
+          Hint = 'Use Constrained Variable Bitrate encoding.  Outputs to a specific bitrate.  This mode is analogous to CBR in AAC/MP3 encoders and managed mode in Vorbis coders.  This delivers less consistent quality than VBR mode, but consistent bitrate.'
+          Top = 72
+          Width = 54
+          Caption = 'CVBR'
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 2
+        end
+        object CB_OGG_Managed: TCheckBox
+          Left = 403
+          Height = 18
+          Top = 75
+          Width = 116
+          Caption = 'Managed Mode'
+          TabOrder = 4
+        end
+      end
+      object GroupBox5: TGroupBox
+        AnchorSideLeft.Control = GroupBox4
+        AnchorSideTop.Control = GroupBox4
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = GroupBox4
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 97
+        Top = 136
+        Width = 534
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Top = 8
+        Caption = 'Quality Settings:  (10 Highest Quality - 1 Lowest Quality)'
+        ClientHeight = 74
+        ClientWidth = 526
+        TabOrder = 1
+        object Label24: TLabel
+          AnchorSideTop.Control = TB_OGG_Quality
+          AnchorSideTop.Side = asrCenter
+          Left = 16
+          Height = 16
+          Top = 12
+          Width = 49
+          Caption = 'Quality:'
+          ParentColor = False
+        end
+        object TB_OGG_Quality: TTrackBar
+          AnchorSideLeft.Control = Label24
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = GroupBox5
+          AnchorSideRight.Control = Label25
+          Left = 69
+          Height = 25
+          Top = 8
+          Width = 431
+          OnChange = TB_OGG_QualityChange
+          Position = 10
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 8
+          BorderSpacing.Right = 4
+          TabOrder = 0
+        end
+        object Label25: TLabel
+          AnchorSideTop.Control = TB_OGG_Quality
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = GroupBox5
+          AnchorSideRight.Side = asrBottom
+          Left = 504
+          Height = 16
+          Top = 12
+          Width = 16
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 6
+          Caption = '10'
+          ParentColor = False
+        end
+        object CB_OGG_ForceQuality: TCheckBox
+          Left = 104
+          Height = 18
+          Top = 40
+          Width = 341
+          Caption = 'Use Quality Settings rather than specifying bitrates'
+          OnChange = CB_OGG_ForceQualityChange
+          TabOrder = 1
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'AAC'
+      ClientHeight = 401
+      ClientWidth = 546
+      object GroupBox6: TGroupBox
+        AnchorSideLeft.Control = TabSheet3
+        AnchorSideTop.Control = TabSheet3
+        AnchorSideRight.Control = TabSheet3
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 114
+        Top = 6
+        Width = 534
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        Caption = 'Bitrate Settings:'
+        ClientHeight = 91
+        ClientWidth = 526
+        TabOrder = 0
+        object Label26: TLabel
+          AnchorSideTop.Control = TB_AAC_Bitrate
+          AnchorSideTop.Side = asrCenter
+          Left = 12
+          Height = 16
+          Top = 10
+          Width = 41
+          Caption = 'Bitrate'
+          ParentColor = False
+        end
+        object TB_AAC_Bitrate: TTrackBar
+          AnchorSideLeft.Control = Label26
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = GroupBox6
+          AnchorSideRight.Control = Label27
+          Left = 57
+          Height = 25
+          Top = 6
+          Width = 434
+          Max = 320
+          Min = 10
+          OnChange = TB_AAC_BitrateChange
+          Position = 128
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 6
+          BorderSpacing.Right = 4
+          TabOrder = 0
+        end
+        object Label27: TLabel
+          AnchorSideTop.Control = TB_AAC_Bitrate
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = GroupBox6
+          AnchorSideRight.Side = asrBottom
+          Left = 495
+          Height = 16
+          Top = 10
+          Width = 25
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 6
+          Caption = '128'
+          ParentColor = False
+        end
+        object RB_AAC_CBR: TRadioButton
+          Left = 12
+          Height = 18
+          Top = 40
+          Width = 45
+          Caption = 'CBR'
+          Checked = True
+          OnChange = RB_AAC_CBRChange
+          TabOrder = 2
+          TabStop = True
+        end
+        object RB_AAC_VBR: TRadioButton
+          Left = 12
+          Height = 18
+          Top = 64
+          Width = 45
+          Caption = 'VBR'
+          TabOrder = 1
+        end
+        object CB_AAC_VBR: TComboBox
+          AnchorSideTop.Control = RB_AAC_VBR
+          AnchorSideTop.Side = asrCenter
+          Left = 72
+          Height = 20
+          Top = 63
+          Width = 128
+          Enabled = False
+          ItemHeight = 0
+          ItemIndex = 4
+          Items.Strings = (
+            '1 - 40 kbps'
+            '2 - 64 kbps'
+            '3 - 96 kbps'
+            '4 - 128 kbps'
+            '5 - 192 kbps'
+          )
+          Style = csDropDownList
+          TabOrder = 3
+          Text = '5 - 192 kbps'
+        end
+      end
+    end
+    object TabSheet4: TTabSheet
+      Caption = 'Opus'
+      ClientHeight = 401
+      ClientWidth = 546
+      object GroupBox2: TGroupBox
+        AnchorSideLeft.Control = TabSheet4
+        AnchorSideTop.Control = TabSheet4
+        AnchorSideRight.Control = TabSheet4
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 92
+        Top = 4
+        Width = 534
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 4
+        BorderSpacing.Right = 6
+        Caption = 'Bitrate Settings:'
+        ClientHeight = 69
+        ClientWidth = 526
+        TabOrder = 0
+        object TB_Opus_Bitrate: TTrackBar
+          AnchorSideLeft.Control = Label10
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = GroupBox2
+          AnchorSideRight.Control = Label12
+          Left = 53
+          Height = 25
+          Top = 4
+          Width = 338
+          Max = 256
+          Min = 6
+          OnChange = TB_Opus_BitrateChange
+          Position = 160
+          ScalePos = trLeft
+          TickMarks = tmTopLeft
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 6
+          BorderSpacing.Top = 4
+          BorderSpacing.Right = 6
+          TabOrder = 0
+        end
+        object Label10: TLabel
+          AnchorSideLeft.Control = GroupBox2
+          AnchorSideTop.Control = TB_Opus_Bitrate
+          AnchorSideTop.Side = asrCenter
+          Left = 6
+          Height = 16
+          Top = 8
+          Width = 41
+          BorderSpacing.Left = 6
+          Caption = 'Bitrate'
+          ParentColor = False
+        end
+        object Label11: TLabel
+          AnchorSideRight.Control = GroupBox2
+          AnchorSideRight.Side = asrBottom
+          Left = 424
+          Height = 16
+          Top = 8
+          Width = 96
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 6
+          Caption = 'Kbps / channel'
+          ParentColor = False
+        end
+        object Label12: TLabel
+          AnchorSideTop.Control = Label11
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = Label11
+          Left = 397
+          Height = 16
+          Top = 8
+          Width = 25
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 2
+          Caption = '160'
+          ParentColor = False
+        end
+        object RB_Opus_VBR: TRadioButton
+          AnchorSideLeft.Control = GroupBox2
+          AnchorSideTop.Control = TB_Opus_Bitrate
+          AnchorSideTop.Side = asrBottom
+          Left = 12
+          Height = 18
+          Hint = 'Use variable bitrate encoding.  In VBR mode the bitrate may go up and down freely depending on the content to achieve more consistent quality.'
+          Top = 37
+          Width = 101
+          BorderSpacing.Left = 12
+          BorderSpacing.Top = 8
+          Caption = 'VBR (default)'
+          Checked = True
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 2
+          TabStop = True
+        end
+        object RB_Opus_CVBR: TRadioButton
+          AnchorSideLeft.Control = GroupBox2
+          AnchorSideLeft.Side = asrCenter
+          AnchorSideTop.Control = TB_Opus_Bitrate
+          AnchorSideTop.Side = asrBottom
+          Left = 236
+          Height = 18
+          Hint = 'Use Constrained Variable Bitrate encoding.  Outputs to a specific bitrate.  This mode is analogous to CBR in AAC/MP3 encoders and managed mode in Vorbis coders.  This delivers less consistent quality than VBR mode, but consistent bitrate.'
+          Top = 37
+          Width = 54
+          BorderSpacing.Top = 8
+          Caption = 'CVBR'
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 1
+        end
+        object RB_Opus_CBR: TRadioButton
+          AnchorSideTop.Control = TB_Opus_Bitrate
+          AnchorSideTop.Side = asrBottom
+          AnchorSideRight.Control = GroupBox2
+          AnchorSideRight.Side = asrBottom
+          Left = 434
+          Height = 18
+          Hint = 'Use Hard Constant Bitrate encoding.  With Hard CBR every frame will be excatly the same size, similar to how speech codecs work.  This delivers lower overall quality, but is useful where bitate changes might leak data in encrypted channels or on synchronous transports.'
+          Top = 37
+          Width = 80
+          Anchors = [akTop, akRight]
+          BorderSpacing.Top = 8
+          BorderSpacing.Right = 12
+          Caption = 'Hard CBR'
+          ParentShowHint = False
+          ShowHint = True
+          TabOrder = 3
+        end
+      end
+      object GroupBox3: TGroupBox
+        AnchorSideLeft.Control = TabSheet4
+        AnchorSideTop.Control = GroupBox2
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TabSheet4
+        AnchorSideRight.Side = asrBottom
+        Left = 6
+        Height = 92
+        Top = 102
+        Width = 534
+        Anchors = [akTop, akLeft, akRight]
+        BorderSpacing.Left = 6
+        BorderSpacing.Top = 6
+        BorderSpacing.Right = 6
+        Caption = 'Quality Settings:  (10 Highest Quality  -  0 Lowest Quality)'
+        ClientHeight = 69
+        ClientWidth = 526
+        TabOrder = 1
+        object Label13: TLabel
+          AnchorSideLeft.Control = GroupBox3
+          AnchorSideTop.Control = TB_Opus_Quality
+          AnchorSideTop.Side = asrCenter
+          Left = 4
+          Height = 16
+          Top = 8
+          Width = 49
+          BorderSpacing.Left = 4
+          Caption = 'Quality:'
+          ParentColor = False
+        end
+        object TB_Opus_Quality: TTrackBar
+          AnchorSideLeft.Control = Label13
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = GroupBox3
+          AnchorSideRight.Control = Label14
+          Left = 59
+          Height = 25
+          Top = 4
+          Width = 431
+          OnChange = TB_Opus_QualityChange
+          Position = 10
+          TickStyle = tsNone
+          Anchors = [akTop, akLeft, akRight]
+          BorderSpacing.Left = 6
+          BorderSpacing.Top = 4
+          BorderSpacing.Right = 4
+          TabOrder = 0
+        end
+        object Label14: TLabel
+          AnchorSideTop.Control = TB_Opus_Quality
+          AnchorSideTop.Side = asrCenter
+          AnchorSideRight.Control = GroupBox3
+          AnchorSideRight.Side = asrBottom
+          Left = 494
+          Height = 16
+          Top = 8
+          Width = 16
+          Anchors = [akTop, akRight]
+          BorderSpacing.Right = 16
+          Caption = '10'
+          ParentColor = False
+        end
+        object Label15: TLabel
+          AnchorSideLeft.Control = GroupBox3
+          AnchorSideTop.Control = TB_Opus_Quality
+          AnchorSideTop.Side = asrBottom
+          Left = 4
+          Height = 16
+          Hint = 'Smaller framesizes achieve lower latency, but less quality at a given bitrate.  Sizes greater than 2Oms are only interesting at fairly low bitrates.'
+          Top = 35
+          Width = 68
+          BorderSpacing.Left = 4
+          BorderSpacing.Top = 6
+          Caption = 'Framesize:'
+          ParentColor = False
+          ParentShowHint = False
+          ShowHint = True
+        end
+        object CB_Opus_Framesize: TComboBox
+          AnchorSideLeft.Control = Label15
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label15
+          AnchorSideTop.Side = asrCenter
+          Left = 76
+          Height = 20
+          Top = 33
+          Width = 60
+          BorderSpacing.Left = 4
+          ItemHeight = 0
+          ItemIndex = 3
+          Items.Strings = (
+            '2,5'
+            '5'
+            '10'
+            '20'
+            '40'
+            '60'
+          )
+          Style = csDropDownList
+          TabOrder = 1
+          Text = '20'
+        end
+        object Label16: TLabel
+          AnchorSideLeft.Control = CB_Opus_Framesize
+          AnchorSideLeft.Side = asrBottom
+          AnchorSideTop.Control = Label15
+          AnchorSideTop.Side = asrCenter
+          Left = 142
+          Height = 16
+          Top = 35
+          Width = 81
+          BorderSpacing.Left = 6
+          Caption = '(default:  20)'
+          ParentColor = False
+        end
+      end
+      object CB_Opus_Mono: TCheckBox
+        AnchorSideLeft.Control = TabSheet4
+        AnchorSideLeft.Side = asrCenter
+        Left = 211
+        Height = 18
+        Top = 216
+        Width = 124
+        Caption = 'Encode as mono'
+        Enabled = False
+        TabOrder = 2
+      end
+    end
+  end
+end

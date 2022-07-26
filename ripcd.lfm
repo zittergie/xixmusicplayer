@@ -1,0 +1,1107 @@
+object FormRip: TFormRip
+  Left = 226
+  Height = 671
+  Top = 127
+  Width = 1015
+  Caption = 'Rip CD/DVD'
+  ClientHeight = 671
+  ClientWidth = 1015
+  Constraints.MinHeight = 644
+  Constraints.MinWidth = 500
+  OnShow = FormShow
+  Position = poScreenCenter
+  LCLVersion = '2.1.0.0'
+  object Image1: TImage
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 0
+    Height = 671
+    Top = 0
+    Width = 1015
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Stretch = True
+  end
+  object LB_Selection1: TLabel
+    AnchorSideLeft.Control = Panel3
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Control = StringGrid1
+    AnchorSideRight.Side = asrBottom
+    Left = 254
+    Height = 16
+    Top = 8
+    Width = 751
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 6
+    Caption = 'Selection:'
+    ParentColor = False
+    ParentFont = False
+  end
+  object RB_Artist: TRadioButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Side = asrCenter
+    AnchorSideBottom.Control = RB_Varia
+    Left = 8
+    Height = 22
+    Top = 512
+    Width = 136
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Left = 8
+    BorderSpacing.Bottom = 8
+    Caption = 'Rip to artist folder:'
+    Checked = True
+    ParentFont = False
+    TabOrder = 0
+    TabStop = True
+  end
+  object RB_Varia: TRadioButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Label9
+    Left = 8
+    Height = 22
+    Top = 542
+    Width = 149
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Left = 8
+    BorderSpacing.Bottom = 8
+    Caption = 'Rip to various folder:'
+    ParentFont = False
+    TabOrder = 1
+  end
+  object EditRipArtist: TEdit
+    AnchorSideLeft.Control = RB_Artist
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = RB_Artist
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = SpeedButton3
+    Left = 147
+    Height = 25
+    Top = 511
+    Width = 836
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 3
+    BorderSpacing.Right = 4
+    ParentFont = False
+    TabOrder = 2
+  end
+  object EditRipVarious: TEdit
+    AnchorSideLeft.Control = RB_Varia
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = RB_Varia
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = SpeedButton4
+    Left = 160
+    Height = 25
+    Top = 541
+    Width = 823
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 3
+    BorderSpacing.Right = 4
+    ParentFont = False
+    TabOrder = 3
+  end
+  object Label9: TLabel
+    AnchorSideLeft.Control = Label5
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Label5
+    Left = 26
+    Height = 16
+    Top = 572
+    Width = 45
+    Caption = ': Artist  '
+    Font.Color = clGray
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    AnchorSideTop.Side = asrBottom
+    AnchorSideBottom.Control = Label12
+    Left = 8
+    Height = 16
+    Top = 572
+    Width = 18
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Top = 6
+    BorderSpacing.Bottom = 1
+    Caption = '%a'
+    Font.Color = clGray
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label6: TLabel
+    AnchorSideLeft.Control = Label5
+    AnchorSideTop.Control = Label12
+    Left = 8
+    Height = 16
+    Top = 589
+    Width = 16
+    Caption = '%t'
+    Font.Color = clGray
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label10: TLabel
+    AnchorSideLeft.Control = Label9
+    AnchorSideTop.Control = Label12
+    Left = 26
+    Height = 16
+    Top = 589
+    Width = 39
+    Caption = ': Title  '
+    Font.Color = clGray
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label8: TLabel
+    AnchorSideLeft.Control = Label7
+    AnchorSideTop.Control = Label5
+    AnchorSideTop.Side = asrCenter
+    Left = 205
+    Height = 16
+    Top = 572
+    Width = 15
+    Anchors = [akTop]
+    Caption = '%l'
+    Font.Color = clGray
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label11: TLabel
+    AnchorSideLeft.Control = Label8
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Label8
+    Left = 224
+    Height = 16
+    Top = 572
+    Width = 82
+    BorderSpacing.Left = 4
+    Caption = ': Title Album  '
+    Font.Color = clGray
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label7: TLabel
+    AnchorSideLeft.Control = Label8
+    AnchorSideTop.Control = Label12
+    Left = 205
+    Height = 16
+    Top = 589
+    Width = 19
+    Caption = '%n'
+    Font.Color = clGray
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label12: TLabel
+    AnchorSideLeft.Control = Label11
+    AnchorSideTop.Control = Label7
+    AnchorSideBottom.Control = Panel2
+    Left = 224
+    Height = 16
+    Top = 589
+    Width = 94
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 6
+    Caption = ': Track number  '
+    Font.Color = clGray
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label26: TLabel
+    AnchorSideLeft.Control = Label7
+    AnchorSideTop.Control = Label5
+    AnchorSideTop.Side = asrCenter
+    Left = 447
+    Height = 16
+    Top = 572
+    Width = 19
+    Anchors = [akTop]
+    Caption = '%1'
+    Font.Color = clGray
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label27: TLabel
+    AnchorSideLeft.Control = Label26
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Label8
+    Left = 470
+    Height = 16
+    Top = 572
+    Width = 126
+    BorderSpacing.Left = 4
+    Caption = ': First letter of Artist  '
+    Font.Color = clGray
+    ParentColor = False
+    ParentFont = False
+  end
+  object SpeedButton3: TSpeedButton
+    AnchorSideTop.Control = EditRipArtist
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Side = asrBottom
+    Left = 987
+    Height = 22
+    Top = 512
+    Width = 24
+    Anchors = [akTop, akRight]
+    Flat = True
+    Glyph.Data = {
+      36090000424D3609000000000000360000002800000018000000180000000100
+      2000000000000009000064000000640000000000000000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF01FFFFFF3CFFFFFF6BFFFFFF6AFFFFFF2EFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF01FFFFFF43C1C2C28F6F7472F9737876F2FFFFFF66FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF17FFFFFF47FFFFFF5DFFFFFF68FFFFFF64FFFF
+      FF32FFFFFF40BDC1BF8C777D7BF8E0E3E2FF686E6CFFFFFFFF68FFFFFF5DFFFF
+      FF47FFFFFF17FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF2CDCDEDE748C9190D1787E7CF7707674FF7A7F7EF1FFFF
+      FF64BFC3C188808482F8F1F2F1FFEDF0EFFF7C8381FA707674FF777C7AF68B90
+      8ECFDEE0E073FFFFFF2CFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF14DFDFDF6F808684F5BBBFBEFCEBECECFFFDFDFDFF787E7CFFFFFF
+      FF30828886E3E1E3E2FFF7F8F8FFEBEEEDFFE7EBE9FFE2E7E4FFD0D6D3FFA6AD
+      AAFC7E8583F6DFDFDF6FFFFFFF14FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF3E979C9ACCBFC3C2FBD9DCDBFE8E9492F37F8683FF838987E8FFFF
+      FF008088843C8B918EF3F3F5F4FFF4F5F5FF89908DF77F8683FF8C928FF3C4CA
+      C7FEAAB1AEFC959B99CCFFFFFF3EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00EAEAEA4A8D9390F6EDEFEEFF959B99F3888E8B58FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00888C8C3C929896F3EBEDECFF878E8BFFFFFFFF00888E8B589299
+      96F3D1D7D4FF8B928FF6EAEAEA4AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00CBCBCB4A8F9693FFF8F8F8FF8F9693FFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF009195953C929896F5929997E8FFFFFF00FFFFFF008F96
+      93FFE0E5E3FF8F9693FFCBCBCB4AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00ADADAD41979E9BFFF7F8F8FF979E9BFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00979E
+      9BFFE4E9E7FF979E9BFFADADAD41FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00898989389FA6A3FFF6F7F7FF9FA6A3FFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF009FA6
+      A3FFE9ECEAFF9FA6A3FF89898938FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF006D6D6D2AA9B0ACF4EDEFEFFFB1B7B4F3A8AEAB58FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00A8AEAB58B0B7
+      B3F3E4E7E5FFA8B0ACF46D6D6D2AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF004E4E4E1AACB2AFBCD2D6D4FBE3E5E4FEB8BEBBF3AFB6B3FFAFB6B3FFAFB6
+      B3FFAFB6B3FFAFB6B3FFAFB6B3FFAFB6B3FFAFB6B3FFAFB6B3FFB9BEBCF3E3E6
+      E5FECED3D1FBABB2AFBC4E4E4E1AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF002B2B2B0671767634B7BDBBF1D5D9D8FBEDEFEEFFF6F7F7FFF7F8F8FFF8F9
+      F9FFF9FAFAFFFAFBFBFFFBFBFBFFFCFCFCFFFDFDFDFFFEFEFEFFF5F6F6FFD6DA
+      D8FBB7BEBBF2717676342B2B2B06FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000008777D772DB3BAB7B9B8BEBCF3B6BDBAFFB6BDBAFFB6BD
+      BAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB8BFBCF2B5BA
+      B8B67777772B00000009FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00000000030000000A0000000D0000000F0000000F0000
+      000F0000000F0000000F0000000F0000000F0000000F0000000F0000000D0000
+      000A00000003FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+    }
+    OnClick = SpeedButton3Click
+    ParentFont = False
+  end
+  object SpeedButton4: TSpeedButton
+    AnchorSideTop.Control = EditRipVarious
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Side = asrBottom
+    Left = 987
+    Height = 22
+    Top = 542
+    Width = 24
+    Anchors = [akTop, akRight]
+    Flat = True
+    Glyph.Data = {
+      36090000424D3609000000000000360000002800000018000000180000000100
+      2000000000000009000064000000640000000000000000000000FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF01FFFFFF3CFFFFFF6BFFFFFF6AFFFFFF2EFFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF01FFFFFF43C1C2C28F6F7472F9737876F2FFFFFF66FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF17FFFFFF47FFFFFF5DFFFFFF68FFFFFF64FFFF
+      FF32FFFFFF40BDC1BF8C777D7BF8E0E3E2FF686E6CFFFFFFFF68FFFFFF5DFFFF
+      FF47FFFFFF17FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF2CDCDEDE748C9190D1787E7CF7707674FF7A7F7EF1FFFF
+      FF64BFC3C188808482F8F1F2F1FFEDF0EFFF7C8381FA707674FF777C7AF68B90
+      8ECFDEE0E073FFFFFF2CFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF14DFDFDF6F808684F5BBBFBEFCEBECECFFFDFDFDFF787E7CFFFFFF
+      FF30828886E3E1E3E2FFF7F8F8FFEBEEEDFFE7EBE9FFE2E7E4FFD0D6D3FFA6AD
+      AAFC7E8583F6DFDFDF6FFFFFFF14FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF3E979C9ACCBFC3C2FBD9DCDBFE8E9492F37F8683FF838987E8FFFF
+      FF008088843C8B918EF3F3F5F4FFF4F5F5FF89908DF77F8683FF8C928FF3C4CA
+      C7FEAAB1AEFC959B99CCFFFFFF3EFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00EAEAEA4A8D9390F6EDEFEEFF959B99F3888E8B58FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00888C8C3C929896F3EBEDECFF878E8BFFFFFFFF00888E8B589299
+      96F3D1D7D4FF8B928FF6EAEAEA4AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00CBCBCB4A8F9693FFF8F8F8FF8F9693FFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF009195953C929896F5929997E8FFFFFF00FFFFFF008F96
+      93FFE0E5E3FF8F9693FFCBCBCB4AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00ADADAD41979E9BFFF7F8F8FF979E9BFFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00979E
+      9BFFE4E9E7FF979E9BFFADADAD41FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00898989389FA6A3FFF6F7F7FF9FA6A3FFFFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF009FA6
+      A3FFE9ECEAFF9FA6A3FF89898938FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF006D6D6D2AA9B0ACF4EDEFEFFFB1B7B4F3A8AEAB58FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00A8AEAB58B0B7
+      B3F3E4E7E5FFA8B0ACF46D6D6D2AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF004E4E4E1AACB2AFBCD2D6D4FBE3E5E4FEB8BEBBF3AFB6B3FFAFB6B3FFAFB6
+      B3FFAFB6B3FFAFB6B3FFAFB6B3FFAFB6B3FFAFB6B3FFAFB6B3FFB9BEBCF3E3E6
+      E5FECED3D1FBABB2AFBC4E4E4E1AFFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF002B2B2B0671767634B7BDBBF1D5D9D8FBEDEFEEFFF6F7F7FFF7F8F8FFF8F9
+      F9FFF9FAFAFFFAFBFBFFFBFBFBFFFCFCFCFFFDFDFDFFFEFEFEFFF5F6F6FFD6DA
+      D8FBB7BEBBF2717676342B2B2B06FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF0000000008777D772DB3BAB7B9B8BEBCF3B6BDBAFFB6BDBAFFB6BD
+      BAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB6BDBAFFB8BFBCF2B5BA
+      B8B67777772B00000009FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00000000030000000A0000000D0000000F0000000F0000
+      000F0000000F0000000F0000000F0000000F0000000F0000000F0000000D0000
+      000A00000003FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFF
+      FF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00FFFFFF00
+    }
+    OnClick = SpeedButton4Click
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Panel2
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = Panel2
+    Left = 8
+    Height = 51
+    Top = 611
+    Width = 775
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    BorderSpacing.Bottom = 2
+    BevelInner = bvLowered
+    ClientHeight = 51
+    ClientWidth = 775
+    Color = clHighlight
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 4
+    object ProgressBarTracks: TProgressBar
+      AnchorSideLeft.Control = Panel1
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = Panel1
+      AnchorSideBottom.Side = asrBottom
+      Left = 6
+      Height = 16
+      Top = 28
+      Width = 763
+      Anchors = [akLeft, akRight, akBottom]
+      BorderSpacing.Left = 4
+      BorderSpacing.Right = 4
+      BorderSpacing.Bottom = 5
+      Max = 99
+      ParentFont = False
+      Smooth = True
+      Step = 1
+      TabOrder = 0
+      BarShowText = True
+    end
+    object ProgressBarRip: TProgressBar
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 6
+      Height = 16
+      Top = 7
+      Width = 763
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 4
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 4
+      BorderSpacing.Bottom = 6
+      ParentFont = False
+      Smooth = True
+      Step = 1
+      TabOrder = 1
+      BarShowText = True
+    end
+  end
+  object Panel2: TPanel
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 791
+    Height = 50
+    Top = 611
+    Width = 202
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Right = 22
+    BorderSpacing.Bottom = 10
+    BevelInner = bvLowered
+    ClientHeight = 50
+    ClientWidth = 202
+    Color = clHighlight
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 5
+    object SpeedButton1: TSpeedButton
+      AnchorSideLeft.Control = Panel2
+      AnchorSideTop.Control = Panel2
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Side = asrBottom
+      Left = 8
+      Height = 30
+      Top = 10
+      Width = 90
+      BorderSpacing.Left = 6
+      Caption = 'Cancel'
+      OnClick = SpeedButton1Click
+      ParentFont = False
+    end
+    object SpeedButton2: TSpeedButton
+      AnchorSideLeft.Control = SpeedButton1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel2
+      AnchorSideTop.Side = asrCenter
+      Left = 104
+      Height = 30
+      Top = 10
+      Width = 90
+      BorderSpacing.Left = 6
+      BorderSpacing.Right = 4
+      BorderSpacing.Bottom = 3
+      Caption = 'Rip'
+      Glyph.Data = {
+        36090000424D3609000000000000360000002800000018000000180000000100
+        2000000000000009000064000000640000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000000080800235966CA83696
+        6CA100FF00010000000000000000000000000000000000000000000000000000
+        000000000000000000000000000000000000000000008A8A8A18919191689A9A
+        9AC0999999E8969696FB969696FB999999E8989898BF4A9473C13FA179F43FA0
+        78F336956A8E0000000000000000000000000000000000000000000000000000
+        00000000000000000002000000083D3D3D158F8F8F889A9A9AF5B2B2B2F6C9C9
+        C9FFD5D5D5FFDCDBDCFFDBD8DBFFD6CED7FF8FB2A4FF419E76FF56C3AAFF57C2
+        A9FF3C9B74F5358E656A00000002000000000000000000000000000000000000
+        0000000000070000000D5B5B5B2D999999DAB5B5B5F7DDDDDDFFE1E1E1FFDDDD
+        DDFFD9D9D9FFD8D7D9FFD8D4D9FFABBFBBFF429C74FF5FC7AFFF4DC6AEFF4DC6
+        AEFF5DC6AEFF3B996FF72F865D52000000070000000000000000000000000000
+        00030000000A6868682C9B9B9BEDCBCBCBFCE7E7E7FFE0E0E0FFDDDDDDFFDBDB
+        DBFFDADADAFFD9D9D9FFB9C7C4FF419C73FF63C9B1FF58CEB8FF47C9B1FF47C9
+        B1FF5ACFB9FF62C8B0FF3A986DF630825B3B0000000300000000000000000000
+        00005A5A5A119D9D9DDACECECEFBE9E9E9FFE1E1E1FFE0E0E0FFDFDFDFFFDDDD
+        DDFFDCDCDCFFC3D0CAFF429C74FF67C9B2FF64D6C2FF4ED0B9FF4ED0B9FF4ED0
+        B9FF4ED0B9FF68D7C3FF64C7AFFF37986DEF36936C2100000000000000000000
+        0000A2A2A283BDBDBDF7EBEBEBFFE4E4E4FFE3E3E3FFE2E2E2FFE0E0E0FFDFDF
+        DFFFD1D8D5FF4B9F7BFF69C8AEFF7FE1D1FF7FE1D1FF55D7C2FF55D7C2FF55D7
+        C2FF55D7C2FF7FE1D1FF7FE1D1FF65C6AAFD37986DE236946B13000000009999
+        9914A1A1A1F5E5E5E5FFE7E6E7FFE5E5E5FFE5E5E5FFE3E3E3FFE2E2E2FFE1E1
+        E1FF9EC4B4FF369569FF369569FF3E9D75FF88E6D8FF5CDDCAFF5CDDCAFF5CDD
+        CAFF5CDDCAFF88E6D8FF3E9D75FF369569FF369569FF36966E6400000000A1A1
+        A164C0BEC0F5EAEAEAFFE4E3E4FFE4E4E4FFE5E5E5FFE5E5E5FFE6E6E6FFDEDE
+        DEFFD1D1D1FCD1D1D1FFD0D0D0FF369569FF90ECE0FF62E4D3FF62E4D3FF62E4
+        D3FF62E4D3FF90ECE0FF369569FFB6B7BAF5A0A0A0610000000000000000A6A6
+        A6BED9D8D9FFE6E6E6FFE3E2E3FFE4E3E4FFE4E4E4FFE6E6E6FFE3E3E3FFCECE
+        CEFED5D5D5DCE9E9E9A2EAEAEAA1369569FF96EFE4FF66E8D7FF66E8D7FF66E8
+        D7FF66E8D7FF96EFE4FF369569FFC9C9C9FFA5A5A5BB0000000000000000A7A7
+        A7E7E5E4E5FFE3E2E3FFE3E1E3FFE3E2E3FFE4E3E4FFEAEAEAFFCECECEFCD3D3
+        D3DED3D3D3BEC8C8C8E3C8C8C8E3369569FF99F0E4FF66E8D7FF66E8D7FF66E8
+        D7FF66E8D7FF99F0E4FF369569FFD5D5D5FFA6A6A6E50000000000000000A5A5
+        A5F9EAE9EAFFE1E0E1FFE2E0E2FFE2E1E2FFE3E2E3FFECECECFFC4C4C4FEE2E2
+        E2A9C2C2C2E2B6B6B607B6B6B607369569FF9CF0E5FF66E8D7FF66E8D7FF66E8
+        D7FF66E8D7FF9CF0E5FF369569FFDDDDDDFFA6A6A6F80000000000000000A7A7
+        A7F8EAEAEAFFE1DFE1FFE1DFE1FFE2E0E2FFE2E1E2FFEFEEEFFFC1C1C1FEE1E1
+        E1A9BDBDBDE3B6B6B607BFBFBF08369569FF9CF0E5FF9CF0E5FF9CF0E5FF9CF0
+        E5FF9CF0E5FF9CF0E5FF369569FFDFDFDFFFA7A7A7F80000000000000000AAAA
+        AAE7E6E5E6FFE1DFE1FFE0DEE0FFE1DFE1FFE0E0E4FFE4E8F1FFCACBCFFCCBCB
+        CBDBC5C5C5BEB7B7B7E3B7B7B7E3439C74F8369569FF369569FF369569FF3695
+        69FF369569FF369569FF489F78FFDDDDDDFFAAAAAAE50000000000000000ABAB
+        ABBFDBDADBFFE1E1E7FFDADBEAFFD5DBEFFFD0DCF5FFCFE1F6FFDAE9EBFFB6B6
+        B6FFC8C8C8DAD9D9D9AED9D9D9AEC8C8C8D9B6B6B6FEEDEDEDFFE8E8E8FFE2E2
+        E2FFE1E1E1FFDFDFDFFFE1E1E1FFD3D3D3FFACACACBB0000000000000000A9A9
+        A965C7C7CAF6DFE5F7FFD2DBF4FFD2E0F0FFCDE5EBFFD1E8E5FFDBECD5FFE6E6
+        D7FFCCC8C8FDB4B4B4FEB4B4B4FEC6C6C6FDEFEFEFFFEFEFEFFFE5E5E5FFE4E4
+        E4FFE2E2E2FFE1E1E1FFE5E5E5FFBFBFBFF4A8A8A8610000000000000000A6A6
+        A614B0B0B0F4E5E8EEFFD6E4EAFFCBEAE8FFD4E7E3FFDAE8D3FFDFE5CEFFE4D5
+        C9FFE8D7DBFFEBE0EDFFF6F6F6FFF4F3F4FFEBEAEBFFE4E4E4FFE5E5E5FFE6E6
+        E6FFE4E4E4FFE4E4E4FFE3E3E3FFAFAFAFF4AAAAAA1200000000000000000000
+        0000AFAFAF83CBCCCCF8DFEFEFFFD5E6E0FFDBE7D3FFDEE5CEFFE1DBCEFFE3D1
+        CCFFE3D1DEFFE1D7E3FFE2E0E2FFE3E1E3FFE3E2E3FFE4E3E4FFE4E4E4FFE5E5
+        E5FFE5E5E5FFEBEBEBFFC5C5C5F6ADADAD800000000000000000000000000000
+        0000B3B3B30AB1B1B1DBD9DCDCFEE7EDE0FFDDE7CDFFDEDFD0FFE2D1CAFFE3D3
+        D2FFE1D0E2FFE2D8E3FFE0DFE0FFE2E0E2FFE2E1E2FFE3E2E3FFE4E3E4FFE4E4
+        E4FFEBEAEBFFD7D7D7FDB1B1B1D9AAAAAA090000000000000000000000000000
+        000000000000ADADAD1CB3B3B3EADDDFD9FDEAECE3FFE3D9D3FFE2D1C9FFE1D2
+        D7FFE1D1E4FFE0D9E2FFE1DFE1FFE1DFE1FFE2E0E2FFE2E1E2FFE5E4E5FFEBEB
+        EBFFD7D7D7FCB3B3B3EAB3B3B31B000000000000000000000000000000000000
+        00000000000000000000B1B1B11AB2B2B2D6CDCCCCF7EAE5E2FFEBDFDDFFE5D9
+        E1FFE3D5E3FFE0DAE1FFE0DCE0FFE2E0E2FFE5E3E5FFE9E8E9FFE8E7E8FFC8C8
+        C8F6B3B3B3D4B1B1B11A00000000000000000000000000000000000000000000
+        0000000000000000000000000000BFBFBF08B3B3B37FB5B5B5F4CDCCCCF6E2DC
+        E2FFE9E4EAFFEBE8EBFFEAE9EAFFE7E6E7FFDEDDDEFFCACACAF6B5B5B5F4B5B5
+        B57CB6B6B6070000000000000000000000000000000000000000000000000000
+        00000000000000000000000000000000000000000000AEAEAE16B3B3B365B7B7
+        B7BEB5B5B5E4B4B4B4F3B4B4B4F3B5B5B5E4B6B6B6BDB3B3B365AEAEAE160000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000
+      }
+      OnClick = SpeedButton2Click
+      ParentFont = False
+    end
+  end
+  object LB_Encodewith: TLabel
+    AnchorSideBottom.Control = RB_Artist
+    Left = 8
+    Height = 16
+    Top = 486
+    Width = 74
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Bottom = 10
+    Caption = 'Encode with'
+    ParentColor = False
+    ParentFont = False
+  end
+  object CB_Encoder: TComboBox
+    AnchorSideLeft.Control = LB_Encodewith
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = LB_Encodewith
+    AnchorSideTop.Side = asrCenter
+    Left = 86
+    Height = 26
+    Top = 481
+    Width = 100
+    BorderSpacing.Left = 4
+    ItemHeight = 0
+    ItemIndex = 0
+    Items.Strings = (
+      'Lame'
+      'Flac'
+      'OGG'
+      'AAC'
+      'Opus'
+    )
+    OnChange = CB_EncoderChange
+    OnSelect = CB_EncoderSelect
+    ParentFont = False
+    Style = csDropDownList
+    TabOrder = 6
+    Text = 'Lame'
+  end
+  object Label3: TLabel
+    AnchorSideLeft.Control = CB_Encoder
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = CB_Encoder
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = CheckBox1
+    Left = 194
+    Height = 16
+    Top = 486
+    Width = 505
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = False
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 12
+    Caption = 'This setting will encode to MP3'
+    Font.Color = clMaroon
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Panel3: TPanel
+    Left = 8
+    Height = 448
+    Top = 8
+    Width = 240
+    BevelOuter = bvLowered
+    ClientHeight = 448
+    ClientWidth = 240
+    ParentFont = False
+    TabOrder = 7
+    object LB_Artist: TLabel
+      AnchorSideTop.Control = SB_SearchCDCover
+      AnchorSideTop.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 16
+      Height = 21
+      Top = 294
+      Width = 208
+      AutoSize = False
+      BorderSpacing.Top = 4
+      Caption = 'Artist Name'
+      Font.Height = 18
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      OnClick = LB_ArtistClick
+    end
+    object LB_Album: TLabel
+      AnchorSideTop.Control = LB_Artist
+      AnchorSideTop.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 16
+      Height = 16
+      Top = 321
+      Width = 208
+      AutoSize = False
+      BorderSpacing.Top = 6
+      Caption = 'Title of Album'
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      OnClick = LB_AlbumClick
+    end
+    object LB_Released: TLabel
+      AnchorSideTop.Control = LB_Album
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 16
+      Top = 347
+      Width = 88
+      Alignment = taRightJustify
+      AutoSize = False
+      BorderSpacing.Top = 10
+      Caption = 'Released:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LB_Year: TLabel
+      AnchorSideTop.Control = LB_Released
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Panel3
+      AnchorSideRight.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 98
+      Height = 16
+      Top = 347
+      Width = 129
+      Anchors = [akTop, akLeft, akRight]
+      AutoSize = False
+      BorderSpacing.Top = 6
+      BorderSpacing.Right = 12
+      Caption = '0000'
+      ParentColor = False
+      ParentFont = False
+      OnClick = LB_YearClick
+    end
+    object LB_Genre2: TLabel
+      AnchorSideTop.Control = LB_Released
+      AnchorSideTop.Side = asrBottom
+      Left = 8
+      Height = 16
+      Top = 371
+      Width = 88
+      Alignment = taRightJustify
+      AutoSize = False
+      BorderSpacing.Top = 8
+      Caption = 'Genre:'
+      ParentColor = False
+      ParentFont = False
+    end
+    object LB_Genre: TLabel
+      AnchorSideTop.Control = LB_Genre2
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = Panel3
+      AnchorSideRight.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 98
+      Height = 16
+      Top = 371
+      Width = 129
+      Anchors = [akTop, akLeft, akRight]
+      AutoSize = False
+      BorderSpacing.Right = 12
+      Caption = 'Unknown'
+      ParentColor = False
+      ParentFont = False
+      OnClick = LB_GenreClick
+    end
+    object CB_Various: TCheckBox
+      Left = 6
+      Height = 22
+      Top = 392
+      Width = 109
+      Caption = 'Various artists'
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label18: TLabel
+      Left = 18
+      Height = 16
+      Top = 416
+      Width = 41
+      Caption = 'CD ID: '
+      ParentColor = False
+      ParentFont = False
+    end
+    object LB_cddb: TLabel
+      Left = 64
+      Height = 16
+      Top = 416
+      Width = 166
+      AutoSize = False
+      Caption = '......................'
+      ParentColor = False
+      ParentFont = False
+    end
+    object SB_SearchCDCover: TSpeedButton
+      AnchorSideTop.Control = Image2
+      AnchorSideTop.Side = asrBottom
+      Left = 16
+      Height = 20
+      Top = 270
+      Width = 208
+      BorderSpacing.Top = 2
+      Caption = 'Search for CD Cover'
+      OnClick = SB_SearchCDCoverClick
+      ParentFont = False
+    end
+    object Edit1: TEdit
+      AnchorSideTop.Control = LB_Artist
+      AnchorSideTop.Side = asrCenter
+      Left = 16
+      Height = 25
+      Top = 292
+      Width = 208
+      OnEditingDone = Edit1EditingDone
+      OnExit = Edit1EditingDone
+      OnKeyPress = Edit1KeyPress
+      ParentFont = False
+      TabOrder = 1
+      Text = 'Edit1'
+      Visible = False
+    end
+    object Edit2: TEdit
+      AnchorSideTop.Control = LB_Album
+      AnchorSideTop.Side = asrCenter
+      Left = 16
+      Height = 25
+      Top = 317
+      Width = 208
+      OnEditingDone = Edit2EditingDone
+      OnExit = Edit2EditingDone
+      OnKeyPress = Edit2KeyPress
+      ParentFont = False
+      TabOrder = 2
+      Text = 'Edit2'
+      Visible = False
+    end
+    object Edit3: TEdit
+      AnchorSideTop.Control = LB_Genre
+      AnchorSideTop.Side = asrCenter
+      Left = 98
+      Height = 25
+      Top = 367
+      Width = 126
+      OnEditingDone = Edit3EditingDone
+      OnExit = Edit3EditingDone
+      OnKeyPress = Edit3KeyPress
+      ParentFont = False
+      TabOrder = 3
+      Text = 'Edit3'
+      Visible = False
+    end
+    object CB_NoFade: TCheckBox
+      Left = 130
+      Height = 22
+      Hint = 'If you do not want your Ripped files to crossfade.'#10'This is not saved in the ID3-tags, but only in the database.'#10'Very usefull for life performances or continious music'
+      Top = 392
+      Width = 103
+      Caption = 'Set NO FADE'
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 4
+    end
+    object Edit4: TEdit
+      AnchorSideTop.Control = LB_Year
+      AnchorSideTop.Side = asrCenter
+      Left = 98
+      Height = 25
+      Top = 343
+      Width = 70
+      OnEditingDone = Edit4EditingDone
+      OnKeyPress = Edit4KeyPress
+      ParentFont = False
+      TabOrder = 5
+      Text = 'Edit4'
+      Visible = False
+    end
+    object CB_CopyCDCover: TCheckBox
+      Left = 6
+      Height = 22
+      Top = 6
+      Width = 209
+      Caption = 'Copy CD-Cover to Music folder'
+      Enabled = False
+      ParentFont = False
+      TabOrder = 6
+    end
+    object CB_Include: TCheckBox
+      AnchorSideTop.Control = CB_CopyCDCover
+      AnchorSideTop.Side = asrBottom
+      Left = 6
+      Height = 22
+      Top = 28
+      Width = 192
+      Caption = 'Include CD Cover in ID3 Tag'
+      ParentFont = False
+      TabOrder = 7
+    end
+    object Image2: TImage
+      AnchorSideLeft.Control = Panel3
+      AnchorSideTop.Control = CB_Include
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel3
+      AnchorSideRight.Side = asrBottom
+      Cursor = crHandPoint
+      Left = 13
+      Height = 214
+      Top = 54
+      Width = 214
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 12
+      BorderSpacing.Top = 4
+      BorderSpacing.Right = 12
+      DragMode = dmAutomatic
+      OnClick = Image2Click
+      PopupMenu = PopupMenu1
+      Proportional = True
+      Stretch = True
+    end
+  end
+  object StringGrid1: TStringGrid
+    AnchorSideLeft.Control = Panel3
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = LB_Selection1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Label3
+    Left = 254
+    Height = 454
+    Top = 26
+    Width = 751
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 6
+    BorderSpacing.Top = 2
+    BorderSpacing.Right = 10
+    BorderSpacing.Bottom = 6
+    ColCount = 11
+    Columns = <    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end    
+      item
+        Title.Caption = 'Title'
+        Width = 64
+      end>
+    DefaultDrawing = False
+    FixedCols = 0
+    HeaderHotZones = [gzFixedCols, gzFixedRows, gzFixedCells, gzInvalid]
+    HeaderPushZones = [gzFixedCols, gzFixedRows, gzFixedCells, gzInvalid]
+    MouseWheelOption = mwGrid
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goColSizing, goEditing, goRowSelect, goDblClickAutoSize, goSmoothScroll, goHeaderHotTracking, goHeaderPushedLook]
+    ParentFont = False
+    PopupMenu = PopupMenu2
+    RowCount = 2
+    TabOrder = 8
+    OnButtonClick = StringGrid1ButtonClick
+    OnEditingDone = StringGrid1EditingDone
+    OnHeaderClick = StringGrid1HeaderClick
+    Cells = (
+      3
+      0
+      0
+      'Rip'
+      1
+      0
+      'Track'
+      2
+      0
+      'Artist'
+    )
+  end
+  object CheckBox1: TCheckBox
+    AnchorSideTop.Control = LB_Encodewith
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = CB_MakePDF
+    Left = 711
+    Height = 22
+    Top = 483
+    Width = 133
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 24
+    Caption = 'Rip to 1 File + CUE'
+    Enabled = False
+    ParentFont = False
+    TabOrder = 9
+  end
+  object CB_MakePDF: TCheckBox
+    AnchorSideTop.Control = LB_Encodewith
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 868
+    Height = 22
+    Top = 483
+    Width = 135
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 12
+    Caption = 'Make PDF booklet'
+    Enabled = False
+    ParentFont = False
+    TabOrder = 10
+  end
+  object OpenDialog1: TOpenDialog
+    FileName = '/Users/bart'
+    Filter = 'Graphic files|*.jpg;*.jpeg;*.png'
+    InitialDir = '/Users/'
+    left = 187
+    top = 289
+  end
+  object PopupMenu1: TPopupMenu
+    left = 416
+    top = 184
+    object MI_NewCDCover: TMenuItem
+      Caption = 'Load new CD-Cover'
+      OnClick = Image2Click
+    end
+    object MenuItem2: TMenuItem
+      Caption = '-'
+    end
+    object MI_ClearCover: TMenuItem
+      Caption = 'Clear CD-Cover'
+      OnClick = MI_ClearCoverClick
+    end
+  end
+  object PopupMenu2: TPopupMenu
+    left = 816
+    top = 336
+    object MI_FillArtist: TMenuItem
+      Caption = 'Fill in Artist'
+      OnClick = MI_FillArtistClick
+    end
+    object MI_FillAlbum: TMenuItem
+      Caption = 'Fill in Album'
+      OnClick = MI_FillAlbumClick
+    end
+    object MI_FillYear: TMenuItem
+      Caption = 'Fill in Year'
+      OnClick = MI_FillYearClick
+    end
+    object MI_FillGenre: TMenuItem
+      Caption = 'Fill in Genre'
+      OnClick = MI_FillGenreClick
+    end
+    object MI_FillComposer: TMenuItem
+      Caption = 'Fill in Composer'
+      OnClick = MI_FillComposerClick
+    end
+    object MI_FillOrigArtist: TMenuItem
+      Caption = 'Fill in Original Artist'
+      OnClick = MI_FillOrigArtistClick
+    end
+    object MI_FillCopyRight: TMenuItem
+      Caption = 'Fill in Copyright'
+      OnClick = MI_FillCopyRightClick
+    end
+    object MI_FillComment: TMenuItem
+      Caption = 'Fill in Comment'
+      OnClick = MI_FillCommentClick
+    end
+  end
+end
