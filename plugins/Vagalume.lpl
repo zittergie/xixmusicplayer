@@ -1,0 +1,24 @@
+XIX Lyrics Plugin
+1
+http://www.vagalume.com.br/
+{artist}/{title}-cifrada.html
+[IGNORECHARS]
+'
+[REPLACECHARS]
+ &@/\;".><
+-
+[DROP]
+<div itemprop=description>
+
+[END]
+[READ]
+<hr>
+
+[END]
+[NOT FOUND]
+1
+Page not Found
+[END]
+[EXTRA]
+0
+1

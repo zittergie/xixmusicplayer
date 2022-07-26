@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://www.metrolyrics.com/
+{title}-lyrics-{artist}.html
+[REPLACECHARS]
+ &@/\;".><
+-
+[DROP]
+<div id="lyrics-body-text">
+
+[END]
+[READ]
+<div
+
+[END]
+[NOT FOUND]
+20
+icensing restrictions
+[END]
+[EXTRA]
+0
+0

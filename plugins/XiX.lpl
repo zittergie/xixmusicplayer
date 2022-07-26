@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://www.xixmusicplayer.org/songtext/
+{artist}-{title}.lrc
+[REPLACECHARS]
+ ?*
+-
+[DROP]
+
+
+[END]
+[READ]
+
+
+[END]
+[NOT FOUND]
+20
+not found
+[END]
+[EXTRA]
+0
+0

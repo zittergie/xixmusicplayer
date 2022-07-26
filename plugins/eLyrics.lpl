@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://www.elyrics.net/read/
+{a}/{artist}-lyrics/{title}-lyrics.html
+[REPLACECHARS]
+ &@/\;".><
+-
+[DROP]
+</div><div id='inlyr'
+
+[END]
+[READ]
+<p><form action="
+
+[END]
+[NOT FOUND]
+1
+Page not Found
+[END]
+[EXTRA]
+1
+1

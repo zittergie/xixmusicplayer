@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://www.lyricsreg.com/lyrics/
+{artist}/{title}
+[REPLACECHARS]
+ &@/\;".><
++
+[DROP]
+Above Lyrics
+</script>
+[END]
+[READ]
+<script
+
+[END]
+[NOT FOUND]
+200
+Page not Found
+[END]
+[EXTRA]
+0
+0

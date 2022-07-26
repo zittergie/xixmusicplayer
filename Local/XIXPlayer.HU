@@ -1,0 +1,395 @@
+HU - Magyar
+
+# 27-10-2013
+# Main Form
+All;Összes
+Artist;Elõadó
+Artists;Elõadók
+Album;Album
+Albums;Albums
+Playlists;Lejátszási lista
+File Manager;Fájlkezelõ
+Playing Queue;Most játszott
+Lyrics;Dalszöveg
+Files;Fájlok
+Artist Info;Information
+Discography;Discography
+Online;Online
+Presets;Presets
+Recorded;Recorded
+by;általa
+on;op
+Source;Forrás
+Choose the CD entry;CD bejegyzés kiválasztása
+Genre;Mûfaj
+Similar artists;Similar artists
+Information;Információt
+CD Cover and Lyric;CD Cover and Songtext
+Title;Cím
+Path;Útvonal
+Filename;Fájlnév
+Year;Év
+Name;Név
+Country;Country
+Genres;Mûfaj
+Date;Date
+From year;Év
+to;neki
+Stars;Csillagok
+Radio Station;Radiostation
+New;Új
+Save;Mentés
+Rename;Átnevezés
+Copy;Másolás
+Delete;Törlés
+Preset;Preset
+Record;Record
+Plan;Plan
+Add;Add
+Up;Up
+Down;Down
+Close;Bezárás
+Post;Post
+until;until
+Build Playlist;Lejátszási lista felépítése
+General Search String;General Search String
+Open Search Dialog;Keresési dialógus megnyitása
+Open configuration dialog;Beállítások dialógus megnyitása
+Switch Fullscreen mode;Váltás teljes képernyõs módra
+Read CD Info;CD infó beolvasása
+Try to read CD-text;CD-Text beolvasásának megpróbálása
+Rip Tracks from the CD to MP3 or FLAC;Számok átmásolása a CD-rõl MP3/FLAC formátumba
+
+#Splash
+Loading all MUSIC files;Loading all MUSIC files
+Loading Playlists;Lejátszási lista betöltése
+Loading online radio listing;Loading online radio listing
+Loading online radio recording schedule;Loading online radio recording schedule
+
+#Menu PM_SG_All
+Play (add to Playing Queue);Lejátszás
+Play (do not add Playing Queue);Lejátszás (a zeneszám nem kerül fel a listára)
+Add Selected;Kiválasztott hozzáadása
+to beginning of Playing Queue;to beginning of Playing Queue
+to end of Playing Queue;a Most játszott lista végéhez
+after song currently being played;a jelenleg lejátszott zeneszám után
+Add all to Playing Queue;Összes hozzáadása a Most játszotthoz
+Add to playlist;Add to playlist
+Remove song(s) from playlist;Remove song(s) from playlist
+Copy item to;Elem másolása ide
+Folder;Mappa
+Set FADE;Set FADE
+Remove FADE;Remove FADE
+Show;Megjelenítés
+Same Artist;Azonos elõadó
+Same Album;Azonos album
+Same Genre;Azonos mûfaj
+Same Year;Azonos Év
+Open folder;Mappa megnyitása
+
+#Menu PM_Play
+Play;Lejátszás
+Reshuffle;Újrakeverés
+Remove selected from Playing Queue;Kiválasztott eltávolítása a Most játszott listáról
+Empty Playing Queue;Üres lejátszási lista
+Save Playing Queue as new playlist;Most játszottak mentése lejátszási listaként
+Add selected to;Add selected to
+
+#Menu PM_Albums
+Go to Album;Go to Album
+Play complete album;Play complete album
+Copy Album to;Copy Album to
+
+#Menu PM_Playlist1
+Create New Playlist;Új lejátszási lista létrehozása
+Duplicate Playlist;Lejátszási lista duplikálása
+Rename Playlist;Lejátszási lista átnevezése
+Delete Playlist;Lejátszási lista törlése
+
+#Menu PM_Radio
+Add Station to Presets;Add Station to Presets
+Add New Radiostation;Add New Radiostation
+Edit Radiostation;Edit Radiostation
+Remove Radiostation;Remove Radiostation
+Record from Radiostation;Record from Radiostation
+Update Radio Listing (Internet update);Update Radio Listing (Internet update)
+
+#menu PM_RecordedRadio
+Copy Recording to;Copy Recording to;
+Delete recording;Delete recording
+
+#Menu PM_Panel
+Pauze;Pauze
+Stop;Megállítás
+Previous;Elõzõ
+Next;Következõ
+Fullscreen;Teljes képernyõ
+About;Névjegy
+Exit;Kilépés
+
+#Menu Fill in CD Info
+Fill in Artist;Add meg az elõadót
+Fill in Album;Add meg az albumot
+Fill in Genre;Add meg a mûfajt
+Fill in Year;Add meg az évet
+
+#Menu CD_Artwork
+Choose other CD artwork;Új borító betöltése
+Remove CD Artwork from cache;Eltávolítás a gyorsítótárból
+Do not show artwork;Ne jelenítsd meg az artwork-öt
+
+#Menu PM_songtext
+Save Songtext;Dalszöveg mentése
+Reload Songtext;Dalszöveg újratöltése
+Reload Songtext from;Dalszöveg újratöltése innen
+File;Fájl
+Remove Songtext;Dalszöveg eltávolítása
+
+#Main Extra Dialogs SHOWDIALOG
+Song successfully copied.;Song successfully copied.
+ERROR: Make sure LAME is installed;ERROR: Make sure LAME is installed
+ERROR: Make sure FLAC is installed;ERROR: Make sure FLAC is installed
+Radiostation already in presets;Radiostation already in presets
+Added to presets;Added to presets
+You did not fill in all the Artist & Title fields;You did not fill in all the Artist & Title fields
+No target folder is selected, please select a target folder;No target folder is selected, please select a target folder
+Please select the Playlist you want to copy;Please select the Playlist you want to copy
+SORT is not allowed when SHUFFLE is active.;SORT is not allowed when SHUFFLE is active.
+First deactivate SHUFFLE.;First deactivate SHUFFLE
+EJECT command not found;EJECT command not found;
+Updates found;Updates found
+Recording copied to;Recording copied to
+
+#Main Extra Dialog SHOWWITH
+WARNING;WARNING
+already exists;already exists
+YES;IGEN
+NO;NEM
+OVERWRITE ?;OVERWRITE ?
+Songs added to the playlist;Songs added to the playlist
+Thanks;Thanks
+No playlist selected;No playlist selected
+Please select a playlist and try again;Please select a playlist and try again
+RECORDING;RECORDING
+A recording is active;A recording is active
+Are you sure you want to stop?;Are you sure you want to stop?
+A scheduled recording is busy.;A scheduled recording is busy.
+DO YOU WANT TO QUIT THE RECORDING?;DO YOU WANT TO QUIT THE RECORDING?
+KEEP RECORDING;KEEP RECORDING
+QUIT RECORDING;QUIT RECORDING
+INFORMATION;INFORMATION
+A Radiostream can not be played reversed.;A Radiostream can not be played reversed.
+If you want to reverse a Radiostream, you will have to record it first;If you want to reverse a Radiostream, you will have to record it first
+A Podcast can not be played reversed.;A Podcast can not be played reversed.
+If you want to reverse a Podcast, you will have to download it first;If you want to reverse a Podcast, you will have to download it first
+An Archive Stream can not be played reversed.;An Archive Stream can not be played reversed.
+If you want to reverse an Archive Stream, you will have to download it first;If you want to reverse an Archive Stream, you will have to download it first
+OK;OK
+Delete Playlist;Lejátszási lista törlése
+ARE YOU SURE?;BIZTOS VAGY BENNE?
+Delete file;Delete file
+ALERT;ALERT
+You have scheduled a warning for;You have scheduled a warning for
+Added the following song to the playlist;Added the following song to the playlist
+does not exist;does not exist
+Remove from Playing Queue;Remove from Playing Queue
+Do you want to remove the song currently playing from the Playing Queue;Do you want to remove the song currently playing from the Playing Queue
+This will stop the music;This will stop the music
+Delete song;Delete song
+Are you sure you want to delete the following song;Are you sure you want to delete the following song
+The file you are about to delete is in the current Playing Queue.;The file you are about to delete is in the current Playing Queue.
+Deleting the song removes it from the Playing Queue too.;Deleting the song removes it from the Playing Queue too.
+
+#MAIN Extras
+CDDB Entry not found.;CDDB bejegyzés nem található.
+Getting Chapters using MPLAYER ...;Getting Chapters using MPLAYER ...
+No CD found;No CD found
+CD Drive Supports CD-TEXT;A CD meghajtó támogatja a CD-TEXT-et
+CD Drive does not support CD-TEXT;A CD meghajtó nem támogatja a CD-TEXT-et
+Problem reading CD;Probléma merült fel a CD beolvasása közben
+CDDB ID for the CD: ;A CD CDDB azonosítója: 
+CD appears to have CD-Text information;A CD CD-TEXT információt tartalmaz
+CDDB Entry found.  If more than one CD is found, you can choose the right CD in the Dropbox;CDDB bejegyzés megtalálva. Ha több, mint egy találat van, akkor a legördülõ listában kiválaszthatod a megfelelõt
+
+#Form ABOUT
+Translations;Translations
+Help;Segítség
+A free multi-platform MP3, OGG, M4A & FLAC player.;Egy ingyenes, többplatformos MP3, OGG, M4A és FLAC lejátszó.
+-  Switch to Fullscreen;-  Váltás teljes képernyõre
+Programmed in FreePascal/Lazarus and uses the third-party library BASS.  Encoding uses LAME and/or FLAC binaries.  MPLAYER binary is used to rip DVD tracks.  Most of development is done on Linux.;Programmed in FreePascal/Lazarus and uses the third-party library BASS.  Encoding uses LAME and/or FLAC binaries.  MPLAYER binary is used to rip DVD tracks.  Most of development is done on Linux.
+Thanks to;Köszönet az alábbiaknak
+visit website;visit website
+OK, thanks;OK, rendben
+
+#Form ADD_RADIO
+Add Radio Stream;Add Radio Stream
+Website;Weboldal
+Logo Link;Logo Link
+Stream URL;Stream URL
+Test;Test
+Cancel;Mégse
+To show the right lyrics you must choose the right order of the ARTIST and TITLE in the radiostream;To show the right lyrics you must choose the right order of the ARTIST and TITLE in the radiostream
+
+#Form CONFIG
+Configuration;Beállítás
+General;Általános
+Cache;Cache
+GUI;GUI
+Fonts;Betűtípusok
+Local Folders;Helyi mappák
+External Folders;Távoli mappák
+Devices;Devices
+Rip CD;Rip CD
+External Apps;External Apps
+Updates;Updates
+Language;Nyelvészet
+Use crossfading between 2 songs;Számok átkeverése
+Fading time;Keverés idõtartama
+Fade on manual selection;Fade on manual selection
+Run from portable USB stick  (needs a restart);Futtatás USB háttértárról (újraindítás szükséges)
+When selecting "Run from portable USB stick" the config, cache & radiopresets will be saved on the USB stick.;When selecting "Run from portable USB stick" the config, cache & radiopresets will be saved on the USB stick.
+Use cache for CD Cover images;Gyorsítótár használata a CD borítóképekhez
+Use cache for songtext;Gyorsítótár használata a dalszövegekhez
+Use cache for Radio Icons;Use cache for Radio Icons
+Clear cache;Gyorstár törlése
+Show cache;Gyorsítótár megjelenítése
+Theme;Téma
+Tab Artist;Elõadó fül
+Tab Playing Queue;Tab Playing Queue
+Follow song;Dal követése
+Show notification;Értesítések megjelenítése
+Only when minimized;Csak kis méretben
+Show tray icon;Ikon megjelenítése a tálcán
+Scan these local folders;Ezeket a helyi mappákat vizsgálja át
+Add folder;Mappa hozzáadása
+Exclude these local folders;Ezeket a helyi mappákat ne vizsgálja át
+Scan these external folders;Ezeket a távoli mappákat vizsgálja át
+Exclude these external folders;Ezeket a távoli mappákat ne vizsgálja át
+Workaround for SAMBA bug;Workaround for SAMBA bug
+Encoder;Encoder
+Select target directory;Cél mappa kiválasztása
+Format for Single Artist CD;Egy elõadós CD-k formátuma
+Format for Compilation CD;Vegyes CD-k formátuma
+LAME is the application that is needed to encode CD-Tracks to MP3;LAME is the application that is needed to encode CD-Tracks to MP3
+FLAC is the application that is needed to encode CD-Tracks to FLAC;FLAC is the application that is needed to encode CD-Tracks to FLAC
+mplayer is needed to rip DVD-Tracks;mplayer is needed to rip DVD-Tracks
+Command Line for Facebook - FBCMD is the application needed for using the facebook integration in XiX Music Player.  If you want to post messages from from within the application, you need to install this program.;Command Line for Facebook - FBCMD is the application needed for using the facebook integration in XiX Music Player.  If you want to post messages from from within the application, you need to install this program.
+Try to find all applications;Try to find all applications
+Top;Felülre
+Right;Jobbra
+Left;Balra
+Bottom;Alulra
+No update found;Nem található frissítés
+Update available at:;Frissítés elérhetõ:
+Network problem;Hálózati problém
+
+#Form EQ
+On;On
+silent;csendes
+double;dupla
+Center;Középpont
+
+#Form PLAN_RECORDING
+Schedule;Schedule
+Overview;Attekintés
+Add Recording;Add Recording
+Modify Recording;Modify Recording
+Settings;Beállítások
+Station;Station
+From;From
+Until;Until
+Mode;Mode
+Radiostation;Radiostation
+from;from
+Warning;Figyelmeztetés
+Listen;Lehallgat
+Update;Update
+recording(s) planned;recording(s) planned
+Entered time is in the past.  Please check time.;Entered time is in the past.  Please check time.
+This recording would create a conflict with the recording that is busy. (You will need to select a different time);This recording would create a conflict with the recording that is busy. (You will need to select a different time)
+
+#Form RENAME_FILE
+Rename File;Rename File
+New Filename;New Filename
+Comment;Megjegyzés
+Composer;Composer
+Copyright;Copyright
+Save database information as ID3-Tag;Save database information as ID3-Tag
+Revert;Revert
+Database Information;Database Information
+Changing ID3 tags only for MP3 files;Changing ID3 tags only for MP3 files
+Song successfully renamed.;Song successfully renamed.
+
+#Form RIP_CD
+Selection;Selection
+Rip to artist folder;Rip to artist folder
+Rip to various folder;Rip to various folder
+Rip;Rip
+Title Album;Album címe
+Track Number;Szám
+First letter of the Artist;First letter of the Artist
+
+#Form ZOEKEN
+Search;Keresés
+Fast Search;Gyors keresés
+INCLUDE;INCLUDE
+Case sensitive;Case sensitive
+No songs found;No songs found
+
+#Form SONG_DETAILS
+Format;Formátum
+Quality;Minõség
+Bitrate;Bitrate
+Filesize;Fájlméret
+Rating;Rating
+bytes;bájt
+Save info as ID3-tag;Save info as ID3-tag
+Custom EQ-Settings for this song;Custom EQ-Settings for this song
+Play as MONO;Play as MONO
+Do NOT fade (overrides FADE SELECTION);Do NOT fade (overrides FADE SELECTION)
+Times played;Szor játszott
+Encoded with;Kódolva ezzel:
+unknown software;ismeretlen szoftver
+Save changes?;Változtatások mentése?
+Some information about the song has changed.;Some information about the song has changed.
+Do you want to save these changes?;Do you want to save these changes?
+
+#Form WIZARD
+Options;Options
+
+
+//About
+
+
+Background info;Háttérinformáció
+Checking Files;Fájlok ellenõrzése
+File copied;Fájl átmásolva
+ERROR: file not copied !!!;HIBA: a fájl átmásolása sikertelen!
+Add selected to Playlist;Hozzáadás a lejátszási listához
+No songs found;Nem találhatóak zeneszámok
+Delete;Törlés
+Are you sure you want to delete the following song;Biztosan ki szeretnéd törölni a következõ zeneszámot
+The file you are about to delete is in the current Playing Queue.;A törlendõ fájl rajta van a lejátszási listán.
+Deleting the song removes it from the Playing Queue too.;Ha törlöd a zeneszámot, akkor a lejátszási listáról is el lesz távolítva.
+
+Are you sure you want to delete the following playlist:;Biztosan ki szeretnéd törölni a következõ zeneszámot:
+to Playlist;a lejátszási listához
+Delete item;Elem törlése
+Rename item;Elem átnevezése
+
+Checking for new songs;Új zeneszámok keresése
+Updated info found: ;Frissített információ található:  
+Database Update;Adatbázis frisssítése
+All songs are scanned.  Changes found.;Összes zeneszám átvizsgálva. Változásokat találtam.
+DO YOU WANT TO RELOAD THE DATABASE ?;SZERETNÉD ÚJRATÖLTENI AZ ADATBÁZIST?
+Playlist with same name already exists;Egy azonos nevû lejátszási lista már létezik
+The key ;A kulcs 
+ is not allowed; nem engedélyezett
+
+CD Drive;CD meghajtó
+
+Time;Idõ
+Track;Szám
+
+
+

@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://www.lyricsdepot.com/
+{artist}/{title}.html
+[REPLACECHARS]
+ &@/\;".><
+-
+[DROP]
+<p class="lyrics">
+
+[END]
+[READ]
+<!-- ends song Lyrics -->
+
+[END]
+[NOT FOUND]
+20
+Your name will be printed as part of the credit when your lyric is approved
+[END]
+[EXTRA]
+0
+1

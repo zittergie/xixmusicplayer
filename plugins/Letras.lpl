@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://letras.mus.br/
+winamp.php?musica={title}&artista={artist}
+[REPLACECHARS]
+ &@/\;".><
+-
+[DROP]
+<div id="letra-cnt">
+
+[END]
+[READ]
+
+
+[END]
+[NOT FOUND]
+20
+Não encontramos a música
+[END]
+[EXTRA]
+0
+1

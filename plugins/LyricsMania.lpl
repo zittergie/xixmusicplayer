@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://www.lyricsmania.com/
+{title}_lyrics_{artist}.html
+[REPLACECHARS]
+ &@/\;"'.><
+_
+[DROP]
+rong>Lyrics to
+
+[END]
+[READ]
+</div>
+
+[END]
+[NOT FOUND]
+20
+Lyricsmania staff is working hard for you to add
+[END]
+[EXTRA]
+0
+0

@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://www.songlyrics.com/
+{artist}/{title}-lyrics/
+[REPLACECHARS]
+ &@/\;".><
+-
+[DROP]
+<p id="songLyricsDiv"
+
+[END]
+[READ]
+</div>
+
+[END]
+[NOT FOUND]
+200
+Sorry, we have
+[END]
+[EXTRA]
+1
+0

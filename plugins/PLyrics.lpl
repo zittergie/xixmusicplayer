@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://www.plyrics.com/lyrics/
+{artist}/{title}.html
+[REPLACECHARS]
+ &@/\;"'><
+
+[DROP]
+<!-- start of lyrics -->
+
+[END]
+[READ]
+<!-- end of lyrics -->
+
+[END]
+[NOT FOUND]
+0
+>>>No idea<<< 
+[END]
+[EXTRA]
+0
+0

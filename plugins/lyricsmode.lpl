@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://www.lyricsmode.com/lyrics/
+{a}/{artist}/{title}.html
+[REPLACECHARS]
+ &@/\;"'><
+_
+[DROP]
+<p id="lyrics_text" class="ui-annotatable">
+
+[END]
+[READ]
+<p id="lyrics_text_selected">
+
+[END]
+[NOT FOUND]
+0
+>>>No idea<<< 
+[END]
+[EXTRA]
+1
+0

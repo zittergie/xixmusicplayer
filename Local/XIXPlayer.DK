@@ -1,0 +1,239 @@
+DK - Dansk
+
+# 08-04-2013
+### HOOFD
+All;Alt
+Artist;Artist
+Artists;Artister
+Playlists;Spilleliste
+by;af
+on;på
+Playing Queue;Spillekø
+Lyrics;Tekst
+Title;Titel
+Filename;Filnavn
+File copied;Kopieret fil
+ERROR: file not copied !!!;FEJL: filen blev ikke kopieret
+Loading Playlists;Henter spilleliste
+Path;Sti
+File Manager;Filhåndtering
+Add selected to Playlist;Tilføj valgte til spilleliste
+No songs found;Ingen sang fundet
+Delete;Slet
+Are you sure you want to delete the following song;Er du sikker på at du vil slette den føgende sang?
+The file you are about to delete is in the current playlist.;Filen du er ved at slette er i den nuværende spileliste.
+Deleting the song removes it from the playlist too.;Ved at slette sangen fjerner du den også fra spilelisten.
+ARE YOU SURE?;ER DU SIKKER?
+YES;JA
+NO;NEJ
+Delete Playlist;Slet spillelisten
+Are you sure you want to delete the following playlist:;Erdu sikker på at du vil slette følgende spilleliste:
+to Playlist;til spilleliste
+New;Ny
+Save;Gem
+Rename;Omdøb
+Copy;Kopier
+Play;Spil
+Play (do not add to Now Playing);Spil (tilføj ikke til Spiller nu)
+Open folder;Åben arkiv
+Copy item to;Kopier til
+Delete item;Slet
+Show;Vis
+Same artist;Samme artist
+Same album;Samme album
+Add Selected;Tilføj valgte
+Add all to Playing Queue;Tilføj alle til spillekø
+to end of Playing Queue;til slutningen af spillekøen
+Create New Playlist;Opret ny spilleliste
+Duplicate Playlist;Duplicer spillelisten
+Rename Playlist;Omdøb spilleliste
+Delete Playlist;Slet spilleliste
+Checking for new songs;Kontroller for nye sange
+Updated info found: ;Opdateret information fundet: 
+Database Update;Databasen er opdateret 
+All songs are scanned.  Changes found.;Alle sange er scannet, Der er sket ændringer.
+DO YOU WANT TO RELOAD THE DATABASE ?;VIL DU INDLÆSE DATABASEN IGEN?
+Playlist with same name already exists;Spilleliste med samme navn ekisterer alerede
+The key ;Tasten 
+ is not allowed; er ikke gyldig
+No update found;Ingen opdatering fundet
+Update available at:;Opdatering fundet:
+Network problem;Netværksprblem
+Reshuffle;Dan sløjfe igen
+Remove selected from Playing Queue;Fjern valgte fra spillekøen
+Empty Playing Queue;Tøm spillekø
+Save Playing Queue as new playlist;Gem spillekø som ny spilleliste
+Name;Navn
+From year;Fra år
+to; til
+Genre;Genre
+Stars;Stjerner
+Build Playlist;Opbyg spileliste
+Open Search Dialog;Åbn søgning
+Save Songtext;Gem sangtekst
+Reload Songtext (from cache);Genindlæs sangtekst (fra cache)
+Reload Songtext from;Genindlæs sangtekst fra;
+File;Fil
+Remove Songtext;Fjern sangtekst
+Open configuration dialog;Åben konfigurations-dialog
+Load a new cover;Indlæs nyt cover
+Remove this from cache;Fjern det fra cache;
+Do not show artwork;Vis ikke afbildning
+Switch Fullscreen mode;Skift Fuldskærmstilstand
+after song currently being played;efter nuværende sang er afspillet
+
+CD Drive;CD-drev
+Choose the CD entry;Vælg CD- medie
+CD Drive Supports CD-TEXT;CD-drev understøtter CD-Tekst
+CD Drive Does not Support CD-TEXT;CD-drev understøtter ikke CD-Tekst
+Problem reading CD;Problem med at læse CD
+CDDB ID for the CD: ;CDDB ID for CD-en: 
+CD appears to have CD-Text information;CD-en ser ud til at have CD-Tekstinformation
+CDDB Entry found.  If more than one CD is found, you can choose the right CD in the Dropbox; CD-medie fundet. Hvis mere end een CD findes, kan du vælge den rigtige CD i vinduet; 
+CDDB Entry not found.;Ingen CDDB information fundet.;
+Read CD Info;Læs CD-Info;
+Try to read CD-text;Prøv at læse CD-tekst
+Rip Tracks from the CD to MP3 or FLAC;Rip Spor fra CD til MP3 eller FLAC
+Fill in Artist;Udfyld Artist
+Fill in Album;Udfyld Album
+Fill in Genre;Udfyld Genre
+Fill in Year;Udfyld År
+Time;Varighed
+Track;Nummer
+
+Stop;Stop
+Previous;Forrige
+Next;Næste
+Fullscreen;Fuldskærm
+About;Om
+Exit;Luk
+
+//Songtekst Dialog; Sangtekst-dial og
+Print;Print
+Close;Luk
+
+//id3Form
+Year;År
+Comment;Kommentar
+Encoded with;Kodet med
+Format;Format
+Quality;Kvalitet
+Filesize;Filstørrelse
+unknown software;ukent program
+
+//Config
+General;Generelt
+Local Folders;Lokale mapper
+External Folders;Eksterne mapper
+Save;Gem
+Cancel;Annuller
+Use crossfading between 2 songs;Brug crossfading mellem 2 numre
+Fading time;Fading varighed
+Do not fade on manual selection;Fade ikke ved manuelt valgte
+Use cache for CD Cover images;Brug cache til CD Cover-billeder
+Use cache for songtext;Brug cache til sangtekst 
+Add Folder;Tilføj mappe
+Clear cache;Tøm cache
+Theme;Tema
+Tab Artist;Tab Artist
+Tab Playlist;Tab spilleliste
+Follow song;Følg nummer
+Show lyrics in floating window;Vis sangtekst i flow-vindue
+Keep window on top;Behold vindue i toppen
+Scan these local folders;Scan disse lokale mapper
+Exclude these local folders;Udelad disse lokale mapper
+Scan these external folders;Scan disse eksterne mapper
+Exclude these external folders;Udelad disse eksterne mapper
+Top;Toppen
+Right;Højre
+Left;Venstre
+Bottom;Bund
+Configuration;Konfigurer
+Color Theme;Farvetema 
+Show notification;Vis note
+Only when minimized;Kun når det er minimeret
+Show tray icon;Vis tray-icon 
+Select target directory;Vælg mål-bibliotek
+Format for Single Artist CD;Format for enkelt-artist CD
+Format for Compilation CD;Format for sammensat CD
+Title Album;Titel-album
+Track number;Spor-nummer
+Show cache;Vis cache
+
+//About
+Help;Hjælp
+-  Switch to Fullscreen;-  Skift til fuld-skærm
+Background info;Baggrunds-info
+Checking Files;Check filer
+A free multi-platform MP3, OGG & FLAC player.;En uafhængig multi-platforms MP3, OGG & FLAC afspiller 
+Programmed in FreePascal/Lazarus and uses the third-party library BASS.  Most of development is done on Linux.;Programmeret i FreePascal/Lazarus og bruger det tredieparts BASS-bibliotek.Det meste udviklingsarbejde er udført med Linux (Mint).
+Thanks to;Tak til
+OK, thanks;OK, tak
+
+//Search
+Search;Søg
+Fast Search;Hurtig søgning
+
+//Added 08-04-2013
+recordings in schedule;planlagte optagelser
+Go to Album;Gå til Album
+Play complete album;Spil hele albummet
+Add sound FXs;Tilføj lyd FXs
+Set NO FADING;Vælg INGEN FADING
+Remove NO FADING;Fjern INGEN FADING
+Presets;Forudindstilling
+Add;Tilføj
+Add to Presets;tilføj til Forudindstilling
+Add Radiostation;Tilføj Radiostation
+Record;Optag
+Record from Radiostation;Optag fra Radiostation
+Schedule;Skema
+Update Internet Radiostation;Opdater Internet Radiostation
+Get new Radiolisting;Hent ny Radiostation
+Air;I luften
+Recorded;Optaget
+Copy Recording to ...;Kopier optagelse til..
+Delete Recording;Slet optagelse
+Overview;Oversigt
+Add Recording;Tilføj optagelse
+Modify Recording;Rediger optagelse
+Settings;Indstillinger
+Date;Dato
+Station;Station
+From;Fra
+Until;Slut ved
+Mode;Indstilling
+from;fra
+until;Slut ved
+Radiostation;Radiostation
+Warning;Advarsel
+Listen;Lyt
+Update;Opdater
+recording(s) planned; planlagt(e) optagelse(r)
+Entered time is in the past.  Please check time.;Indstillet tid er fra tidligere. Kontroller tidspunkt
+RECORDING;OPTAGLSE
+WARNING;ADVARSEL
+A recording is active;En optagele er aktiv
+A scheduled recording is busy.;En planlgt optagelse er igang.
+Are you sure you want to stop?;Er du sikker på at du vil slutte?
+NO;NEJ
+YES;JA
+DO YOU WANT TO QUIT THE RECORDING?;Ønsker du at afbryde en optagelse?
+KEEP RECORDING;FORTSÆT OPTAGELSE
+QUIT RECORDING;AFBRYD OPTAGELSE
+Country;Land
+Genres;Genrer
+You did not fill in all the Artist & Title fields;Du udfyldte ikke artist- & titel-felterne 
+No target folder is selected, please select a target folder;Inget mål-bibliotek er valgt, vær venlig at vælge et bibliotek
+Please fill all the required fields;Venligst udfyld de krævede felter
+KEEP PLAYING;FORTSÆT MED AFSPILNING
+STOP;STOP
+Choose STOP or KEEP PLAYING;Vælg STOP eller FORTSÆT AFSPILNING
+Choose HIDE or QUIT;Vælg SKJUL eller AFBRYD
+HIDE;SKJUL
+QUIT;AFBRYD
+Do you want the music to STOP?;Ønsker du at musikken skal STOPPE?
+XiX Music Player is still playing music.;XiX Music Player spiller stadigvæk musik
+There is a schedule planned.;Der er planlagt en hændelse.
+
+

@@ -1,0 +1,22 @@
+XIX Lyrics Plugin
+1
+http://www.azlyrics.com/lyrics/
+{artist}/{title}.html
+[REPLACECHARS]
+ &@/\;"'><
+
+[DROP]
+<!-- Usage of
+
+[END]
+[READ]
+</div>
+
+[END]
+[NOT FOUND]
+0
+>>>No idea<<< 
+[END]
+[EXTRA]
+0
+0

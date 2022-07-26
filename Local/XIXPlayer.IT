@@ -1,0 +1,407 @@
+IT - Italian
+
+# 27-10-2013
+
+# Main Form
+All;Tutto
+Artist;Artista
+Artists;Artisti
+Album;Album
+Albums;Albums
+Playlists;Elenco brani
+File Manager;Gestione file
+Playing Queue;Coda di riproduzione
+Lyrics;Testi
+Files;Files
+Artist Info;Information
+Discography;Discography
+Online;Online
+Presets;Preimpostazioni
+Recorded;Registrato
+by;di
+on;su
+Source;Source
+Choose the CD entry;Selezionate la voce CD
+Genre;Genere
+Similar artists;Similar artists
+Information;Information
+CD Cover and Lyric;CD Cover and Lyric
+Title;Titolo
+Path;Percorso
+to;a
+Filename;Nome del file
+Year;Anno
+Name;Nome
+Country;Nazione
+Genres;Generi
+Date;Data
+From year;Dall'anno
+to;to
+Stars;Stelle
+Radio Station;Stazione radio
+New;Nuovo
+Save;Salva
+Rename;Rinomina
+Copy;Copia
+Delete;Elimina
+Preset;Preimpostazioni
+Record;Registra
+Plan;Plan
+Add;Aggiungi
+Up;Up
+Down;Down
+Close;Chiudi
+Post;Post
+until;fino a
+Build Playlist;Costruisci elenco brani
+General Search String;General Search String
+Open Search Dialog;Apri la finestra di ricerca
+Open configuration dialog;Apri la finestra di configurazione
+Switch Fullscreen mode;Passa alla modalità schermo intero
+Read CD Info;Leggi le informazioni sul CD
+Try to read CD-text;Prova a leggere i CD-Text
+Rip Tracks from the CD to MP3 or FLAC;Copia tracce da CD in formato MP3 o FLAC
+
+#Splash
+Loading all MUSIC files;Caricamento di tutti i file musicali
+Loading Playlists;Caricamento elenco brani
+Loading online radio listing;Caricamento elenco radio online
+Loading online radio recording schedule;Caricamento di programma in linea di registrazione radio
+
+#Menu PM_SG_All
+Play (add to Playing Queue);Riproduci (add to Playing Queue)
+Play (do not add Playing Queue);Riproduci (non aggiungere ai file Ora in riproduzione)
+Add Selected;Aggiungi i selezionati
+to beginning of Playing Queue;to beginning of Playing Queue
+to end of Playing Queue;alla fine della coda di riproduzione
+after song currently being played;after song currently being played;dopo la canzone attualmente in riproduzione
+Add all to Playing Queue;Aggiungi tutto alla coda di riproduzione
+Add to playlist;Add to playlist
+Remove song(s) from playlist;Remove song(s) from playlist
+Copy item to;Copia il file in
+Folder;Cartella
+Rename item;Rename item
+Delete item;Elimina file
+Fading options;Fading options
+Set FADE;Set FADE
+Remove FADE;Remove FADE
+Show;Visualizza
+Same Artist;Stesso artista
+Same Album;Stesso album
+Same Genre;Stesso Genere
+Same Year;Stesso Anno
+Open folder;pri la cartella
+
+#Menu PM_Play
+Play;Riproduci
+Reshuffle;Riproduzione a caso
+Remove selected from Playing Queue;Rimuovi i selezionati dalla coda di riproduzione afspeelvolgorde
+Empty Playing Queue;Svuota coda di riproduzione
+Save Playing Queue as new playlist;Salva la coda di riproduzione come un nuovo elenco brani
+
+#Menu PM_Albums
+Go to Album;Vai all'album
+Play complete album;Riproduci l'intero album
+Copy Album to;Copy Album to
+
+#Menu PM_Playlist1
+Create New Playlist;Crea un nuovo elenco brani
+Duplicate Playlist;Duplica elenco brani
+Rename Playlist;Rinomina elenco brani
+Delete Playlist;Elimina elenco brani
+
+#Menu PM_Radio
+Add Station to Presets;Aggiungi alle preimpostazioni
+Add New Radiostation;Aggiungi stazione radio
+Edit Radiostation;Edit Radiostation
+Remove Radiostation;Rimuovi stazione radio
+Record from Radiostation;Registra dalla stazione radio
+Update Radio Listing (Internet update);Aggiungi stazione radio via internet
+
+#menu PM_RecordedRadio
+Copy Recording to;Copia la registrazione in
+Delete Recording;Elimina la registrazione
+
+#Menu PM_Panel
+Pauze;Pauze
+Stop;Stop
+Previous;Indietro
+Next;Avanti
+Fullscreen;Schermo intero
+About;Informazioni su
+Exit;Esci
+
+#Menu Fill in CD Info
+Fill in Artist;Completa artista
+Fill in Album;Completa Album
+Fill in Genre;Completa Genere
+Fill in Year;Completa Anno
+
+#Menu CD_Artwork
+Choose other CD artwork;Carica una nuova copertina
+Remove CD Artwork from cache;Rimuovi dalla cache
+Do not show artwork;Non visualizzare le copertine
+
+#Menu PM_songtext
+Save Songtext;Salva Songtext
+Reload Songtext;Ricarica Songtext
+Reload Songtext from;Ricarica Songtext da
+File;File
+Remove Songtext;Rimuovi Songtext
+
+#Main Extra Dialogs SHOWDIALOG
+Song successfully copied.;Song successfully copied.
+ERROR: Make sure LAME is installed;ERROR: Make sure LAME is installed
+ERROR: Make sure FLAC is installed;ERROR: Make sure FLAC is installed
+Radiostation already in presets;Radiostation already in presets
+Added to presets;Added to presets
+You did not fill in all the Artist & Title fields;Non avete compilato i campi Artista & Titolo
+No target folder is selected, please select a target folder;Nessuna cartella di setinazione selezionata, selezionatene una
+Please select the Playlist you want to copy;Please select the Playlist you want to copy
+SORT is not allowed when SHUFFLE is active.;SORT is not allowed when SHUFFLE is active.
+First deactivate SHUFFLE.;First deactivate SHUFFLE.
+EJECT command not found;EJECT command not found
+Updates found;Updates found
+Recording copied to;Recording copied to
+
+#Main Extra Dialog SHOWWITH
+WARNING;ATTENZIONE
+already exists;already exists
+YES;SI
+NO;NO
+OVERWRITE ?;OVERWRITE ?
+Songs added to the playlist;Songs added to the playlist
+Thanks;Grazie
+No playlist selected;No playlist selected
+Please select a playlist and try again;Please select a playlist and try again
+RECORDING;REGISTRAZIONE
+A recording is active;È in corso una registrazione
+Are you sure you want to stop?;Siete sicuri di voler terminare?
+A scheduled recording is busy.;È in corso una registrazione pianificata.
+DO YOU WANT TO QUIT THE RECORDING?;VOLETE INTERROMPERE LA REGISTRAZIONE?
+KEEP RECORDING;CONTINUA LA REGISTRAZIONE
+QUIT RECORDING;INTERROMPI LA REGISTRAZIONE
+A scheduled recording is busy.;A scheduled recording is busy.
+INFORMATION;INFORMATION
+A Radiostream can not be played reversed.;A Radiostream can not be played reversed.
+If you want to reverse a Radiostream, you will have to record it first;If you want to reverse a Radiostream, you will have to record it first
+A Podcast can not be played reversed.;A Podcast can not be played reversed.
+If you want to reverse a Podcast, you will have to download it first;If you want to reverse a Podcast, you will have to download it first
+An Archive Stream can not be played reversed.;An Archive Stream can not be played reversed.
+If you want to reverse an Archive Stream, you will have to download it first;If you want to reverse an Archive Stream, you will have to download it first
+OK;OK
+Delete Playlist;Elimina elenco brani
+ARE YOU SURE?;SIETE SICURI?
+Delete file;Delete file
+ALERT;ALERT
+You have scheduled a warning for;You have scheduled a warning for
+Added the following song to the playlist;Added the following song to the playlist
+does not exist;does not exist
+Remove from Playing Queue;Remove from Playing Queue
+Do you want to remove the song currently playing from the Playing Queue;Do you want to remove the song currently playing from the Playing Queu
+This will stop the music;This will stop the music
+Delete song;Delete song
+Are you sure you want to delete the following song;Are you sure you want to delete the following song
+The file you are about to delete is in the current Playing Queue.;The file you are about to delete is in the current Playing Queue.
+Deleting the song removes it from the Playing Queue too.;Deleting the song removes it from the Playing Queue too.
+
+#MAIN Extras
+CDDB Entry not found.;Voce CDDB non trovata.
+Getting Chapters using MPLAYER ...;Getting Chapters using MPLAYER ...
+No CD found;Geen CD gevonden
+CD Drive Supports CD-TEXT;il lettore cd supporta i CD-TEXT
+CD Drive does not support CD-TEXT;L'unità CD non supporta i CD-TEXT
+Problem reading CD;Problemi di lettura per il CD
+CDDB ID for the CD: ;ID di CDDB per il CD: 
+CD appears to have CD-Text information;CD contient des informations CD-Text
+CDDB Entry found.  If more than one CD is found, you can choose the right CD in the Dropbox;Voce CDDB trovata. Se viene trovato più di un CD, potete scegliere quello giusto con Dropbox.
+
+#Form ABOUT
+Translations;Translations
+Help;Guida
+A free multi-platform MP3, OGG, M4A & FLAC player.;Un riproduttore gratuito di file MP3, OGG, M4A e FLAC
+-  Switch to Fullscreen;-  Passa alla modalità schermo intero
+Programmed in FreePascal/Lazarus and uses the third-party library BASS.  Encoding uses LAME and/or FLAC binaries.  MPLAYER binary is used to rip DVD tracks.  Most of development is done on Linux.;Programmed in FreePascal/Lazarus and uses the third-party library BASS.  Encoding uses LAME and/or FLAC binaries.  MPLAYER binary is used to rip DVD tracks.  Most of development is done on Linux.
+visit website;bezoek website
+OK, thanks;OK, grazie
+
+#Form ADD_RADIO
+Add Radio Stream;Add Radio Stream
+Website;Website
+Logo Link;Logo Link
+Stream URL;Stream URL
+Test;Test
+Cancel;Annulla
+To show the right lyrics you must choose the right order of the ARTIST and TITLE in the radiostream;To show the right lyrics you must choose the right order of the ARTIST and TITLE in the radiostream
+
+#Form CONFIG
+Configuration;Configurazione
+General;Generali
+Cache;Cache
+GUI;GUI
+Fonts;Lettertypes
+Local Folders;Cartelle locali
+External Folders;Cartelle esterne
+Devices;Devices
+Rip CD;Rip CD
+External Apps;External Apps
+Updates;Updates
+Language;Lingua
+Use crossfading between 2 songs;Usa la sfumatura incrociata tra due canzoni
+Fading time;Tempo di sfumatura
+Fade on manual selection;Sfumatura sulla selezione manuale
+Run from portable USB stick  (needs a restart);Run from portable USB stick  (needs a restart)
+When selecting "Run from portable USB stick" the config, cache & radiopresets will be saved on the USB stick.;When selecting "Run from portable USB stick" the config, cache & radiopresets will be saved on the USB stick.
+Use cache for CD Cover images;Usa la cache per le immagini della copertina
+Use cache for songtext;Usa la cache per il testo della canzone
+Use cache for Radio Icons;Use cache for Radio Icons
+Clear cache;Svuota la cache
+Show cache;Visualizza cache
+Theme;Tema
+Tab Artist;Etichetta artista
+Tab Playing Queue;Tab Playing Queue
+Follow song;Segui canzone
+Show notification;Visualizza notifica
+Only when minimized;Solo se ridotto a icona
+Show tray icon;Visualizza icona nella tray
+Scan these local folders;Analizza queste cartelle locali
+Exclude these local folders;Escludi queste cartelle locali
+Add folder;Aggiungi cartella
+Scan these external folders;Analizza queste cartelle esterne
+Exclude these external folders;Escludi queste cartelle esterne
+Workaround for SAMBA bug;Workaround for SAMBA bug
+Encoder;Encoder
+Select target directory;Seleziona cartella di destinazione
+Format for Single Artist CD;Formato CD singolo dell'artista
+Format for Compilation CD;Formato CD Compilation
+LAME is the application that is needed to encode CD-Tracks to MP3;LAME is the application that is needed to encode CD-Tracks to MP3
+FLAC is the application that is needed to encode CD-Tracks to FLAC;FLAC is the application that is needed to encode CD-Tracks to FLAC
+mplayer is needed to rip DVD-Tracks;mplayer is needed to rip DVD-Tracks
+Command Line for Facebook - FBCMD is the application needed for using the facebook integration in XiX Music Player.  If you want to post messages from from within the application, you need to install this program.;Command Line for Facebook - FBCMD is the application needed for using the facebook integration in XiX Music Player.  If you want to post messages from from within the application, you need to install this program.
+Try to find all applications;Trovare tutte le applicazioni
+Top;Alto
+Right;Destra
+Left;Sinistra
+Bottom;Basso
+No update found;Nessun aggiornamento trovato
+Update available at:;Aggiornamenti disponibili a:
+Network problem;Problemi di rete
+
+#Form EQ
+On;Acceso
+silent;silenzioso
+double;doppio
+Center;Mezzo
+
+#Form PLAN_RECORDING
+Schedule;Pianifica
+Overview;Panoramica
+Add Recording;Aggiungi registrazione
+Modify Recording;Modifica registrazione
+Settings;Impostazioni
+Station;Stazione Radio
+From;Da
+Until;Fino a
+Mode;Modalità
+Radiostation;Stazione Radio
+from;da
+Warning;Attenzione
+Listen;Ascolta
+Update;Aggiorna
+recording(s) planned;registrazione(i) pianificata(e)
+Entered time is in the past.  Please check time.;La data inserita non è recente. Controllate l'ora.
+This recording would create a conflict with the recording that is busy. (You will need to select a different time);This recording would create a conflict with the recording that is busy. (You will need to select a different time)
+
+#Form RENAME_FILE
+Rename File;Rinominare file
+New Filename;Nuovo file
+Comment;Commento
+Composer;Compositore
+Copyright;Copyright
+Save database information as ID3-Tag;Save database information as ID3-Tag
+Revert;Ripristina
+Database Information;Database Information
+Changing ID3 tags only for MP3 files;Changing ID3 tags only for MP3 files
+Song successfully renamed.;Song successfully renamed.
+
+#Form RIP_CD
+Selection;Selezione
+Rip to artist folder;Rip to artist folder
+Rip to various folder;Rip to various folder
+Rip;Rip
+Title Album;Titolo dell'album
+Track Number;Numero della traccia
+First letter of the Artist;First letter of the Artist
+
+#Form ZOEKEN
+Search;Cerca
+Fast Search;Ricerca rapida
+INCLUDE;INCLUDERE
+Case sensitive;Case sensitive
+No songs found;Nessuna canzone trovata
+
+#Form SONG_DETAILS
+Format;Formato
+Quality;Qualità
+Filesize;Dimensioni del file
+Rating;Rating
+bytes;bytes
+Save info as ID3-tag;Save info as ID3-tag
+Custom EQ-Settings for this song;Custom EQ-Settings for this song
+Play as MONO;Play as MONO
+Do NOT fade (overrides FADE SELECTION);Do NOT fade (overrides FADE SELECTION)
+Times played;Times played
+Encoded with;Codificato con
+unknown software;programma sconosciuto
+Save changes?;Save changes?
+Some information about the song has changed.;Some information about the song has changed.;
+Do you want to save these changes?;Wilt U deze aanpassingen opslaan?
+
+#Form WIZARD
+Options;Options
+
+//OBSOLTE FOR NOW
+Thanks to;Grazie a
+File copied;File copiato
+ERROR: file not copied !!!;ERRORE: il file non è stato copiato!
+Loading Playlists;Caricamento elenco brani
+Add selected to Playlist;Aggiungi i selezionati all'elenco brani
+Are you sure you want to delete the following song;Siete sicuri di voler eliminare la seguente canzone
+The file you are about to delete is in the current playlist.;Il file che volete eliminare si trova nell'attuale elenco brani.
+Deleting the song removes it from the playlist too.;L'eliminazione della canzone lo elimina anche dall'elenco brani.
+Are you sure you want to delete the following playlist:;Siete sicuri di voler eliminare il seguente elenco brani:
+to Playlist;all'elenco brani
+Checking for new songs;Controllo nuove canzoni
+Updated info found: ;Informazioni sull'aggiornamento trovate: 
+Database Update;Database aggiornato
+All songs are scanned.  Changes found.;Tutte le canzoni sono state analizzate. Ci sono dei cambiamenti.
+DO YOU WANT TO RELOAD THE DATABASE ?;VOLETE RICARICARE IL DATABASE?
+Playlist with same name already exists;Esiste già un elenco brani con lo stesso nome
+The key ;il tasto 
+ is not allowed; non è consentito
+CD Drive;Lettore CD
+Time;Durata
+Track;Traccia
+
+//Config
+Color Theme;Tema di colori
+
+//Added 08-04-2013
+recordings in schedule;registrazioni pianificate
+Add sound FXs;Aggiungi effetti sonori
+Set NO FADING;Imposta NESSUNA SFUMATURA
+Remove NO FADING;Rimuovi NESSUNA SFUMATURA
+Get new Radiolisting;Ricezione elenchi nuove stazioni radio
+Air;Aria
+Please fill all the required fields;Compilate tutti i campi richiesti
+KEEP PLAYING;CONTINUA LA RIPRODUZIONE
+STOP;STOP
+Choose STOP or KEEP PLAYING;Selezionate STOP o CONTINUA LA RIPRODUZIONE
+Choose HIDE or QUIT;Selezionate NASCONDI o INTERROMPI
+HIDE;NASCONDI
+QUIT;INTERROMPI
+Do you want the music to STOP?;Volete interrompere la musica?
+XiX Music Player is still playing music.;XiX Music Player sta già riproducendo della musica.
+There is a schedule planned.;C'è un'operazione pianificata.
+
+
