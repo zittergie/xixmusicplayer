@@ -1,0 +1,137 @@
+object FormThemePrefs: TFormThemePrefs
+  Left = 351
+  Height = 617
+  Top = 154
+  Width = 1003
+  Caption = 'Theme Preferences'
+  ClientHeight = 617
+  ClientWidth = 1003
+  Position = poDesktopCenter
+  LCLVersion = '2.1.0.0'
+  object Panel1: TPanel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 50
+    Top = 8
+    Width = 987
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 8
+    BorderSpacing.Right = 8
+    Caption = 'Theme Preferences'
+    Color = clSkyBlue
+    Font.Color = clBlack
+    Font.Height = -19
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Bevel1: TBevel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Panel1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 50
+    Top = 67
+    Width = 987
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 8
+    BorderSpacing.Top = 9
+    BorderSpacing.Right = 8
+  end
+  object Label1: TLabel
+    AnchorSideLeft.Control = Bevel1
+    AnchorSideTop.Control = Bevel1
+    AnchorSideTop.Side = asrCenter
+    Left = 23
+    Height = 16
+    Top = 84
+    Width = 106
+    BorderSpacing.Left = 15
+    Caption = 'Available themes:'
+    ParentColor = False
+  end
+  object ComboBox1: TComboBox
+    AnchorSideLeft.Control = Label1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = Bevel1
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = BitBtn2
+    Left = 131
+    Height = 31
+    Top = 77
+    Width = 559
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 2
+    BorderSpacing.Right = 6
+    ItemHeight = 0
+    Sorted = True
+    Style = csOwnerDrawFixed
+    TabOrder = 1
+  end
+  object BitBtn1: TBitBtn
+    AnchorSideTop.Control = Bevel1
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = Bevel1
+    AnchorSideRight.Side = asrBottom
+    Left = 864
+    Height = 30
+    Top = 77
+    Width = 119
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 12
+    Caption = 'Add new theme'
+    TabOrder = 2
+  end
+  object BitBtn2: TBitBtn
+    AnchorSideTop.Control = Bevel1
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = BitBtn1
+    Left = 696
+    Height = 30
+    Top = 77
+    Width = 156
+    Anchors = [akTop, akRight]
+    BorderSpacing.Right = 12
+    Caption = 'Delete Chosen theme'
+    TabOrder = 3
+  end
+  object Panel2: TPanel
+    AnchorSideLeft.Control = Bevel1
+    AnchorSideTop.Control = Bevel1
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Bevel1
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = BitBtn3
+    Left = 8
+    Height = 446
+    Top = 125
+    Width = 987
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Top = 8
+    BorderSpacing.Bottom = 8
+    BevelInner = bvLowered
+    BevelOuter = bvNone
+    TabOrder = 4
+  end
+  object BitBtn3: TBitBtn
+    AnchorSideRight.Control = Bevel1
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 920
+    Height = 30
+    Top = 579
+    Width = 75
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Bottom = 8
+    Caption = 'Close'
+    OnClick = BitBtn3Click
+    TabOrder = 5
+  end
+end

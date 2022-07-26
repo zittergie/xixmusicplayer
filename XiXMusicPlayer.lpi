@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="XiXMusicPlayer"/>
+      <ResourceType Value="res"/>
+      <Icon Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <LaunchingApplication PathPlusParams="/usr/bin/xterm -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+      <FormatVersion Value="2"/>
+      <Modes>
+        <Mode Name="default">
+          <local>
+            <LaunchingApplication PathPlusParams="/usr/bin/xterm -T &apos;Lazarus Run Output&apos; -e $(LazarusDir)tools/runwait.sh $(TargetCmdLine)"/>
+          </local>
+        </Mode>
+      </Modes>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="uEControls"/>
+      </Item>
+      <Item>
+        <PackageName Value="BGRABitmapPack"/>
+      </Item>
+      <Item>
+        <PackageName Value="bgracontrols"/>
+      </Item>
+      <Item>
+        <PackageName Value="thumbctrl"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
+    <Units>
+      <Unit>
+        <Filename Value="XiXMusicPlayer.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="hoofd.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="wizard.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormWizard"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="splash.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormSplash"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="songdetails.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormDetails"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="configuration.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormConfig"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="showmydialog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormShowMyDialog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="renamesong.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormRenameSong"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="newplaylist.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormNewPlaylist"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="addradio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAddRadio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="recordplan.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormPlanRecording"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="nieuwepodcast.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Formnieuwepodcast"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="downloadlist.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormDownLoadOverView"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="eq.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormEQ"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="search.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormSearch"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ripcd.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormRip"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="fillincd.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormFillInCD"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="about.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="lameconfig.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormLameConfig"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="fx_echo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormEcho"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="fx_flanger.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormFlanger"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="fx_reverb.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormReverb"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="coverplayer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormCoverPlayer"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="id3tagger.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormID3Tagger"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="filltagfromfile.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormFillTagFromFile"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="debuglog.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormLog"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vuviewer.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="VuViewer"/>
+      </Unit>
+      <Unit>
+        <Filename Value="filetools.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormFileTools"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="filecheckingsettings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormFileCheckingSettings"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="xix_opustagreader.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="XiX_OpusTagReader"/>
+      </Unit>
+      <Unit>
+        <Filename Value="themeprefs.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormThemePrefs"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ThemePrefs"/>
+      </Unit>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <Target>
+      <Filename Value="XiXMusicPlayer"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+      <TargetCPU Value="x86_64"/>
+      <Optimizations>
+        <OptimizationLevel Value="3"/>
+      </Optimizations>
+      <SmallerCode Value="True"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <DebugInfoType Value="dsDwarf2Set"/>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <LinkSmart Value="True"/>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <ConfigFile>
+        <ConfigFilePath Value="/Developer/fpc/fpc.cfg"/>
+      </ConfigFile>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+      <Item>
+        <Name Value="Unknown"/>
+      </Item>
+      <Item>
+        <Name Value="RunError(0)"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
